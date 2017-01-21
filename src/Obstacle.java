@@ -46,18 +46,23 @@ public class Obstacle {
     public void draw(Bumple bumple) {
         update();
         bumple.rectMode(PConstants.CORNER);
-        Point<Integer> positionPixels = bumple.metersToPixels(position);
+        Point<Integer> positionPixelsLeft = bumple.metersToPixels(position);
+        Point<Integer> positionPixelsRight = bumple.metersToPixels(new Point<>(-position.x, position.y));
 
         // Left part of obstacle
         bumple.pushMatrix();
-        bumple.translate(positionPixels.x, positionPixels.y);
+        bumple.translate(positionPixelsLeft.x, positionPixelsLeft.y);
         bumple.rotate(angle);
         bumple.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
         bumple.popMatrix();
 
         // Right part of obstacle
-        // TODO
-
+        bumple.pushMatrix();
+        bumple.translate(positionPixelsRight.x, positionPixelsRight.y);
+        bumple.rotate(-angle);
+        bumple.translate(-bumple.metersToPixels(width), 0);
+        bumple.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
+        bumple.popMatrix();
     }
 
 }
