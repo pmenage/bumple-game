@@ -5,7 +5,7 @@ public class Bumple extends PApplet {
 
     private static final int PIXELS_PER_METER = 200;
     private BumpCube bumpCube = new BumpCube();
-    private Obstacle obstacle = new Obstacle(Obstacle.ObstacleType.Sliding, 1f, 1.5f);
+    private Obstacle obstacle = new Obstacle(Obstacle.ObstacleType.Rotating, 1f, 1.5f);
 
     public static void main(String[] args) {
         Bumple.main(Bumple.class.getName());

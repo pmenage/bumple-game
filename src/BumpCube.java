@@ -2,7 +2,7 @@ import processing.core.PConstants;
 
 public class BumpCube {
 
-    private float size = 0.4f;
+    private float size = 0.3f;
     private float y = size/2;
     private float vy = 0f;
     private float ay = 0f;
