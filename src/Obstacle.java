@@ -14,6 +14,18 @@ public class Obstacle {
         Rotating
     }
 
+    public Point getPosition() {
+        return position;
+    }
+
+    public float getWidth() {
+        return width;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
     public Obstacle(ObstacleType type, float y, float duration) {
         this.type = type;
         position.y = y;
@@ -44,7 +56,6 @@ public class Obstacle {
     }
 
     public void draw(Bumple bumple) {
-        update();
         bumple.rectMode(PConstants.CORNER);
         Point positionPixelsLeft = bumple.metersToPixels(position);
         Point positionPixelsRight = bumple.metersToPixels(new Point(-position.x, position.y));

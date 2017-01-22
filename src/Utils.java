@@ -8,7 +8,7 @@ public class Utils {
      * @param R The radius of the circle.
      * @return Whether there is an intersection.
      */
-    public boolean detectSegmentCircleIntersection(Point A, Point B, Point P, float R) {
+    public static boolean detectSegmentCircleIntersection(Point A, Point B, Point P, float R) {
         Point I = projectOrthogonally(A, B, P);
         Point AB = B.subtract(A);
         Point AI = I.subtract(A);
@@ -25,7 +25,7 @@ public class Utils {
      * @param R The radius of the circle.
      * @return Whether the point is in the circle.
      */
-    public boolean isPointInCircle(Point I, Point P, float R) {
+    public static boolean isPointInCircle(Point I, Point P, float R) {
         Point PI = I.subtract(P);
         return PI.normSq() < R * R;
     }
@@ -37,7 +37,7 @@ public class Utils {
      * @param P The point to project.
      * @return The projected point.
      */
-    public Point projectOrthogonally(Point A, Point B, Point P) {
+    public static Point projectOrthogonally(Point A, Point B, Point P) {
         Point AB = B.subtract(A);
         return findIntersection(A, AB, P, AB.normal());
     }
@@ -50,7 +50,7 @@ public class Utils {
      * @param V2 A direction vector of the second line.
      * @return The single point of intersection or null.
      */
-    public Point findIntersection(Point P1, Point V1, Point P2, Point V2) {
+    public static Point findIntersection(Point P1, Point V1, Point P2, Point V2) {
         float detA1 = (P2.x - P1.x) * (-V2.y) - (P2.y - P1.y) * (-V2.x);
         float detA = V1.x * (-V2.y) - V1.y * (-V2.x);
         float t1 = detA1 / detA;

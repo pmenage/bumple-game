@@ -33,8 +33,31 @@ public class Bumple extends PApplet {
     @Override
     public void draw() {
         clear();
+        update();
         bumpCube.draw(this);
         obstacle.draw(this);
+    }
+
+    public void update() {
+        bumpCube.update();
+        obstacle.update();
+        if (detectCollision(obstacle, bumpCube))
+            rect(0, 0, 50, 50);
+    }
+
+    public static boolean detectCollision(Obstacle obstacle, BumpCube bumpCube) {
+        float obstacleX = obstacle.getPosition().x;
+        float obstacleY = obstacle.getPosition().y;
+        float obstacleWidth = obstacle.getWidth();
+        float obstacleHeight = obstacle.getHeight();
+        Point LeftUp = new Point(obstacleX, obstacleY);
+        Point RightUp = new Point(obstacleX + obstacleWidth, obstacleY);
+        Point RightDown = new Point(obstacleX + obstacleWidth, obstacleY - obstacleHeight);
+        Point LeftDown = new Point(obstacleX, obstacleY - obstacleHeight);
+        return Utils.detectSegmentCircleIntersection(LeftUp, LeftDown , bumpCube.getPosition(), bumpCube.getRadius()) ||
+                Utils.detectSegmentCircleIntersection(LeftUp, RightUp, bumpCube.getPosition(), bumpCube.getRadius()) ||
+                Utils.detectSegmentCircleIntersection(LeftDown, RightDown, bumpCube.getPosition(), bumpCube.getRadius()) ||
+                Utils.detectSegmentCircleIntersection(RightUp, RightDown, bumpCube.getPosition(), bumpCube.getRadius());
     }
 
 }
