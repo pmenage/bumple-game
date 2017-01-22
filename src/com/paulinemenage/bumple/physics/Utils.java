@@ -6,30 +6,28 @@ public class Utils {
      * Detect if there is an intersection between a segment and a circle.
      * @param A An end of the segment.
      * @param B The other end of the segment.
-     * @param P The center of the circle.
-     * @param R The radius of the circle.
+     * @param circle The circle.
      * @return Whether there is an intersection.
      */
-    public static boolean detectSegmentCircleIntersection(Point A, Point B, Point P, float R) {
-        Point I = projectOrthogonally(A, B, P);
+    public static boolean detectSegmentCircleIntersection(Point A, Point B, Circle circle) {
+        Point I = projectOrthogonally(A, B, circle.center);
         Point AB = B.subtract(A);
         Point AI = I.subtract(A);
         Point BI = I.subtract(B);
         float normSqAB = AB.normSq();
-        boolean isOnSegment = isPointInCircle(I, P, R) && AI.normSq() < normSqAB && BI.normSq() < normSqAB;
-        return isOnSegment || isPointInCircle(A, P, R) || isPointInCircle(B, P, R);
+        boolean isOnSegment = isPointInCircle(I, circle) && AI.normSq() < normSqAB && BI.normSq() < normSqAB;
+        return isOnSegment || isPointInCircle(A, circle) || isPointInCircle(B, circle);
     }
 
     /**
      * Detect if a point is in a circle.
      * @param I The point whose position we're checking.
-     * @param P The center of the circle.
-     * @param R The radius of the circle.
+     * @param circle The circle.
      * @return Whether the point is in the circle.
      */
-    public static boolean isPointInCircle(Point I, Point P, float R) {
-        Point PI = I.subtract(P);
-        return PI.normSq() < R * R;
+    public static boolean isPointInCircle(Point I, Circle circle) {
+        Point PI = I.subtract(circle.center);
+        return PI.normSq() < circle.radius * circle.radius;
     }
 
     /**

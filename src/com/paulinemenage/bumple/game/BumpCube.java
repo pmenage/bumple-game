@@ -1,5 +1,6 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
 import processing.core.PConstants;
 
@@ -12,12 +13,8 @@ public class BumpCube {
     private float radius = 0.1f;
     private boolean isOnGround = true;
 
-    public float getRadius() {
-        return radius;
-    }
-
-    public Point getPosition() {
-        return position;
+    public Circle getCollisionShape() {
+        return new Circle(position, radius);
     }
 
     public void jump() {

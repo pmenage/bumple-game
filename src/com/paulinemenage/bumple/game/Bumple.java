@@ -59,10 +59,10 @@ public class Bumple extends PApplet {
         Point RightUp = new Point(obstacleX + cos(obstacleAngle) * obstacleWidth + sin(obstacleAngle) * obstacleHeight, obstacleY);
         Point RightDown = new Point(obstacleX + cos(obstacleAngle) * obstacleWidth + sin(obstacleAngle) * obstacleHeight, obstacleY - (-sin(obstacleAngle) * obstacleWidth + cos(obstacleAngle) * obstacleHeight));
         Point LeftDown = new Point(obstacleX, obstacleY - (-sin(obstacleAngle) * obstacleWidth + cos(obstacleAngle) * obstacleHeight));
-        return Utils.detectSegmentCircleIntersection(LeftUp, LeftDown , bumpCube.getPosition(), bumpCube.getRadius()) ||
-                Utils.detectSegmentCircleIntersection(LeftUp, RightUp, bumpCube.getPosition(), bumpCube.getRadius()) ||
-                Utils.detectSegmentCircleIntersection(LeftDown, RightDown, bumpCube.getPosition(), bumpCube.getRadius()) ||
-                Utils.detectSegmentCircleIntersection(RightUp, RightDown, bumpCube.getPosition(), bumpCube.getRadius());
+        return Utils.detectSegmentCircleIntersection(LeftUp, LeftDown , bumpCube.getCollisionShape()) ||
+                Utils.detectSegmentCircleIntersection(LeftUp, RightUp, bumpCube.getCollisionShape()) ||
+                Utils.detectSegmentCircleIntersection(LeftDown, RightDown, bumpCube.getCollisionShape()) ||
+                Utils.detectSegmentCircleIntersection(RightUp, RightDown, bumpCube.getCollisionShape());
     }
 
 }
