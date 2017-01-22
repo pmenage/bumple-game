@@ -6,7 +6,7 @@ public class Obstacle {
     private float width = 1f;
     private float duration;
     private float angle;
-    private Point<Float> position = new Point<>(0f,0f);
+    private Point position = new Point(0f,0f);
     private ObstacleType type;
 
     public enum ObstacleType {
@@ -46,8 +46,8 @@ public class Obstacle {
     public void draw(Bumple bumple) {
         update();
         bumple.rectMode(PConstants.CORNER);
-        Point<Integer> positionPixelsLeft = bumple.metersToPixels(position);
-        Point<Integer> positionPixelsRight = bumple.metersToPixels(new Point<>(-position.x, position.y));
+        Point positionPixelsLeft = bumple.metersToPixels(position);
+        Point positionPixelsRight = bumple.metersToPixels(new Point(-position.x, position.y));
 
         // Left part of obstacle
         bumple.pushMatrix();

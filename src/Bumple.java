@@ -15,8 +15,8 @@ public class Bumple extends PApplet {
         return (int) (meters * PIXELS_PER_METER);
     }
 
-    public Point<Integer> metersToPixels(Point<Float> meters) {
-        return new Point<>(metersToPixels(meters.x) + 200, - metersToPixels(meters.y) + 500);
+    public Point metersToPixels(Point meters) {
+        return new Point(metersToPixels(meters.x) + 200, - metersToPixels(meters.y) + 500);
     }
 
     @Override

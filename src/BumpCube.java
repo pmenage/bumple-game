@@ -28,7 +28,7 @@ public class BumpCube {
     public void draw(Bumple bumple) {
         update();
         int sizePixels = bumple.metersToPixels(size);
-        Point<Integer> position = bumple.metersToPixels(new Point<Float>(0f, y));
+        Point position = bumple.metersToPixels(new Point(0f, y));
         bumple.rectMode(PConstants.CENTER);
         bumple.rect(position.x, position.y, sizePixels, sizePixels);
     }
