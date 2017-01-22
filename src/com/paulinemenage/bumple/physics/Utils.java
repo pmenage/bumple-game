@@ -3,13 +3,13 @@ package com.paulinemenage.bumple.physics;
 public class Utils {
 
     /**
-     * Detect if there is an intersection between a segment and a circle.
+     * Detect if there is an intersection between origin segment and origin circle.
      * @param segment The segment.
      * @param circle The circle.
      * @return Whether there is an intersection.
      */
     public static boolean detectSegmentCircleIntersection(Segment segment, Circle circle) {
-        Point I = projectOrthogonally(segment, circle.center);
+        Point I = projectOrthogonally(new Line(segment.a, segment.getDirectionVector()), circle.center);
         Point AB = segment.getDirectionVector();
         Point AI = I.subtract(segment.a);
         Point BI = I.subtract(segment.b);
@@ -19,7 +19,7 @@ public class Utils {
     }
 
     /**
-     * Detect if a point is in a circle.
+     * Detect if origin point is in origin circle.
      * @param I The point whose position we're checking.
      * @param circle The circle.
      * @return Whether the point is in the circle.
@@ -35,24 +35,21 @@ public class Utils {
      * @param P The point to project.
      * @return The projected point.
      */
-    public static Point projectOrthogonally(Segment line, Point P) {
-        Point AB = line.getDirectionVector();
-        return findIntersection(line.a, AB, P, AB.normal());
+    public static Point projectOrthogonally(Line line, Point P) {
+        return findIntersection(line, new Line(P, line.direction.normal()));
     }
 
     /**
      * Find the intersection between two lines.
-     * @param P1 A point of the first line.
-     * @param V1 A direction vector of the first line.
-     * @param P2 A point of the second line.
-     * @param V2 A direction vector of the second line.
+     * @param l1 The first line.
+     * @param l2 The second line.
      * @return The single point of intersection or null.
      */
-    public static Point findIntersection(Point P1, Point V1, Point P2, Point V2) {
-        float detA1 = (P2.x - P1.x) * (-V2.y) - (P2.y - P1.y) * (-V2.x);
-        float detA = V1.x * (-V2.y) - V1.y * (-V2.x);
+    public static Point findIntersection(Line l1, Line l2) {
+        float detA1 = (l2.origin.x - l1.origin.x) * (-l2.direction.y) - (l2.origin.y - l1.origin.y) * (-l2.direction.x);
+        float detA = l1.direction.x * (-l2.direction.y) - l1.direction.y * (-l2.direction.x);
         float t1 = detA1 / detA;
-        return new Point(P1.x + t1 * V1.x, P1.y + t1 * V1.y);
+        return new Point(l1.origin.x + t1 * l1.direction.x, l1.origin.y + t1 * l1.direction.y);
     }
 
 }
