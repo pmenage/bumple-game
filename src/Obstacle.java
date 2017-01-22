@@ -26,6 +26,10 @@ public class Obstacle {
         return height;
     }
 
+    public float getAngle() {
+        return angle;
+    }
+
     public Obstacle(ObstacleType type, float y, float duration) {
         this.type = type;
         position.y = y;
@@ -37,7 +41,7 @@ public class Obstacle {
                 break;
             case Rotating:
                 position.x = -width;
-                angle = (float) (Math.PI / 2);
+                angle = (float) (- Math.PI / 2);
                 break;
         }
     }
@@ -49,8 +53,8 @@ public class Obstacle {
                     position.x += width / (duration * 60);
                 break;
             case Rotating:
-                if (angle > 0)
-                    angle -= (Math.PI / 2) / (duration * 60);
+                if (angle < 0)
+                    angle += (Math.PI / 2) / (duration * 60);
                 break;
         }
     }
@@ -63,14 +67,14 @@ public class Obstacle {
         // Left part of obstacle
         bumple.pushMatrix();
         bumple.translate(positionPixelsLeft.x, positionPixelsLeft.y);
-        bumple.rotate(angle);
+        bumple.rotate(-angle);
         bumple.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
         bumple.popMatrix();
 
         // Right part of obstacle
         bumple.pushMatrix();
         bumple.translate(positionPixelsRight.x, positionPixelsRight.y);
-        bumple.rotate(-angle);
+        bumple.rotate(angle);
         bumple.translate(-bumple.metersToPixels(width), 0);
         bumple.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
         bumple.popMatrix();
