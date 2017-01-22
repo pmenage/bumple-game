@@ -1,6 +1,7 @@
 package com.paulinemenage.bumple.game;
 
 import com.paulinemenage.bumple.physics.Point;
+import com.paulinemenage.bumple.physics.Segment;
 import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
@@ -59,10 +60,10 @@ public class Bumple extends PApplet {
         Point RightUp = new Point(obstacleX + cos(obstacleAngle) * obstacleWidth + sin(obstacleAngle) * obstacleHeight, obstacleY);
         Point RightDown = new Point(obstacleX + cos(obstacleAngle) * obstacleWidth + sin(obstacleAngle) * obstacleHeight, obstacleY - (-sin(obstacleAngle) * obstacleWidth + cos(obstacleAngle) * obstacleHeight));
         Point LeftDown = new Point(obstacleX, obstacleY - (-sin(obstacleAngle) * obstacleWidth + cos(obstacleAngle) * obstacleHeight));
-        return Utils.detectSegmentCircleIntersection(LeftUp, LeftDown , bumpCube.getCollisionShape()) ||
-                Utils.detectSegmentCircleIntersection(LeftUp, RightUp, bumpCube.getCollisionShape()) ||
-                Utils.detectSegmentCircleIntersection(LeftDown, RightDown, bumpCube.getCollisionShape()) ||
-                Utils.detectSegmentCircleIntersection(RightUp, RightDown, bumpCube.getCollisionShape());
+        return Utils.detectSegmentCircleIntersection(new Segment(LeftUp, LeftDown), bumpCube.getCollisionShape()) ||
+                Utils.detectSegmentCircleIntersection(new Segment(LeftUp, RightUp), bumpCube.getCollisionShape()) ||
+                Utils.detectSegmentCircleIntersection(new Segment(LeftDown, RightDown), bumpCube.getCollisionShape()) ||
+                Utils.detectSegmentCircleIntersection(new Segment(RightUp, RightDown), bumpCube.getCollisionShape());
     }
 
 }

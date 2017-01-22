@@ -4,19 +4,18 @@ public class Utils {
 
     /**
      * Detect if there is an intersection between a segment and a circle.
-     * @param A An end of the segment.
-     * @param B The other end of the segment.
+     * @param segment The segment.
      * @param circle The circle.
      * @return Whether there is an intersection.
      */
-    public static boolean detectSegmentCircleIntersection(Point A, Point B, Circle circle) {
-        Point I = projectOrthogonally(A, B, circle.center);
-        Point AB = B.subtract(A);
-        Point AI = I.subtract(A);
-        Point BI = I.subtract(B);
+    public static boolean detectSegmentCircleIntersection(Segment segment, Circle circle) {
+        Point I = projectOrthogonally(segment, circle.center);
+        Point AB = segment.getDirectionVector();
+        Point AI = I.subtract(segment.a);
+        Point BI = I.subtract(segment.b);
         float normSqAB = AB.normSq();
         boolean isOnSegment = isPointInCircle(I, circle) && AI.normSq() < normSqAB && BI.normSq() < normSqAB;
-        return isOnSegment || isPointInCircle(A, circle) || isPointInCircle(B, circle);
+        return isOnSegment || isPointInCircle(segment.a, circle) || isPointInCircle(segment.b, circle);
     }
 
     /**
@@ -32,14 +31,13 @@ public class Utils {
 
     /**
      * Compute the orthogonal projection of P on (AB).
-     * @param A A point of the line.
-     * @param B A point of the line.
+     * @param line The line.
      * @param P The point to project.
      * @return The projected point.
      */
-    public static Point projectOrthogonally(Point A, Point B, Point P) {
-        Point AB = B.subtract(A);
-        return findIntersection(A, AB, P, AB.normal());
+    public static Point projectOrthogonally(Segment line, Point P) {
+        Point AB = line.getDirectionVector();
+        return findIntersection(line.a, AB, P, AB.normal());
     }
 
     /**
