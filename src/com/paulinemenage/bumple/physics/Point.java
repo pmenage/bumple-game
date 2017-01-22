@@ -1,3 +1,5 @@
+package com.paulinemenage.bumple.physics;
+
 public class Point {
 
     public float x;

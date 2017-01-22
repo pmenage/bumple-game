@@ -1,3 +1,6 @@
+package com.paulinemenage.bumple.game;
+
+import com.paulinemenage.bumple.physics.Point;
 import processing.core.PConstants;
 
 public class Obstacle {

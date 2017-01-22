@@ -1,3 +1,7 @@
+package com.paulinemenage.bumple.game;
+
+import com.paulinemenage.bumple.physics.Point;
+import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
