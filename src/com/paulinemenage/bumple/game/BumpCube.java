@@ -39,6 +39,8 @@ public class BumpCube {
         Point positionPixels = bumple.metersToPixels(position);
         bumple.rectMode(PConstants.CENTER);
         bumple.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
+        int diameter = bumple.metersToPixels(radius*2);
+        bumple.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
     }
 
 }
