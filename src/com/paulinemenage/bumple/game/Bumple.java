@@ -18,20 +18,38 @@ public class Bumple extends PApplet {
         Bumple.main(Bumple.class.getName());
     }
 
+    /**
+     * Converts values in meters to pixels.
+     * @param meters A value in meters.
+     * @return This same value in pixels.
+     */
     public int metersToPixels(float meters) {
         return (int) (meters * PIXELS_PER_METER);
     }
 
+    /**
+     * Converts values in meters to pixels.
+     * @param meters A point whose position is in meters.
+     * @return This position in pixels.
+     */
     public Point metersToPixels(Point meters) {
         return new Point(metersToPixels(meters.x) + 200, - metersToPixels(meters.y) + 500);
     }
 
+    /**
+     * Binds the jump method to the space bar.
+     * @param event An event.
+     */
     @Override
     public void keyPressed(KeyEvent event) {
         if (event.getKey() == ' ')
             bumpCube.jump();
     }
 
+    /**
+     * Gives the dimensions of the window.
+     * Creates and adds the ground and the first obstacle to the obstacles array.
+     */
     @Override
     public void settings() {
         size(400, 600);
@@ -39,6 +57,11 @@ public class Bumple extends PApplet {
         obstacles.add(new Obstacle(Obstacle.ObstacleType.Rotating, 1f, 1.5f));
     }
 
+    /**
+     * Clears the window.
+     * Calls the Processing update function.
+     * Draws the bumpCube and the obstacles.
+     */
     @Override
     public void draw() {
         clear();
@@ -48,6 +71,9 @@ public class Bumple extends PApplet {
             obstacle.draw(this);
     }
 
+    /**
+     * Calls the cube's and the obstacles' update methods.
+     */
     public void update() {
         int fps = 60;
         for (int i = 0, steps = 1; i < steps; ++i) {
@@ -61,6 +87,12 @@ public class Bumple extends PApplet {
         }
     }
 
+    /**
+     * Detects if there is a collision between an obstacle and a bumpCube.
+     * @param obstacle An obstacle.
+     * @param bumpCube A cube.
+     * @return Whether there is a collision.
+     */
     public static boolean detectCollision(Obstacle obstacle, BumpCube bumpCube) {
         float obstacleX = obstacle.getPosition().x;
         float obstacleY = obstacle.getPosition().y;

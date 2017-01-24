@@ -34,6 +34,12 @@ public class Obstacle {
         return angle;
     }
 
+    /**
+     * Obstacle constructor.
+     * @param type The type of obstacle wanted, chosen from the enum ObstacleType.
+     * @param y The height of the obstacle at the beginning.
+     * @param duration The time needed for the obstacle to close itself, in seconds.
+     */
     public Obstacle(ObstacleType type, float y, float duration) {
         this.type = type;
         position.y = y;
@@ -55,6 +61,9 @@ public class Obstacle {
         }
     }
 
+    /**
+     * Updates the position and the angle of the obstacle.
+     */
     public void update() {
         switch (type) {
             case Sliding:
@@ -70,6 +79,10 @@ public class Obstacle {
         }
     }
 
+    /**
+     * Draws the obstacle with the Processing library.
+     * @param bumple Instance of Bumple, to call methods in the Bumple class.
+     */
     public void draw(Bumple bumple) {
         bumple.rectMode(PConstants.CORNER);
         Point positionPixelsLeft = bumple.metersToPixels(position);

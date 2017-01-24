@@ -25,11 +25,18 @@ public class BumpCube {
         isColliding = colliding;
     }
 
+    /**
+     * Makes the cube jump, after checking that it is on the ground.
+     */
     public void jump() {
         if (isOnGround)
             jumpTimeLeft = .4f;
     }
 
+    /**
+     * Updates the position, the speed, and the acceleration of the cube.
+     * @param delta Small float value to calculate the approximation.
+     */
     public void update(float delta) {
         if (jumpTimeLeft > 0)
             ay = 20f;
@@ -47,6 +54,10 @@ public class BumpCube {
         jumpTimeLeft -= delta;
     }
 
+    /**
+     * Draws the cube with the Processing library.
+     * @param bumple Instance of Bumple, to call methods in the Bumple class.
+     */
     public void draw(Bumple bumple) {
         int sizePixels = bumple.metersToPixels(size);
         Point positionPixels = bumple.metersToPixels(position);
