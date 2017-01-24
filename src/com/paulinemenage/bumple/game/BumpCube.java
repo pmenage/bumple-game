@@ -4,6 +4,8 @@ import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
 import processing.core.PConstants;
 
+import java.util.Date;
+
 public class BumpCube {
 
     private float size = 0.3f;
@@ -12,26 +14,37 @@ public class BumpCube {
     private float ay = 0f;
     private float radius = 0.1f;
     private boolean isOnGround = true;
+    private boolean isColliding = false;
+    private float jumpTimeLeft = 0;
 
     public Circle getCollisionShape() {
         return new Circle(position, radius);
     }
 
-    public void jump() {
-        if (isOnGround)
-            ay += 30f;
+    public void setColliding(boolean colliding) {
+        isColliding = colliding;
     }
 
-    public void update() {
-        isOnGround = false;
-        ay *= 0.94f;
-        vy += (ay - 9.81f) / 60;
-        position.y += vy / 60;
-        if (position.y < size/2) {
-            isOnGround = true;
-            position.y = size/2;
+    public void jump() {
+        if (isOnGround)
+            jumpTimeLeft = .4f;
+    }
+
+    public void update(float delta) {
+        if (jumpTimeLeft > 0)
+            ay = 20f;
+        if (jumpTimeLeft <= 0)
+            ay = 0f;
+        if (isColliding && jumpTimeLeft < 0) {
+            if (vy < 0)
+                isOnGround = true;
             vy = 0;
+        } else {
+            isOnGround = false;
+            vy += (ay - 9.81f) * delta;
+            position.y += vy * delta;
         }
+        jumpTimeLeft -= delta;
     }
 
     public void draw(Bumple bumple) {

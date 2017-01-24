@@ -14,7 +14,8 @@ public class Obstacle {
 
     public enum ObstacleType {
         Sliding,
-        Rotating
+        Rotating,
+        Ground
     }
 
     public Point getPosition() {
@@ -46,6 +47,11 @@ public class Obstacle {
                 position.x = -width;
                 angle = (float) (- Math.PI / 2);
                 break;
+            case Ground:
+                position.x = -width;
+                width *= 2;
+                angle = 0;
+                break;
         }
     }
 
@@ -58,6 +64,8 @@ public class Obstacle {
             case Rotating:
                 if (angle < 0)
                     angle += (Math.PI / 2) / (duration * 60);
+                break;
+            case Ground:
                 break;
         }
     }

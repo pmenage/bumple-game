@@ -6,11 +6,13 @@ import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
+import java.util.ArrayList;
+
 public class Bumple extends PApplet {
 
     private static final int PIXELS_PER_METER = 200;
     private BumpCube bumpCube = new BumpCube();
-    private Obstacle obstacle = new Obstacle(Obstacle.ObstacleType.Rotating, 1f, 1.5f);
+    private ArrayList<Obstacle> obstacles = new ArrayList<>();
 
     public static void main(String[] args) {
         Bumple.main(Bumple.class.getName());
@@ -33,6 +35,8 @@ public class Bumple extends PApplet {
     @Override
     public void settings() {
         size(400, 600);
+        obstacles.add(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
+        obstacles.add(new Obstacle(Obstacle.ObstacleType.Rotating, 1f, 1.5f));
     }
 
     @Override
@@ -40,14 +44,21 @@ public class Bumple extends PApplet {
         clear();
         update();
         bumpCube.draw(this);
-        obstacle.draw(this);
+        for (Obstacle obstacle : obstacles)
+            obstacle.draw(this);
     }
 
     public void update() {
-        bumpCube.update();
-        obstacle.update();
-        if (detectCollision(obstacle, bumpCube))
-            rect(0, 0, 50, 50);
+        int fps = 60;
+        for (int i = 0, steps = 1; i < steps; ++i) {
+            bumpCube.setColliding(false);
+            for (Obstacle obstacle : obstacles) {
+                obstacle.update(); // TODO add delta to Obstacle.update
+                if (detectCollision(obstacle, bumpCube))
+                    bumpCube.setColliding(true);
+            }
+            bumpCube.update(1f / (fps * steps));
+        }
     }
 
     public static boolean detectCollision(Obstacle obstacle, BumpCube bumpCube) {
