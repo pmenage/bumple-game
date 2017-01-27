@@ -1,6 +1,5 @@
 package com.paulinemenage.bumple.physics;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Polygon {

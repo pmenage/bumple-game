@@ -4,7 +4,7 @@ import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
 import processing.core.PConstants;
 
-import java.util.Date;
+import java.util.ArrayList;
 
 public class BumpCube {
 
@@ -19,6 +19,10 @@ public class BumpCube {
 
     public Circle getCollisionShape() {
         return new Circle(position, radius);
+    }
+
+    public boolean isOnGround() {
+        return isOnGround;
     }
 
     public void setColliding(boolean colliding) {

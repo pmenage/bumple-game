@@ -6,13 +6,28 @@ import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
-import java.util.ArrayList;
-
 public class Bumple extends PApplet {
 
     private static final int PIXELS_PER_METER = 200;
     private BumpCube bumpCube = new BumpCube();
-    private ArrayList<Obstacle> obstacles = new ArrayList<>();
+    private Obstacle[] obstacles = new Obstacle[2];
+    private float cameraHeight;
+
+    private Obstacle getGroundObstacle() {
+        return obstacles[0];
+    }
+
+    private void setGroundObstacle(Obstacle groundObstacle) {
+        this.obstacles[0] = groundObstacle;
+    }
+
+    private Obstacle getNextObstacle() {
+        return obstacles[1];
+    }
+
+    private void setNextObstacle(Obstacle nextObstacle) {
+        this.obstacles[1] = nextObstacle;
+    }
 
     public static void main(String[] args) {
         Bumple.main(Bumple.class.getName());
@@ -36,6 +51,23 @@ public class Bumple extends PApplet {
         return new Point(metersToPixels(meters.x) + 200, - metersToPixels(meters.y) + 500);
     }
 
+    public Obstacle createRandomObstacle(float y) {
+        Obstacle.ObstacleType[] obstacleTypes = new Obstacle.ObstacleType[] {
+                Obstacle.ObstacleType.Rotating,
+                Obstacle.ObstacleType.Sliding
+        };
+        return new Obstacle(
+                obstacleTypes[(int) random(0, obstacleTypes.length)],
+                y,
+                random(1,2)
+        );
+    }
+
+    private void cycleObstacles() {
+        setGroundObstacle(getNextObstacle());
+        setNextObstacle(createRandomObstacle(getGroundObstacle().getPosition().y + 1f));
+    }
+
     /**
      * Binds the jump method to the space bar.
      * @param event An event.
@@ -52,9 +84,9 @@ public class Bumple extends PApplet {
      */
     @Override
     public void settings() {
-        size(400, 600);
-        obstacles.add(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
-        obstacles.add(new Obstacle(Obstacle.ObstacleType.Rotating, 1f, 1.5f));
+        size(metersToPixels(2), metersToPixels(3));
+        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
+        cycleObstacles();
     }
 
     /**
@@ -66,6 +98,7 @@ public class Bumple extends PApplet {
     public void draw() {
         clear();
         update();
+        translate(0, metersToPixels(cameraHeight));
         bumpCube.draw(this);
         for (Obstacle obstacle : obstacles)
             obstacle.draw(this);
@@ -76,14 +109,21 @@ public class Bumple extends PApplet {
      */
     public void update() {
         int fps = 60;
+        Obstacle ground = null;
         for (int i = 0, steps = 1; i < steps; ++i) {
             bumpCube.setColliding(false);
             for (Obstacle obstacle : obstacles) {
                 obstacle.update(); // TODO add delta to Obstacle.update
-                if (detectCollision(obstacle, bumpCube))
+                if (detectCollision(obstacle, bumpCube)) {
+                    ground = obstacle;
                     bumpCube.setColliding(true);
+                }
             }
             bumpCube.update(1f / (fps * steps));
+            if (bumpCube.isOnGround() && ground == getNextObstacle()) {
+                cycleObstacles();
+                cameraHeight = getGroundObstacle().getPosition().y;
+            }
         }
     }
 
