@@ -99,10 +99,22 @@ public class Bumple extends PApplet {
         float obstacleAngle = obstacle.getAngle();
         float obstacleWidth = obstacle.getWidth();
         float obstacleHeight = obstacle.getHeight();
-        Point LeftUp = new Point(obstacleX, obstacleY);
-        Point RightUp = new Point(obstacleX + cos(obstacleAngle) * obstacleWidth + sin(obstacleAngle) * obstacleHeight, obstacleY);
-        Point RightDown = new Point(obstacleX + cos(obstacleAngle) * obstacleWidth + sin(obstacleAngle) * obstacleHeight, obstacleY - (-sin(obstacleAngle) * obstacleWidth + cos(obstacleAngle) * obstacleHeight));
-        Point LeftDown = new Point(obstacleX, obstacleY - (-sin(obstacleAngle) * obstacleWidth + cos(obstacleAngle) * obstacleHeight));
+        Point LeftUp = new Point(
+                obstacleX,
+                obstacleY
+        );
+        Point RightUp = new Point(
+                (float) (obstacleX + Math.cos(obstacleAngle) * obstacleWidth),
+                (float) (obstacleY + Math.sin(obstacleAngle) * obstacleWidth)
+        );
+        Point RightDown = new Point(
+                (float) (obstacleX + Math.cos(obstacleAngle) * obstacleWidth + Math.sin(obstacleAngle) * obstacleHeight),
+                (float) (obstacleY + Math.sin(obstacleAngle) * obstacleWidth + (-Math.cos(obstacleAngle)) * obstacleHeight)
+        );
+        Point LeftDown = new Point(
+                (float) (obstacleX + Math.sin(obstacleAngle) * obstacleHeight),
+                (float) (obstacleY + (-Math.cos(obstacleAngle)) * obstacleHeight)
+        );
         return Utils.detectSegmentCircleIntersection(new Segment(LeftUp, LeftDown), bumpCube.getCollisionShape()) ||
                 Utils.detectSegmentCircleIntersection(new Segment(LeftUp, RightUp), bumpCube.getCollisionShape()) ||
                 Utils.detectSegmentCircleIntersection(new Segment(LeftDown, RightDown), bumpCube.getCollisionShape()) ||
