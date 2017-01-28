@@ -111,11 +111,13 @@ public class Bumple extends PApplet {
     public void update() {
         Obstacle ground = null;
         for (int i = 0, steps = 15; i < steps; ++i) {
-            float delta = 1f / (600 * steps);
+            float delta = 1f / (60 * steps);
             bumpCube.setColliding(false);
             for (Obstacle obstacle : obstacles) {
                 obstacle.update(delta);
-                if (detectCollision(obstacle, bumpCube)) {
+                if (Utils.detectPolygonCircleIntersection(
+                        obstacle.getCollisionShape(),
+                        bumpCube.getCollisionShape())) {
                     rect(0, 0, 50, 50);
                     ground = obstacle;
                     bumpCube.setColliding(true);
@@ -127,40 +129,6 @@ public class Bumple extends PApplet {
             if (cameraHeight < getGroundObstacle().getPosition().y)
                 cameraHeight += CAMERA_SPEED * delta;
         }
-    }
-
-    /**
-     * Detects if there is a collision between an obstacle and a bumpCube.
-     * @param obstacle An obstacle.
-     * @param bumpCube A cube.
-     * @return Whether there is a collision.
-     */
-    public static boolean detectCollision(Obstacle obstacle, BumpCube bumpCube) {
-        float obstacleX = obstacle.getPosition().x;
-        float obstacleY = obstacle.getPosition().y;
-        float obstacleAngle = obstacle.getAngle();
-        float obstacleWidth = obstacle.getWidth();
-        float obstacleHeight = obstacle.getHeight();
-        Point LeftUp = new Point(
-                obstacleX,
-                obstacleY
-        );
-        Point RightUp = new Point(
-                (float) (obstacleX + Math.cos(obstacleAngle) * obstacleWidth),
-                (float) (obstacleY + Math.sin(obstacleAngle) * obstacleWidth)
-        );
-        Point RightDown = new Point(
-                (float) (obstacleX + Math.cos(obstacleAngle) * obstacleWidth + Math.sin(obstacleAngle) * obstacleHeight),
-                (float) (obstacleY + Math.sin(obstacleAngle) * obstacleWidth + (-Math.cos(obstacleAngle)) * obstacleHeight)
-        );
-        Point LeftDown = new Point(
-                (float) (obstacleX + Math.sin(obstacleAngle) * obstacleHeight),
-                (float) (obstacleY + (-Math.cos(obstacleAngle)) * obstacleHeight)
-        );
-        return Utils.detectSegmentCircleIntersection(new Segment(LeftUp, LeftDown), bumpCube.getCollisionShape()) ||
-                Utils.detectSegmentCircleIntersection(new Segment(LeftUp, RightUp), bumpCube.getCollisionShape()) ||
-                Utils.detectSegmentCircleIntersection(new Segment(LeftDown, RightDown), bumpCube.getCollisionShape()) ||
-                Utils.detectSegmentCircleIntersection(new Segment(RightUp, RightDown), bumpCube.getCollisionShape());
     }
 
 }

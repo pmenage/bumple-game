@@ -1,7 +1,11 @@
 package com.paulinemenage.bumple.game;
 
 import com.paulinemenage.bumple.physics.Point;
+import com.paulinemenage.bumple.physics.Polygon;
 import processing.core.PConstants;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Obstacle {
 
@@ -61,6 +65,26 @@ public class Obstacle {
         }
     }
 
+    public Polygon getCollisionShape() {
+        Point LeftUp = new Point(
+                position.x,
+                position.y
+        );
+        Point RightUp = new Point(
+                (float) (position.x + Math.cos(angle) * width),
+                (float) (position.y + Math.sin(angle) * width)
+        );
+        Point RightDown = new Point(
+                (float) (position.x + Math.cos(angle) * width + Math.sin(angle) * height),
+                (float) (position.y + Math.sin(angle) * width + (-Math.cos(angle)) * height)
+        );
+        Point LeftDown = new Point(
+                (float) (position.x + Math.sin(angle) * height),
+                (float) (position.y + (-Math.cos(angle)) * height)
+        );
+        return new Polygon(Arrays.asList(LeftUp, RightUp, RightDown, LeftDown));
+    }
+    
     /**
      * Updates the position and the angle of the obstacle.
      * @param delta

@@ -4,8 +4,6 @@ import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
 import processing.core.PConstants;
 
-import java.util.ArrayList;
-
 public class BumpCube {
 
     private static final float MAX_JUMP_TIME = .4f;
