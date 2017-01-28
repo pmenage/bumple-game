@@ -11,7 +11,8 @@ public class Bumple extends PApplet {
     private static final int PIXELS_PER_METER = 200;
     private BumpCube bumpCube = new BumpCube();
     private Obstacle[] obstacles = new Obstacle[2];
-    private float cameraHeight;
+    private float cameraHeight = 0f;
+    private static final float CAMERA_SPEED = 1.8f;
 
     private Obstacle getGroundObstacle() {
         return obstacles[0];
@@ -85,7 +86,7 @@ public class Bumple extends PApplet {
     @Override
     public void settings() {
         size(metersToPixels(2), metersToPixels(3));
-        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
+        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0)) ;
         cycleObstacles();
     }
 
@@ -111,6 +112,7 @@ public class Bumple extends PApplet {
         int fps = 60;
         Obstacle ground = null;
         for (int i = 0, steps = 1; i < steps; ++i) {
+            float delta = 1f / (fps * steps);
             bumpCube.setColliding(false);
             for (Obstacle obstacle : obstacles) {
                 obstacle.update(); // TODO add delta to Obstacle.update
@@ -119,11 +121,11 @@ public class Bumple extends PApplet {
                     bumpCube.setColliding(true);
                 }
             }
-            bumpCube.update(1f / (fps * steps));
-            if (bumpCube.isOnGround() && ground == getNextObstacle()) {
+            bumpCube.update(delta);
+            if (bumpCube.isOnGround() && ground == getNextObstacle())
                 cycleObstacles();
-                cameraHeight = getGroundObstacle().getPosition().y;
-            }
+            if (cameraHeight < getGroundObstacle().getPosition().y)
+                cameraHeight += CAMERA_SPEED * delta;
         }
     }
 
