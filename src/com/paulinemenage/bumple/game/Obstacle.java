@@ -63,18 +63,19 @@ public class Obstacle {
 
     /**
      * Updates the position and the angle of the obstacle.
+     * @param delta
      */
-    public void update() {
+    public void update(float delta) {
         switch (type) {
             case Sliding:
                 if (position.x < -width)
-                    position.x += width / (duration * 60);
+                    position.x += width / duration * delta;
                 else
                     position.x = -width;
                 break;
             case Rotating:
                 if (angle < 0)
-                    angle += (Math.PI / 2) / (duration * 60);
+                    angle += (Math.PI / 2) / duration * delta;
                 else
                     angle = 0;
                 break;

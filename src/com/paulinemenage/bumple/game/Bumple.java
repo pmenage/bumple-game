@@ -109,13 +109,12 @@ public class Bumple extends PApplet {
      * Calls the cube's and the obstacles' update methods.
      */
     public void update() {
-        int fps = 60;
         Obstacle ground = null;
-        for (int i = 0, steps = 1; i < steps; ++i) {
-            float delta = 1f / (fps * steps);
+        for (int i = 0, steps = 15; i < steps; ++i) {
+            float delta = 1f / (60 * steps);
             bumpCube.setColliding(false);
             for (Obstacle obstacle : obstacles) {
-                obstacle.update(); // TODO add delta to Obstacle.update
+                obstacle.update(delta);
                 if (detectCollision(obstacle, bumpCube)) {
                     ground = obstacle;
                     bumpCube.setColliding(true);
