@@ -1,7 +1,6 @@
 package com.paulinemenage.bumple.game;
 
 import com.paulinemenage.bumple.physics.Point;
-import com.paulinemenage.bumple.physics.Segment;
 import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
@@ -13,6 +12,7 @@ public class Bumple extends PApplet {
     private Obstacle[] obstacles = new Obstacle[2];
     private float cameraHeight = 0f;
     private static final float CAMERA_SPEED = 1.8f;
+    private int score = 0;
 
     private Obstacle getGroundObstacle() {
         return obstacles[0];
@@ -99,10 +99,14 @@ public class Bumple extends PApplet {
     public void draw() {
         clear();
         update();
+        textSize(20);
+        text(score, 20, 30);
+        pushMatrix();
         translate(0, metersToPixels(cameraHeight));
         bumpCube.draw(this);
         for (Obstacle obstacle : obstacles)
             obstacle.draw(this);
+        popMatrix();
     }
 
     /**
@@ -118,14 +122,15 @@ public class Bumple extends PApplet {
                 if (Utils.detectPolygonCircleIntersection(
                         obstacle.getCollisionShape(),
                         bumpCube.getCollisionShape())) {
-                    rect(0, 0, 50, 50);
                     ground = obstacle;
                     bumpCube.setColliding(true);
                 }
             }
             bumpCube.update(delta);
-            if (bumpCube.isOnGround() && ground == getNextObstacle())
+            if (bumpCube.isOnGround() && ground == getNextObstacle()) {
+                ++score;
                 cycleObstacles();
+            }
             if (cameraHeight < getGroundObstacle().getPosition().y)
                 cameraHeight += CAMERA_SPEED * delta;
         }

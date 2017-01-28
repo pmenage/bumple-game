@@ -3,7 +3,7 @@ package com.paulinemenage.bumple.physics;
 public class Utils {
 
     /**
-     * Detects if there is a collision between an obstacle and a bumpCube.
+     * Detects if there is a collision between a polygon and a circle.
      * @return Whether there is a collision.
      */
     public static boolean detectPolygonCircleIntersection(Polygon polygon, Circle circle) {
@@ -16,7 +16,7 @@ public class Utils {
 
     /**
      * Detect if there is an intersection between origin segment and origin circle.
-     * @param segment The segment.
+q     * @param segment The segment.
      * @param circle The circle.
      * @return Whether there is an intersection.
      */
