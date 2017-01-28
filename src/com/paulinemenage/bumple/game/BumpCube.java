@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class BumpCube {
 
+    private static final float MAX_JUMP_TIME = .4f;
     private float size = 0.3f;
     private Point position = new Point(0, size/2);
     private float vy = 0f;
@@ -34,19 +35,19 @@ public class BumpCube {
      */
     public void jump() {
         if (isOnGround)
-            jumpTimeLeft = .4f;
+            jumpTimeLeft = MAX_JUMP_TIME;
     }
 
     /**
      * Updates the position, the speed, and the acceleration of the cube.
-     * @param delta Small float value to calculate the approximation.
+     * @param delta Small time interval to calculate the approximation.
      */
     public void update(float delta) {
         if (jumpTimeLeft > 0)
             ay = 20f;
         if (jumpTimeLeft <= 0)
             ay = 0f;
-        if (isColliding && jumpTimeLeft < 0) {
+        if (isColliding && jumpTimeLeft < .9f * MAX_JUMP_TIME) {
             if (vy < 0)
                 isOnGround = true;
             vy = 0;

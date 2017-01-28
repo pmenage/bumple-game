@@ -111,11 +111,12 @@ public class Bumple extends PApplet {
     public void update() {
         Obstacle ground = null;
         for (int i = 0, steps = 15; i < steps; ++i) {
-            float delta = 1f / (60 * steps);
+            float delta = 1f / (600 * steps);
             bumpCube.setColliding(false);
             for (Obstacle obstacle : obstacles) {
                 obstacle.update(delta);
                 if (detectCollision(obstacle, bumpCube)) {
+                    rect(0, 0, 50, 50);
                     ground = obstacle;
                     bumpCube.setColliding(true);
                 }
