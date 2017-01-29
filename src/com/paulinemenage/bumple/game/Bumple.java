@@ -5,7 +5,7 @@ import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
-public class Bumple extends PApplet {
+public class Bumple {
 
     private static final int PIXELS_PER_METER = 200;
     private BumpCube bumpCube = new BumpCube();
@@ -13,6 +13,11 @@ public class Bumple extends PApplet {
     private float cameraHeight = 0f;
     private static final float CAMERA_SPEED = 1.8f;
     private int score = 0;
+
+    public Bumple() {
+        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
+        cycleObstacles();
+    }
 
     private Obstacle getGroundObstacle() {
         return obstacles[0];
@@ -30,16 +35,12 @@ public class Bumple extends PApplet {
         this.obstacles[1] = nextObstacle;
     }
 
-    public static void main(String[] args) {
-        Bumple.main(Bumple.class.getName());
-    }
-
     /**
      * Converts values in meters to pixels.
      * @param meters A value in meters.
      * @return This same value in pixels.
      */
-    public int metersToPixels(float meters) {
+    public static int metersToPixels(float meters) {
         return (int) (meters * PIXELS_PER_METER);
     }
 
@@ -48,7 +49,7 @@ public class Bumple extends PApplet {
      * @param meters A point whose position is in meters.
      * @return This position in pixels.
      */
-    public Point metersToPixels(Point meters) {
+    public static Point metersToPixels(Point meters) {
         return new Point(metersToPixels(meters.x) + 200, - metersToPixels(meters.y) + 500);
     }
 
@@ -58,9 +59,9 @@ public class Bumple extends PApplet {
                 Obstacle.ObstacleType.Sliding
         };
         return new Obstacle(
-                obstacleTypes[(int) random(0, obstacleTypes.length)],
+                obstacleTypes[(int) Math.random() * obstacleTypes.length],
                 y,
-                random(1,2)
+                (float) Math.random() + 1
         );
     }
 
@@ -73,21 +74,9 @@ public class Bumple extends PApplet {
      * Binds the jump method to the space bar.
      * @param event An event.
      */
-    @Override
     public void keyPressed(KeyEvent event) {
         if (event.getKey() == ' ')
             bumpCube.jump();
-    }
-
-    /**
-     * Gives the dimensions of the window.
-     * Creates and adds the ground and the first obstacle to the obstacles array.
-     */
-    @Override
-    public void settings() {
-        size(metersToPixels(2), metersToPixels(3));
-        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0)) ;
-        cycleObstacles();
     }
 
     /**
@@ -95,18 +84,17 @@ public class Bumple extends PApplet {
      * Calls the Processing update function.
      * Draws the bumpCube and the obstacles.
      */
-    @Override
-    public void draw() {
-        clear();
+    public void draw(PApplet pApplet) {
+        pApplet.clear();
         update();
-        textSize(20);
-        text(score, 20, 30);
-        pushMatrix();
-        translate(0, metersToPixels(cameraHeight));
-        bumpCube.draw(this);
+        pApplet.textSize(20);
+        pApplet.text(score, 20, 30);
+        pApplet.pushMatrix();
+        pApplet.translate(0, metersToPixels(cameraHeight));
+        bumpCube.draw(this, pApplet);
         for (Obstacle obstacle : obstacles)
-            obstacle.draw(this);
-        popMatrix();
+            obstacle.draw(this, pApplet);
+        pApplet.popMatrix();
     }
 
     /**

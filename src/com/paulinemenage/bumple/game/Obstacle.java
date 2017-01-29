@@ -2,7 +2,9 @@ package com.paulinemenage.bumple.game;
 
 import com.paulinemenage.bumple.physics.Point;
 import com.paulinemenage.bumple.physics.Polygon;
+import processing.core.PApplet;
 import processing.core.PConstants;
+import sun.security.krb5.internal.PAData;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -112,25 +114,25 @@ public class Obstacle {
      * Draws the obstacle with the Processing library.
      * @param bumple Instance of Bumple, to call methods in the Bumple class.
      */
-    public void draw(Bumple bumple) {
-        bumple.rectMode(PConstants.CORNER);
+    public void draw(Bumple bumple, PApplet pApplet) {
+        pApplet.rectMode(PConstants.CORNER);
         Point positionPixelsLeft = bumple.metersToPixels(position);
         Point positionPixelsRight = bumple.metersToPixels(new Point(-position.x, position.y));
 
         // Left part of obstacle
-        bumple.pushMatrix();
-        bumple.translate(positionPixelsLeft.x, positionPixelsLeft.y);
-        bumple.rotate(-angle);
-        bumple.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
-        bumple.popMatrix();
+        pApplet.pushMatrix();
+        pApplet.translate(positionPixelsLeft.x, positionPixelsLeft.y);
+        pApplet.rotate(-angle);
+        pApplet.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
+        pApplet.popMatrix();
 
         // Right part of obstacle
-        bumple.pushMatrix();
-        bumple.translate(positionPixelsRight.x, positionPixelsRight.y);
-        bumple.rotate(angle);
-        bumple.translate(-bumple.metersToPixels(width), 0);
-        bumple.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
-        bumple.popMatrix();
+        pApplet.pushMatrix();
+        pApplet.translate(positionPixelsRight.x, positionPixelsRight.y);
+        pApplet.rotate(angle);
+        pApplet.translate(-bumple.metersToPixels(width), 0);
+        pApplet.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
+        pApplet.popMatrix();
     }
 
 }

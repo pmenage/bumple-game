@@ -2,6 +2,7 @@ package com.paulinemenage.bumple.game;
 
 import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
+import processing.core.PApplet;
 import processing.core.PConstants;
 
 public class BumpCube {
@@ -61,13 +62,13 @@ public class BumpCube {
      * Draws the cube with the Processing library.
      * @param bumple Instance of Bumple, to call methods in the Bumple class.
      */
-    public void draw(Bumple bumple) {
+    public void draw(Bumple bumple, PApplet pApplet) {
         int sizePixels = bumple.metersToPixels(size);
         Point positionPixels = bumple.metersToPixels(position);
-        bumple.rectMode(PConstants.CENTER);
-        bumple.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
+        pApplet.rectMode(PConstants.CENTER);
+        pApplet.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
         int diameter = bumple.metersToPixels(radius*2);
-        bumple.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
+        pApplet.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
     }
 
 }
