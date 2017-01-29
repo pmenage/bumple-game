@@ -4,9 +4,7 @@ import com.paulinemenage.bumple.physics.Point;
 import com.paulinemenage.bumple.physics.Polygon;
 import processing.core.PApplet;
 import processing.core.PConstants;
-import sun.security.krb5.internal.PAData;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Obstacle {

@@ -1,11 +1,12 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.Screen;
 import com.paulinemenage.bumple.physics.Point;
 import com.paulinemenage.bumple.physics.Utils;
 import processing.core.PApplet;
 import processing.event.KeyEvent;
 
-public class Bumple {
+public class Bumple extends Screen {
 
     private static final int PIXELS_PER_METER = 200;
     private BumpCube bumpCube = new BumpCube();

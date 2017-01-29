@@ -7,7 +7,7 @@ import processing.event.KeyEvent;
 
 public class Main extends PApplet {
 
-    private Bumple bumple = new Bumple();
+    private Screen screen = new Bumple();
 
     public static void main(String[] args) {
         Main.main(Main.class.getName());
@@ -24,12 +24,12 @@ public class Main extends PApplet {
 
     @Override
     public void keyPressed(KeyEvent event) {
-        bumple.keyPressed(event);
+        screen.keyPressed(event);
     }
 
     @Override
     public void draw() {
-        bumple.draw(this);
+        screen.draw(this);
     }
 
 }
