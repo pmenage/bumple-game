@@ -7,10 +7,14 @@ import processing.event.KeyEvent;
 
 public class Main extends PApplet {
 
-    private Screen screen = new Bumple();
+    private Screen screen = new TitleScreen(this);
 
     public static void main(String[] args) {
         Main.main(Main.class.getName());
+    }
+
+    public void setScreen(Screen screen) {
+        this.screen = screen;
     }
 
     /**
