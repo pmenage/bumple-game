@@ -7,7 +7,7 @@ import processing.event.KeyEvent;
 
 public class Main extends PApplet {
 
-    private Screen screen = new TitleScreen(this);
+    private Screen screen = new GameOverScreen(this);
 
     public static void main(String[] args) {
         Main.main(Main.class.getName());
@@ -19,7 +19,6 @@ public class Main extends PApplet {
 
     /**
      * Gives the dimensions of the window.
-     * Creates and adds the ground and the first obstacle to the obstacles array.
      */
     @Override
     public void settings() {
