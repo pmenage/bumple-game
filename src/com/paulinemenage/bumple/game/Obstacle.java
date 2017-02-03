@@ -26,18 +26,6 @@ public class Obstacle {
         return position;
     }
 
-    public float getWidth() {
-        return width;
-    }
-
-    public float getHeight() {
-        return height;
-    }
-
-    public float getAngle() {
-        return angle;
-    }
-
     /**
      * Obstacle constructor.
      * @param type The type of obstacle wanted, chosen from the enum ObstacleType.
@@ -65,6 +53,10 @@ public class Obstacle {
         }
     }
 
+    /**
+     * Get the obstacle's shape.
+     * @return A polygon which represents the obstacle's shape.
+     */
     public Polygon getCollisionShape() {
         Point LeftUp = new Point(
                 position.x,
@@ -87,7 +79,7 @@ public class Obstacle {
     
     /**
      * Updates the position and the angle of the obstacle.
-     * @param delta
+     * @param delta Small time interval to calculate the approximation.
      */
     public void update(float delta) {
         switch (type) {
@@ -111,6 +103,7 @@ public class Obstacle {
     /**
      * Draws the obstacle with the Processing library.
      * @param bumple Instance of Bumple, to call methods in the Bumple class.
+     * @param pApplet Instance of PApplet, to call methods from the Processing library.
      */
     public void draw(Bumple bumple, PApplet pApplet) {
         pApplet.rectMode(PConstants.CORNER);

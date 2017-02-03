@@ -54,6 +54,11 @@ public class Bumple extends Screen {
         return new Point(metersToPixels(meters.x) + 200, - metersToPixels(meters.y) + 500);
     }
 
+    /**
+     * Creates a random rotating or sliding obstacle.
+     * @param y The height at which the obstacle is.
+     * @return The obstacle which has been created.
+     */
     public Obstacle createRandomObstacle(float y) {
         Obstacle.ObstacleType[] obstacleTypes = new Obstacle.ObstacleType[] {
                 Obstacle.ObstacleType.Rotating,
@@ -66,6 +71,10 @@ public class Bumple extends Screen {
         );
     }
 
+    /**
+     * Sets the next obstacle as the ground.
+     * Creates a random obstacle as the next obstacle.
+     */
     private void cycleObstacles() {
         setGroundObstacle(getNextObstacle());
         setNextObstacle(createRandomObstacle(getGroundObstacle().getPosition().y + 1f));

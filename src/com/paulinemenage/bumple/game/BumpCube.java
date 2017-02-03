@@ -17,6 +17,10 @@ public class BumpCube {
     private boolean isColliding = false;
     private float jumpTimeLeft = 0;
 
+    /**
+     * Get the cube's shape.
+     * @return A circle, which represents the shape of the cube which can collide with another shape.
+     */
     public Circle getCollisionShape() {
         return new Circle(position, radius);
     }
@@ -61,6 +65,7 @@ public class BumpCube {
     /**
      * Draws the cube with the Processing library.
      * @param bumple Instance of Bumple, to call methods in the Bumple class.
+     * @param pApplet Instance of PApplet, to call methods from the Processing library.
      */
     public void draw(Bumple bumple, PApplet pApplet) {
         int sizePixels = bumple.metersToPixels(size);

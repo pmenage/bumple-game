@@ -7,12 +7,19 @@ import processing.event.KeyEvent;
 
 public class Main extends PApplet {
 
+    /**
+     * Defines the screen on which the game is.
+     */
     private Screen screen = new GameOverScreen(this);
 
     public static void main(String[] args) {
         Main.main(Main.class.getName());
     }
 
+    /**
+     * Sets the screen to another screen.
+     * @param screen The other screen.
+     */
     public void setScreen(Screen screen) {
         this.screen = screen;
     }

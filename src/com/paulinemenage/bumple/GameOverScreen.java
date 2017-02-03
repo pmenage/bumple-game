@@ -13,6 +13,10 @@ public class GameOverScreen extends Screen {
         this.main = main;
     }
 
+    /**
+     * Binds the spacebar to the beginning of a game and the m key to the main menu.
+     * @param event An event.
+     */
     public void keyPressed(KeyEvent event) {
         if (event.getKey() == ' ')
             main.setScreen(new Bumple());
@@ -20,6 +24,10 @@ public class GameOverScreen extends Screen {
             main.setScreen(new TitleScreen(main));
     }
 
+    /**
+     * Draws the game over screen.
+     * @param pApplet An instance of pApplet to be able to use the Processing library.
+     */
     public void draw(PApplet pApplet) {
         pApplet.clear();
         pApplet.textAlign(PConstants.CENTER);

@@ -4,6 +4,8 @@ public class Utils {
 
     /**
      * Detects if there is a collision between a polygon and a circle.
+     * @param polygon The polygon.
+     * @param circle The circle.
      * @return Whether there is a collision.
      */
     public static boolean detectPolygonCircleIntersection(Polygon polygon, Circle circle) {
@@ -16,7 +18,7 @@ public class Utils {
 
     /**
      * Detect if there is an intersection between origin segment and origin circle.
-q     * @param segment The segment.
+     * @param segment The segment.
      * @param circle The circle.
      * @return Whether there is an intersection.
      */
