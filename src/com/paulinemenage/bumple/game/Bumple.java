@@ -1,5 +1,7 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.GameOverScreen;
+import com.paulinemenage.bumple.Main;
 import com.paulinemenage.bumple.Screen;
 import com.paulinemenage.bumple.physics.Point;
 import com.paulinemenage.bumple.physics.Utils;
@@ -14,10 +16,14 @@ public class Bumple extends Screen {
     private float cameraHeight = 0f;
     private static final float CAMERA_SPEED = 1.8f;
     private int score = 0;
+    private Water water;
+    private Main main;
 
-    public Bumple() {
+    public Bumple(Main main) {
+        this.main = main;
         setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
         cycleObstacles();
+        water = new Water(-.5f);
     }
 
     private Obstacle getGroundObstacle() {
@@ -104,6 +110,7 @@ public class Bumple extends Screen {
         bumpCube.draw(this, pApplet);
         for (Obstacle obstacle : obstacles)
             obstacle.draw(this, pApplet);
+        water.draw(this, pApplet);
         pApplet.popMatrix();
     }
 
@@ -125,12 +132,15 @@ public class Bumple extends Screen {
                 }
             }
             bumpCube.update(delta);
+            water.update(delta);
             if (bumpCube.isOnGround() && ground == getNextObstacle()) {
                 ++score;
                 cycleObstacles();
             }
             if (cameraHeight < getGroundObstacle().getPosition().y)
                 cameraHeight += CAMERA_SPEED * delta;
+            if (Utils.detectSegmentCircleIntersection(water.getCollisionShape(), bumpCube.getCollisionShape()))
+                main.setScreen(new GameOverScreen(main));
         }
     }
 

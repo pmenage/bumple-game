@@ -10,7 +10,7 @@ public class Main extends PApplet {
     /**
      * Defines the screen on which the game is.
      */
-    private Screen screen = new GameOverScreen(this);
+    private Screen screen = new TitleScreen(this);
 
     public static void main(String[] args) {
         Main.main(Main.class.getName());

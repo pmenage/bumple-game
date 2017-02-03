@@ -19,7 +19,7 @@ public class TitleScreen extends Screen {
      */
     public void keyPressed(KeyEvent event) {
         if (event.getKey() == ' ')
-            main.setScreen(new Bumple());
+            main.setScreen(new Bumple(main));
     }
 
     /**
@@ -28,7 +28,9 @@ public class TitleScreen extends Screen {
      */
     public void draw(PApplet pApplet) {
         pApplet.clear();
-        pApplet.textSize(24);
+        pApplet.textSize(30);
+        pApplet.text("Main Menu", 200, 170);
+        pApplet.textSize(20);
         pApplet.textAlign(PConstants.CENTER);
         pApplet.text("Press the spacebar to play",130, 250, 130, 200);
     }
