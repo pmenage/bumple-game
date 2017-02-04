@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 4.1.465 <https://api.sketch.io/> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Im1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXAiOnsiZW5hYmxlZCI6dHJ1ZSwic3R5bGUiOnsic3Ryb2tlU3R5bGUiOiJibGFjayIsInNoYWRvd0NvbG9yIjoicmdiYSgyNTUsMjU1LDI1NSwwLjE1KSIsInNoYWRvd0JsdXIiOjEsImxpbmVXaWR0aCI6Mn19LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6IiUiLCJ3aWR0aCI6MTAwLCJoZWlnaHQiOjEwMCwic2NhbGUiOjEsInBhZ2VzIjp7Imxlbmd0aCI6MSwiZGF0YSI6W3sid2lkdGgiOjEwMCwiaGVpZ2h0IjoxMDB9XX19" sketchjs:version="4.1.465">
+<defs>
+	<linearGradient id="dna_376944282" gradientUnits="userSpaceOnUse" x1="20.240663900414866" x2="214.77593360995854" y1="34.073529411764795" y2="309.095588235294">
+		<stop offset="0" style="stop-color:#4c36b3;"/>
+		<stop offset="0.15" style="stop-color:#a1207d;"/>
+		<stop offset="0.24734265" style="stop-color:#f60a48;"/>
+		<stop offset="0.3446853" style="stop-color:#fa7e3b;"/>
+		<stop offset="0.43132864374999996" style="stop-color:#fff32e;"/>
+		<stop offset="0.5326573" style="stop-color:#87f874;"/>
+		<stop offset="0.6721152827415" style="stop-color:#0ffebb;"/>
+		<stop offset="0.8" style="stop-color:#26a0be;"/>
+		<stop offset="1" style="stop-color:#3d43c1;"/>
+	</linearGradient>
+	<linearGradient id="dna_3589213988" gradientUnits="userSpaceOnUse" x2="271" y1="165.5" y2="165.5">
+		<stop offset="0" style="stop-color:#959595;"/>
+		<stop offset="0.460581" style="stop-color:#4b4b4b;"/>
+		<stop offset="0.502075" style="stop-color:#010101;"/>
+		<stop offset="0.502075" style="stop-color:#272727;"/>
+		<stop offset="0.763485" style="stop-color:#4e4e4e;"/>
+		<stop offset="0.763485" style="stop-color:#343434;"/>
+		<stop offset="1" style="stop-color:#1b1b1b;"/>
+	</linearGradient>
+	<linearGradient id="oxtZlBqDKOaS" x1="20.240663900414866" y1="34.073529411764795" x2="214.77593360995854" y2="309.095588235294" gradientUnits="userSpaceOnUse">
+		<stop offset="0" style="stop-color:rgb(76,54,179);"/>
+		<stop offset="0.002" style="stop-color:rgb(77,53,178);"/>
+		<stop offset="0.004" style="stop-color:rgb(78,53,177);"/>
+		<stop offset="0.006" style="stop-color:rgb(79,53,176);"/>
+		<stop offset="0.008" style="stop-color:rgb(80,52,176);"/>
+		<stop offset="0.01" style="stop-color:rgb(81,52,175);"/>
+		<stop offset="0.012" style="stop-color:rgb(82,52,174);"/>
+		<stop offset="0.014" style="stop-color:rgb(83,51,173);"/>
+		<stop offset="0.016" style="stop-color:rgb(85,51,173);"/>
+		<stop offset="0.018" style="stop-color:rgb(86,51,172);"/>
+		<stop offset="0.02" style="stop-color:rgb(87,51,171);"/>
+		<stop offset="0.022" style="stop-color:rgb(88,50,171);"/>
+		<stop offset="0.024" style="stop-color:rgb(89,50,170);"/>
+		<stop offset="0.026" style="stop-color:rgb(90,50,169);"/>
+		<stop offset="0.028" style="stop-color:rgb(91,49,168);"/>
+		<stop offset="0.03" style="stop-color:rgb(93,49,168);"/>
+		<stop offset="0.032" style="stop-color:rgb(94,49,167);"/>
+		<stop offset="0.034" style="stop-color:rgb(95,49,166);"/>
+		<stop offset="0.036" style="stop-color:rgb(96,48,166);"/>
+		<stop offset="0.038" style="stop-color:rgb(97,48,165);"/>
+		<stop offset="0.04" style="stop-color:rgb(98,48,164);"/>
+		<stop offset="0.042" style="stop-color:rgb(99,47,163);"/>
+		<stop offset="0.044" style="stop-color:rgb(100,47,163);"/>
+		<stop offset="0.046" style="stop-color:rgb(102,47,162);"/>
+		<stop offset="0.048" style="stop-color:rgb(103,46,161);"/>
+		<stop offset="0.05" style="stop-color:rgb(104,46,161);"/>
+		<stop offset="0.052" style="stop-color:rgb(105,46,160);"/>
+		<stop offset="0.054" style="stop-color:rgb(106,46,159);"/>
+		<stop offset="0.056" style="stop-color:rgb(107,45,158);"/>
+		<stop offset="0.058" style="stop-color:rgb(108,45,158);"/>
+		<stop offset="0.06" style="stop-color:rgb(110,45,157);"/>
+		<stop offset="0.062" style="stop-color:rgb(111,44,156);"/>
+		<stop offset="0.064" style="stop-color:rgb(112,44,155);"/>
+		<stop offset="0.066" style="stop-color:rgb(113,44,155);"/>
+		<stop offset="0.068" style="stop-color:rgb(114,44,154);"/>
+		<stop offset="0.07" style="stop-color:rgb(115,43,153);"/>
+		<stop offset="0.072" style="stop-color:rgb(116,43,153);"/>
+		<stop offset="0.074" style="stop-color:rgb(117,43,152);"/>
+		<stop offset="0.076" style="stop-color:rgb(119,42,151);"/>
+		<stop offset="0.078" style="stop-color:rgb(120,42,150);"/>
+		<stop offset="0.08" style="stop-color:rgb(121,42,150);"/>
+		<stop offset="0.082" style="stop-color:rgb(122,41,149);"/>
+		<stop offset="0.084" style="stop-color:rgb(123,41,148);"/>
+		<stop offset="0.086" style="stop-color:rgb(124,41,148);"/>
+		<stop offset="0.088" style="stop-color:rgb(125,41,147);"/>
+		<stop offset="0.09" style="stop-color:rgb(127,40,146);"/>
+		<stop offset="0.092" style="stop-color:rgb(128,40,145);"/>
+		<stop offset="0.094" style="stop-color:rgb(129,40,145);"/>
+		<stop offset="0.096" style="stop-color:rgb(130,39,144);"/>
+		<stop offset="0.098" style="stop-color:rgb(131,39,143);"/>
+		<stop offset="0.1" style="stop-color:rgb(132,39,143);"/>
+		<stop offset="0.102" style="stop-color:rgb(133,39,142);"/>
+		<stop offset="0.104" style="stop-color:rgb(134,38,141);"/>
+		<stop offset="0.106" style="stop-color:rgb(136,38,140);"/>
+		<stop offset="0.108" style="stop-color:rgb(137,38,140);"/>
+		<stop offset="0.11" style="stop-color:rgb(138,37,139);"/>
+		<stop offset="0.112" style="stop-color:rgb(139,37,138);"/>
+		<stop offset="0.114" style="stop-color:rgb(140,37,137);"/>
+		<stop offset="0.116" style="stop-color:rgb(141,36,137);"/>
+		<stop offset="0.118" style="stop-color:rgb(142,36,136);"/>
+		<stop offset="0.12" style="stop-color:rgb(144,36,135);"/>
+		<stop offset="0.122" style="stop-color:rgb(145,36,135);"/>
+		<stop offset="0.124" style="stop-color:rgb(146,35,134);"/>
+		<stop offset="0.126" style="stop-color:rgb(147,35,133);"/>
+		<stop offset="0.128" style="stop-color:rgb(148,35,132);"/>
+		<stop offset="0.13" style="stop-color:rgb(149,34,132);"/>
+		<stop offset="0.132" style="stop-color:rgb(150,34,131);"/>
+		<stop offset="0.134" style="stop-color:rgb(151,34,130);"/>
+		<stop offset="0.136" style="stop-color:rgb(153,34,130);"/>
+		<stop offset="0.138" style="stop-color:rgb(154,33,129);"/>
+		<stop offset="0.14" style="stop-color:rgb(155,33,128);"/>
+		<stop offset="0.142" style="stop-color:rgb(156,33,127);"/>
+		<stop offset="0.144" style="stop-color:rgb(157,32,127);"/>
+		<stop offset="0.146" style="stop-color:rgb(158,32,126);"/>
+		<stop offset="0.148" style="stop-color:rgb(159,32,125);"/>
+		<stop offset="0.15" style="stop-color:rgb(161,32,125);"/>
+		<stop offset="0.152" style="stop-color:rgb(162,31,123);"/>
+		<stop offset="0.154" style="stop-color:rgb(164,31,122);"/>
+		<stop offset="0.156" style="stop-color:rgb(166,30,121);"/>
+		<stop offset="0.158" style="stop-color:rgb(167,30,120);"/>
+		<stop offset="0.16" style="stop-color:rgb(169,29,119);"/>
+		<stop offset="0.162" style="stop-color:rgb(171,29,118);"/>
+		<stop offset="0.164" style="stop-color:rgb(173,28,117);"/>
+		<stop offset="0.166" style="stop-color:rgb(174,28,116);"/>
+		<stop offset="0.168" style="stop-color:rgb(176,27,115);"/>
+		<stop offset="0.17" style="stop-color:rgb(178,27,114);"/>
+		<stop offset="0.172" style="stop-color:rgb(180,27,113);"/>
+		<stop offset="0.174" style="stop-color:rgb(181,26,111);"/>
+		<stop offset="0.176" style="stop-color:rgb(183,26,110);"/>
+		<stop offset="0.178" style="stop-color:rgb(185,25,109);"/>
+		<stop offset="0.18" style="stop-color:rgb(187,25,108);"/>
+		<stop offset="0.182" style="stop-color:rgb(188,24,107);"/>
+		<stop offset="0.184" style="stop-color:rgb(190,24,106);"/>
+		<stop offset="0.186" style="stop-color:rgb(192,23,105);"/>
+		<stop offset="0.188" style="stop-color:rgb(194,23,104);"/>
+		<stop offset="0.19" style="stop-color:rgb(195,22,103);"/>
+		<stop offset="0.192" style="stop-color:rgb(197,22,102);"/>
+		<stop offset="0.194" style="stop-color:rgb(199,22,101);"/>
+		<stop offset="0.196" style="stop-color:rgb(201,21,99);"/>
+		<stop offset="0.198" style="stop-color:rgb(202,21,98);"/>
+		<stop offset="0.2" style="stop-color:rgb(204,20,97);"/>
+		<stop offset="0.202" style="stop-color:rgb(206,20,96);"/>
+		<stop offset="0.204" style="stop-color:rgb(208,19,95);"/>
+		<stop offset="0.206" style="stop-color:rgb(209,19,94);"/>
+		<stop offset="0.208" style="stop-color:rgb(211,18,93);"/>
+		<stop offset="0.21" style="stop-color:rgb(213,18,92);"/>
+		<stop offset="0.212" style="stop-color:rgb(215,17,91);"/>
+		<stop offset="0.214" style="stop-color:rgb(216,17,90);"/>
+		<stop offset="0.216" style="stop-color:rgb(218,17,89);"/>
+		<stop offset="0.218" style="stop-color:rgb(220,16,87);"/>
+		<stop offset="0.22" style="stop-color:rgb(222,16,86);"/>
+		<stop offset="0.222" style="stop-color:rgb(223,15,85);"/>
+		<stop offset="0.224" style="stop-color:rgb(225,15,84);"/>
+		<stop offset="0.226" style="stop-color:rgb(227,14,83);"/>
+		<stop offset="0.228" style="stop-color:rgb(229,14,82);"/>
+		<stop offset="0.23" style="stop-color:rgb(230,13,81);"/>
+		<stop offset="0.232" style="stop-color:rgb(232,13,80);"/>
+		<stop offset="0.234" style="stop-color:rgb(234,13,79);"/>
+		<stop offset="0.236" style="stop-color:rgb(236,12,78);"/>
+		<stop offset="0.238" style="stop-color:rgb(237,12,77);"/>
+		<stop offset="0.24" style="stop-color:rgb(239,11,75);"/>
+		<stop offset="0.242" style="stop-color:rgb(241,11,74);"/>
+		<stop offset="0.244" style="stop-color:rgb(243,10,73);"/>
+		<stop offset="0.246" style="stop-color:rgb(244,10,72);"/>
+		<stop offset="0.248" style="stop-color:rgb(246,10,71);"/>
+		<stop offset="0.25" style="stop-color:rgb(246,13,71);"/>
+		<stop offset="0.252" style="stop-color:rgb(246,15,71);"/>
+		<stop offset="0.254" style="stop-color:rgb(246,17,71);"/>
+		<stop offset="0.256" style="stop-color:rgb(246,20,70);"/>
+		<stop offset="0.258" style="stop-color:rgb(246,22,70);"/>
+		<stop offset="0.26" style="stop-color:rgb(246,25,70);"/>
+		<stop offset="0.262" style="stop-color:rgb(246,27,70);"/>
+		<stop offset="0.264" style="stop-color:rgb(246,29,69);"/>
+		<stop offset="0.266" style="stop-color:rgb(246,32,69);"/>
+		<stop offset="0.268" style="stop-color:rgb(246,34,69);"/>
+		<stop offset="0.27" style="stop-color:rgb(246,37,68);"/>
+		<stop offset="0.272" style="stop-color:rgb(247,39,68);"/>
+		<stop offset="0.274" style="stop-color:rgb(247,41,68);"/>
+		<stop offset="0.276" style="stop-color:rgb(247,44,68);"/>
+		<stop offset="0.278" style="stop-color:rgb(247,46,67);"/>
+		<stop offset="0.28" style="stop-color:rgb(247,48,67);"/>
+		<stop offset="0.282" style="stop-color:rgb(247,51,67);"/>
+		<stop offset="0.284" style="stop-color:rgb(247,53,67);"/>
+		<stop offset="0.286" style="stop-color:rgb(247,56,66);"/>
+		<stop offset="0.288" style="stop-color:rgb(247,58,66);"/>
+		<stop offset="0.29" style="stop-color:rgb(247,60,66);"/>
+		<stop offset="0.292" style="stop-color:rgb(247,63,66);"/>
+		<stop offset="0.294" style="stop-color:rgb(247,65,65);"/>
+		<stop offset="0.296" style="stop-color:rgb(247,67,65);"/>
+		<stop offset="0.298" style="stop-color:rgb(248,70,65);"/>
+		<stop offset="0.3" style="stop-color:rgb(248,72,64);"/>
+		<stop offset="0.302" style="stop-color:rgb(248,75,64);"/>
+		<stop offset="0.304" style="stop-color:rgb(248,77,64);"/>
+		<stop offset="0.306" style="stop-color:rgb(248,79,64);"/>
+		<stop offset="0.308" style="stop-color:rgb(248,82,63);"/>
+		<stop offset="0.31" style="stop-color:rgb(248,84,63);"/>
+		<stop offset="0.312" style="stop-color:rgb(248,87,63);"/>
+		<stop offset="0.314" style="stop-color:rgb(248,89,63);"/>
+		<stop offset="0.316" style="stop-color:rgb(248,91,62);"/>
+		<stop offset="0.318" style="stop-color:rgb(248,94,62);"/>
+		<stop offset="0.32" style="stop-color:rgb(248,96,62);"/>
+		<stop offset="0.322" style="stop-color:rgb(249,98,62);"/>
+		<stop offset="0.324" style="stop-color:rgb(249,101,61);"/>
+		<stop offset="0.326" style="stop-color:rgb(249,103,61);"/>
+		<stop offset="0.328" style="stop-color:rgb(249,106,61);"/>
+		<stop offset="0.33" style="stop-color:rgb(249,108,60);"/>
+		<stop offset="0.332" style="stop-color:rgb(249,110,60);"/>
+		<stop offset="0.334" style="stop-color:rgb(249,113,60);"/>
+		<stop offset="0.336" style="stop-color:rgb(249,115,60);"/>
+		<stop offset="0.338" style="stop-color:rgb(249,118,59);"/>
+		<stop offset="0.34" style="stop-color:rgb(249,120,59);"/>
+		<stop offset="0.342" style="stop-color:rgb(249,122,59);"/>
+		<stop offset="0.344" style="stop-color:rgb(249,125,59);"/>
+		<stop offset="0.346" style="stop-color:rgb(250,127,58);"/>
+		<stop offset="0.348" style="stop-color:rgb(250,130,58);"/>
+		<stop offset="0.35" style="stop-color:rgb(250,133,58);"/>
+		<stop offset="0.352" style="stop-color:rgb(250,135,57);"/>
+		<stop offset="0.354" style="stop-color:rgb(250,138,57);"/>
+		<stop offset="0.356" style="stop-color:rgb(250,141,57);"/>
+		<stop offset="0.358" style="stop-color:rgb(250,143,57);"/>
+		<stop offset="0.36" style="stop-color:rgb(250,146,56);"/>
+		<stop offset="0.362" style="stop-color:rgb(250,149,56);"/>
+		<stop offset="0.364" style="stop-color:rgb(251,152,56);"/>
+		<stop offset="0.366" style="stop-color:rgb(251,154,55);"/>
+		<stop offset="0.368" style="stop-color:rgb(251,157,55);"/>
+		<stop offset="0.37" style="stop-color:rgb(251,160,55);"/>
+		<stop offset="0.372" style="stop-color:rgb(251,162,54);"/>
+		<stop offset="0.374" style="stop-color:rgb(251,165,54);"/>
+		<stop offset="0.376" style="stop-color:rgb(251,168,54);"/>
+		<stop offset="0.378" style="stop-color:rgb(251,170,54);"/>
+		<stop offset="0.38" style="stop-color:rgb(252,173,53);"/>
+		<stop offset="0.382" style="stop-color:rgb(252,176,53);"/>
+		<stop offset="0.384" style="stop-color:rgb(252,179,53);"/>
+		<stop offset="0.386" style="stop-color:rgb(252,181,52);"/>
+		<stop offset="0.388" style="stop-color:rgb(252,184,52);"/>
+		<stop offset="0.39" style="stop-color:rgb(252,187,52);"/>
+		<stop offset="0.392" style="stop-color:rgb(252,189,51);"/>
+		<stop offset="0.394" style="stop-color:rgb(252,192,51);"/>
+		<stop offset="0.396" style="stop-color:rgb(252,195,51);"/>
+		<stop offset="0.398" style="stop-color:rgb(253,197,51);"/>
+		<stop offset="0.4" style="stop-color:rgb(253,200,50);"/>
+		<stop offset="0.402" style="stop-color:rgb(253,203,50);"/>
+		<stop offset="0.404" style="stop-color:rgb(253,206,50);"/>
+		<stop offset="0.406" style="stop-color:rgb(253,208,49);"/>
+		<stop offset="0.408" style="stop-color:rgb(253,211,49);"/>
+		<stop offset="0.41" style="stop-color:rgb(253,214,49);"/>
+		<stop offset="0.412" style="stop-color:rgb(253,216,48);"/>
+		<stop offset="0.414" style="stop-color:rgb(254,219,48);"/>
+		<stop offset="0.416" style="stop-color:rgb(254,222,48);"/>
+		<stop offset="0.418" style="stop-color:rgb(254,225,47);"/>
+		<stop offset="0.42" style="stop-color:rgb(254,227,47);"/>
+		<stop offset="0.422" style="stop-color:rgb(254,230,47);"/>
+		<stop offset="0.424" style="stop-color:rgb(254,233,47);"/>
+		<stop offset="0.426" style="stop-color:rgb(254,235,46);"/>
+		<stop offset="0.428" style="stop-color:rgb(254,238,46);"/>
+		<stop offset="0.43" style="stop-color:rgb(254,241,46);"/>
+		<stop offset="0.432" style="stop-color:rgb(254,243,46);"/>
+		<stop offset="0.434" style="stop-color:rgb(251,243,47);"/>
+		<stop offset="0.436" style="stop-color:rgb(249,243,49);"/>
+		<stop offset="0.438" style="stop-color:rgb(247,243,50);"/>
+		<stop offset="0.44" style="stop-color:rgb(244,243,51);"/>
+		<stop offset="0.442" style="stop-color:rgb(242,243,53);"/>
+		<stop offset="0.444" style="stop-color:rgb(239,243,54);"/>
+		<stop offset="0.446" style="stop-color:rgb(237,243,56);"/>
+		<stop offset="0.448" style="stop-color:rgb(235,243,57);"/>
+		<stop offset="0.45" style="stop-color:rgb(232,243,58);"/>
+		<stop offset="0.452" style="stop-color:rgb(230,244,60);"/>
+		<stop offset="0.454" style="stop-color:rgb(228,244,61);"/>
+		<stop offset="0.456" style="stop-color:rgb(225,244,63);"/>
+		<stop offset="0.458" style="stop-color:rgb(223,244,64);"/>
+		<stop offset="0.46" style="stop-color:rgb(221,244,65);"/>
+		<stop offset="0.462" style="stop-color:rgb(218,244,67);"/>
+		<stop offset="0.464" style="stop-color:rgb(216,244,68);"/>
+		<stop offset="0.466" style="stop-color:rgb(213,244,69);"/>
+		<stop offset="0.468" style="stop-color:rgb(211,244,71);"/>
+		<stop offset="0.47" style="stop-color:rgb(209,244,72);"/>
+		<stop offset="0.472" style="stop-color:rgb(206,245,74);"/>
+		<stop offset="0.474" style="stop-color:rgb(204,245,75);"/>
+		<stop offset="0.476" style="stop-color:rgb(202,245,76);"/>
+		<stop offset="0.478" style="stop-color:rgb(199,245,78);"/>
+		<stop offset="0.48" style="stop-color:rgb(197,245,79);"/>
+		<stop offset="0.482" style="stop-color:rgb(194,245,81);"/>
+		<stop offset="0.484" style="stop-color:rgb(192,245,82);"/>
+		<stop offset="0.486" style="stop-color:rgb(190,245,83);"/>
+		<stop offset="0.488" style="stop-color:rgb(187,245,85);"/>
+		<stop offset="0.49" style="stop-color:rgb(185,245,86);"/>
+		<stop offset="0.492" style="stop-color:rgb(183,245,87);"/>
+		<stop offset="0.494" style="stop-color:rgb(180,246,89);"/>
+		<stop offset="0.496" style="stop-color:rgb(178,246,90);"/>
+		<stop offset="0.498" style="stop-color:rgb(176,246,92);"/>
+		<stop offset="0.5" style="stop-color:rgb(173,246,93);"/>
+		<stop offset="0.502" style="stop-color:rgb(171,246,94);"/>
+		<stop offset="0.504" style="stop-color:rgb(168,246,96);"/>
+		<stop offset="0.506" style="stop-color:rgb(166,246,97);"/>
+		<stop offset="0.508" style="stop-color:rgb(164,246,98);"/>
+		<stop offset="0.51" style="stop-color:rgb(161,246,100);"/>
+		<stop offset="0.512" style="stop-color:rgb(159,246,101);"/>
+		<stop offset="0.514" style="stop-color:rgb(157,247,103);"/>
+		<stop offset="0.516" style="stop-color:rgb(154,247,104);"/>
+		<stop offset="0.518" style="stop-color:rgb(152,247,105);"/>
+		<stop offset="0.52" style="stop-color:rgb(149,247,107);"/>
+		<stop offset="0.522" style="stop-color:rgb(147,247,108);"/>
+		<stop offset="0.524" style="stop-color:rgb(145,247,110);"/>
+		<stop offset="0.526" style="stop-color:rgb(142,247,111);"/>
+		<stop offset="0.528" style="stop-color:rgb(140,247,112);"/>
+		<stop offset="0.53" style="stop-color:rgb(138,247,114);"/>
+		<stop offset="0.532" style="stop-color:rgb(135,247,115);"/>
+		<stop offset="0.534" style="stop-color:rgb(133,248,116);"/>
+		<stop offset="0.536" style="stop-color:rgb(132,248,117);"/>
+		<stop offset="0.538" style="stop-color:rgb(130,248,118);"/>
+		<stop offset="0.54" style="stop-color:rgb(128,248,119);"/>
+		<stop offset="0.542" style="stop-color:rgb(126,248,120);"/>
+		<stop offset="0.544" style="stop-color:rgb(125,248,121);"/>
+		<stop offset="0.546" style="stop-color:rgb(123,248,122);"/>
+		<stop offset="0.548" style="stop-color:rgb(121,248,123);"/>
+		<stop offset="0.55" style="stop-color:rgb(120,248,124);"/>
+		<stop offset="0.552" style="stop-color:rgb(118,248,125);"/>
+		<stop offset="0.554" style="stop-color:rgb(116,248,126);"/>
+		<stop offset="0.556" style="stop-color:rgb(114,249,127);"/>
+		<stop offset="0.558" style="stop-color:rgb(113,249,128);"/>
+		<stop offset="0.56" style="stop-color:rgb(111,249,129);"/>
+		<stop offset="0.562" style="stop-color:rgb(109,249,130);"/>
+		<stop offset="0.564" style="stop-color:rgb(108,249,131);"/>
+		<stop offset="0.566" style="stop-color:rgb(106,249,132);"/>
+		<stop offset="0.568" style="stop-color:rgb(104,249,133);"/>
+		<stop offset="0.57" style="stop-color:rgb(102,249,135);"/>
+		<stop offset="0.572" style="stop-color:rgb(101,249,136);"/>
+		<stop offset="0.574" style="stop-color:rgb(99,249,137);"/>
+		<stop offset="0.576" style="stop-color:rgb(97,249,138);"/>
+		<stop offset="0.578" style="stop-color:rgb(95,249,139);"/>
+		<stop offset="0.58" style="stop-color:rgb(94,250,140);"/>
+		<stop offset="0.582" style="stop-color:rgb(92,250,141);"/>
+		<stop offset="0.584" style="stop-color:rgb(90,250,142);"/>
+		<stop offset="0.586" style="stop-color:rgb(89,250,143);"/>
+		<stop offset="0.588" style="stop-color:rgb(87,250,144);"/>
+		<stop offset="0.59" style="stop-color:rgb(85,250,145);"/>
+		<stop offset="0.592" style="stop-color:rgb(83,250,146);"/>
+		<stop offset="0.594" style="stop-color:rgb(82,250,147);"/>
+		<stop offset="0.596" style="stop-color:rgb(80,250,148);"/>
+		<stop offset="0.598" style="stop-color:rgb(78,250,149);"/>
+		<stop offset="0.6" style="stop-color:rgb(77,250,150);"/>
+		<stop offset="0.602" style="stop-color:rgb(75,250,151);"/>
+		<stop offset="0.604" style="stop-color:rgb(73,251,152);"/>
+		<stop offset="0.606" style="stop-color:rgb(71,251,153);"/>
+		<stop offset="0.608" style="stop-color:rgb(70,251,154);"/>
+		<stop offset="0.61" style="stop-color:rgb(68,251,155);"/>
+		<stop offset="0.612" style="stop-color:rgb(66,251,156);"/>
+		<stop offset="0.614" style="stop-color:rgb(65,251,157);"/>
+		<stop offset="0.616" style="stop-color:rgb(63,251,158);"/>
+		<stop offset="0.618" style="stop-color:rgb(61,251,159);"/>
+		<stop offset="0.62" style="stop-color:rgb(59,251,160);"/>
+		<stop offset="0.622" style="stop-color:rgb(58,251,161);"/>
+		<stop offset="0.624" style="stop-color:rgb(56,251,162);"/>
+		<stop offset="0.626" style="stop-color:rgb(54,252,163);"/>
+		<stop offset="0.628" style="stop-color:rgb(52,252,164);"/>
+		<stop offset="0.63" style="stop-color:rgb(51,252,165);"/>
+		<stop offset="0.632" style="stop-color:rgb(49,252,166);"/>
+		<stop offset="0.634" style="stop-color:rgb(47,252,167);"/>
+		<stop offset="0.636" style="stop-color:rgb(46,252,168);"/>
+		<stop offset="0.638" style="stop-color:rgb(44,252,169);"/>
+		<stop offset="0.64" style="stop-color:rgb(42,252,170);"/>
+		<stop offset="0.642" style="stop-color:rgb(40,252,171);"/>
+		<stop offset="0.644" style="stop-color:rgb(39,252,172);"/>
+		<stop offset="0.646" style="stop-color:rgb(37,252,173);"/>
+		<stop offset="0.648" style="stop-color:rgb(35,252,174);"/>
+		<stop offset="0.65" style="stop-color:rgb(34,253,175);"/>
+		<stop offset="0.652" style="stop-color:rgb(32,253,176);"/>
+		<stop offset="0.654" style="stop-color:rgb(30,253,177);"/>
+		<stop offset="0.656" style="stop-color:rgb(28,253,178);"/>
+		<stop offset="0.658" style="stop-color:rgb(27,253,179);"/>
+		<stop offset="0.66" style="stop-color:rgb(25,253,180);"/>
+		<stop offset="0.662" style="stop-color:rgb(23,253,181);"/>
+		<stop offset="0.664" style="stop-color:rgb(21,253,182);"/>
+		<stop offset="0.666" style="stop-color:rgb(20,253,183);"/>
+		<stop offset="0.668" style="stop-color:rgb(18,253,184);"/>
+		<stop offset="0.67" style="stop-color:rgb(16,253,185);"/>
+		<stop offset="0.672" style="stop-color:rgb(15,253,186);"/>
+		<stop offset="0.674" style="stop-color:rgb(15,252,187);"/>
+		<stop offset="0.676" style="stop-color:rgb(15,251,187);"/>
+		<stop offset="0.678" style="stop-color:rgb(16,249,187);"/>
+		<stop offset="0.68" style="stop-color:rgb(16,248,187);"/>
+		<stop offset="0.682" style="stop-color:rgb(16,246,187);"/>
+		<stop offset="0.684" style="stop-color:rgb(17,245,187);"/>
+		<stop offset="0.686" style="stop-color:rgb(17,243,187);"/>
+		<stop offset="0.688" style="stop-color:rgb(17,242,187);"/>
+		<stop offset="0.69" style="stop-color:rgb(18,240,187);"/>
+		<stop offset="0.692" style="stop-color:rgb(18,239,187);"/>
+		<stop offset="0.694" style="stop-color:rgb(18,237,187);"/>
+		<stop offset="0.696" style="stop-color:rgb(19,236,187);"/>
+		<stop offset="0.698" style="stop-color:rgb(19,234,187);"/>
+		<stop offset="0.7" style="stop-color:rgb(20,233,187);"/>
+		<stop offset="0.702" style="stop-color:rgb(20,232,187);"/>
+		<stop offset="0.704" style="stop-color:rgb(20,230,187);"/>
+		<stop offset="0.706" style="stop-color:rgb(21,229,187);"/>
+		<stop offset="0.708" style="stop-color:rgb(21,227,187);"/>
+		<stop offset="0.71" style="stop-color:rgb(21,226,187);"/>
+		<stop offset="0.712" style="stop-color:rgb(22,224,187);"/>
+		<stop offset="0.714" style="stop-color:rgb(22,223,187);"/>
+		<stop offset="0.716" style="stop-color:rgb(22,221,188);"/>
+		<stop offset="0.718" style="stop-color:rgb(23,220,188);"/>
+		<stop offset="0.72" style="stop-color:rgb(23,218,188);"/>
+		<stop offset="0.722" style="stop-color:rgb(23,217,188);"/>
+		<stop offset="0.724" style="stop-color:rgb(24,215,188);"/>
+		<stop offset="0.726" style="stop-color:rgb(24,214,188);"/>
+		<stop offset="0.728" style="stop-color:rgb(25,212,188);"/>
+		<stop offset="0.73" style="stop-color:rgb(25,211,188);"/>
+		<stop offset="0.732" style="stop-color:rgb(25,209,188);"/>
+		<stop offset="0.734" style="stop-color:rgb(26,208,188);"/>
+		<stop offset="0.736" style="stop-color:rgb(26,207,188);"/>
+		<stop offset="0.738" style="stop-color:rgb(26,205,188);"/>
+		<stop offset="0.74" style="stop-color:rgb(27,204,188);"/>
+		<stop offset="0.742" style="stop-color:rgb(27,202,188);"/>
+		<stop offset="0.744" style="stop-color:rgb(27,201,188);"/>
+		<stop offset="0.746" style="stop-color:rgb(28,199,188);"/>
+		<stop offset="0.748" style="stop-color:rgb(28,198,188);"/>
+		<stop offset="0.75" style="stop-color:rgb(29,196,188);"/>
+		<stop offset="0.752" style="stop-color:rgb(29,195,188);"/>
+		<stop offset="0.754" style="stop-color:rgb(29,193,188);"/>
+		<stop offset="0.756" style="stop-color:rgb(30,192,188);"/>
+		<stop offset="0.758" style="stop-color:rgb(30,190,189);"/>
+		<stop offset="0.76" style="stop-color:rgb(30,189,189);"/>
+		<stop offset="0.762" style="stop-color:rgb(31,187,189);"/>
+		<stop offset="0.764" style="stop-color:rgb(31,186,189);"/>
+		<stop offset="0.766" style="stop-color:rgb(31,184,189);"/>
+		<stop offset="0.768" style="stop-color:rgb(32,183,189);"/>
+		<stop offset="0.77" style="stop-color:rgb(32,182,189);"/>
+		<stop offset="0.772" style="stop-color:rgb(32,180,189);"/>
+		<stop offset="0.774" style="stop-color:rgb(33,179,189);"/>
+		<stop offset="0.776" style="stop-color:rgb(33,177,189);"/>
+		<stop offset="0.778" style="stop-color:rgb(34,176,189);"/>
+		<stop offset="0.78" style="stop-color:rgb(34,174,189);"/>
+		<stop offset="0.782" style="stop-color:rgb(34,173,189);"/>
+		<stop offset="0.784" style="stop-color:rgb(35,171,189);"/>
+		<stop offset="0.786" style="stop-color:rgb(35,170,189);"/>
+		<stop offset="0.788" style="stop-color:rgb(35,168,189);"/>
+		<stop offset="0.79" style="stop-color:rgb(36,167,189);"/>
+		<stop offset="0.792" style="stop-color:rgb(36,165,189);"/>
+		<stop offset="0.794" style="stop-color:rgb(36,164,189);"/>
+		<stop offset="0.796" style="stop-color:rgb(37,162,189);"/>
+		<stop offset="0.798" style="stop-color:rgb(37,161,189);"/>
+		<stop offset="0.8" style="stop-color:rgb(38,160,190);"/>
+		<stop offset="0.802" style="stop-color:rgb(38,159,190);"/>
+		<stop offset="0.804" style="stop-color:rgb(38,158,190);"/>
+		<stop offset="0.806" style="stop-color:rgb(38,157,190);"/>
+		<stop offset="0.808" style="stop-color:rgb(38,156,190);"/>
+		<stop offset="0.81" style="stop-color:rgb(39,155,190);"/>
+		<stop offset="0.812" style="stop-color:rgb(39,154,190);"/>
+		<stop offset="0.814" style="stop-color:rgb(39,153,190);"/>
+		<stop offset="0.816" style="stop-color:rgb(39,152,190);"/>
+		<stop offset="0.818" style="stop-color:rgb(40,151,190);"/>
+		<stop offset="0.82" style="stop-color:rgb(40,150,190);"/>
+		<stop offset="0.822" style="stop-color:rgb(40,149,190);"/>
+		<stop offset="0.824" style="stop-color:rgb(40,148,190);"/>
+		<stop offset="0.826" style="stop-color:rgb(40,147,190);"/>
+		<stop offset="0.828" style="stop-color:rgb(41,146,190);"/>
+		<stop offset="0.83" style="stop-color:rgb(41,146,190);"/>
+		<stop offset="0.832" style="stop-color:rgb(41,145,190);"/>
+		<stop offset="0.834" style="stop-color:rgb(41,144,190);"/>
+		<stop offset="0.836" style="stop-color:rgb(42,143,190);"/>
+		<stop offset="0.838" style="stop-color:rgb(42,142,190);"/>
+		<stop offset="0.84" style="stop-color:rgb(42,141,190);"/>
+		<stop offset="0.842" style="stop-color:rgb(42,140,190);"/>
+		<stop offset="0.844" style="stop-color:rgb(43,139,190);"/>
+		<stop offset="0.846" style="stop-color:rgb(43,138,190);"/>
+		<stop offset="0.848" style="stop-color:rgb(43,137,190);"/>
+		<stop offset="0.85" style="stop-color:rgb(43,136,190);"/>
+		<stop offset="0.852" style="stop-color:rgb(43,135,190);"/>
+		<stop offset="0.854" style="stop-color:rgb(44,134,190);"/>
+		<stop offset="0.856" style="stop-color:rgb(44,133,190);"/>
+		<stop offset="0.858" style="stop-color:rgb(44,133,190);"/>
+		<stop offset="0.86" style="stop-color:rgb(44,132,190);"/>
+		<stop offset="0.862" style="stop-color:rgb(45,131,190);"/>
+		<stop offset="0.864" style="stop-color:rgb(45,130,190);"/>
+		<stop offset="0.866" style="stop-color:rgb(45,129,190);"/>
+		<stop offset="0.868" style="stop-color:rgb(45,128,191);"/>
+		<stop offset="0.87" style="stop-color:rgb(46,127,191);"/>
+		<stop offset="0.872" style="stop-color:rgb(46,126,191);"/>
+		<stop offset="0.874" style="stop-color:rgb(46,125,191);"/>
+		<stop offset="0.876" style="stop-color:rgb(46,124,191);"/>
+		<stop offset="0.878" style="stop-color:rgb(46,123,191);"/>
+		<stop offset="0.88" style="stop-color:rgb(47,122,191);"/>
+		<stop offset="0.882" style="stop-color:rgb(47,121,191);"/>
+		<stop offset="0.884" style="stop-color:rgb(47,120,191);"/>
+		<stop offset="0.886" style="stop-color:rgb(47,120,191);"/>
+		<stop offset="0.888" style="stop-color:rgb(48,119,191);"/>
+		<stop offset="0.89" style="stop-color:rgb(48,118,191);"/>
+		<stop offset="0.892" style="stop-color:rgb(48,117,191);"/>
+		<stop offset="0.894" style="stop-color:rgb(48,116,191);"/>
+		<stop offset="0.896" style="stop-color:rgb(49,115,191);"/>
+		<stop offset="0.898" style="stop-color:rgb(49,114,191);"/>
+		<stop offset="0.9" style="stop-color:rgb(49,113,191);"/>
+		<stop offset="0.902" style="stop-color:rgb(49,112,191);"/>
+		<stop offset="0.904" style="stop-color:rgb(49,111,191);"/>
+		<stop offset="0.906" style="stop-color:rgb(50,110,191);"/>
+		<stop offset="0.908" style="stop-color:rgb(50,109,191);"/>
+		<stop offset="0.91" style="stop-color:rgb(50,108,191);"/>
+		<stop offset="0.912" style="stop-color:rgb(50,107,191);"/>
+		<stop offset="0.914" style="stop-color:rgb(51,106,191);"/>
+		<stop offset="0.916" style="stop-color:rgb(51,106,191);"/>
+		<stop offset="0.918" style="stop-color:rgb(51,105,191);"/>
+		<stop offset="0.92" style="stop-color:rgb(51,104,191);"/>
+		<stop offset="0.922" style="stop-color:rgb(52,103,191);"/>
+		<stop offset="0.924" style="stop-color:rgb(52,102,191);"/>
+		<stop offset="0.926" style="stop-color:rgb(52,101,191);"/>
+		<stop offset="0.928" style="stop-color:rgb(52,100,191);"/>
+		<stop offset="0.93" style="stop-color:rgb(52,99,191);"/>
+		<stop offset="0.932" style="stop-color:rgb(53,98,191);"/>
+		<stop offset="0.934" style="stop-color:rgb(53,97,192);"/>
+		<stop offset="0.936" style="stop-color:rgb(53,96,192);"/>
+		<stop offset="0.938" style="stop-color:rgb(53,95,192);"/>
+		<stop offset="0.94" style="stop-color:rgb(54,94,192);"/>
+		<stop offset="0.942" style="stop-color:rgb(54,93,192);"/>
+		<stop offset="0.944" style="stop-color:rgb(54,93,192);"/>
+		<stop offset="0.946" style="stop-color:rgb(54,92,192);"/>
+		<stop offset="0.948" style="stop-color:rgb(55,91,192);"/>
+		<stop offset="0.95" style="stop-color:rgb(55,90,192);"/>
+		<stop offset="0.952" style="stop-color:rgb(55,89,192);"/>
+		<stop offset="0.954" style="stop-color:rgb(55,88,192);"/>
+		<stop offset="0.956" style="stop-color:rgb(55,87,192);"/>
+		<stop offset="0.958" style="stop-color:rgb(56,86,192);"/>
+		<stop offset="0.96" style="stop-color:rgb(56,85,192);"/>
+		<stop offset="0.962" style="stop-color:rgb(56,84,192);"/>
+		<stop offset="0.964" style="stop-color:rgb(56,83,192);"/>
+		<stop offset="0.966" style="stop-color:rgb(57,82,192);"/>
+		<stop offset="0.968" style="stop-color:rgb(57,81,192);"/>
+		<stop offset="0.97" style="stop-color:rgb(57,80,192);"/>
+		<stop offset="0.972" style="stop-color:rgb(57,80,192);"/>
+		<stop offset="0.974" style="stop-color:rgb(58,79,192);"/>
+		<stop offset="0.976" style="stop-color:rgb(58,78,192);"/>
+		<stop offset="0.978" style="stop-color:rgb(58,77,192);"/>
+		<stop offset="0.98" style="stop-color:rgb(58,76,192);"/>
+		<stop offset="0.982" style="stop-color:rgb(58,75,192);"/>
+		<stop offset="0.984" style="stop-color:rgb(59,74,192);"/>
+		<stop offset="0.986" style="stop-color:rgb(59,73,192);"/>
+		<stop offset="0.988" style="stop-color:rgb(59,72,192);"/>
+		<stop offset="0.99" style="stop-color:rgb(59,71,192);"/>
+		<stop offset="0.992" style="stop-color:rgb(60,70,192);"/>
+		<stop offset="0.994" style="stop-color:rgb(60,69,192);"/>
+		<stop offset="0.996" style="stop-color:rgb(60,68,192);"/>
+		<stop offset="0.998" style="stop-color:rgb(60,67,192);"/>
+		<stop offset="1" style="stop-color:rgb(61,67,193);"/>
+	</linearGradient>
+</defs>
+<g sketchjs:tool="rectangle" style="fill: none; mix-blend-mode: source-over; opacity: NaN;">
+	<path id="94266ea2_x2d3218_x2d4e03_x2d9f3b_x2dc2a49629d5d5" style="vector-effect: non-scaling-stroke;" d="M0 -313.5 L1141 -313.5 1141 827.5 0 827.5 z"/>
+	<use xlink:href="#94266ea2_x2d3218_x2d4e03_x2d9f3b_x2dc2a49629d5d5"/>
+	<use xlink:href="#94266ea2_x2d3218_x2d4e03_x2d9f3b_x2dc2a49629d5d5" style="fill: white; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="square" style="fill: none; mix-blend-mode: source-over;" transform="matrix(6.428472084258388,0,0,6.428472084258388,321.0626009191403,91.06260091914041)">
+	<path id="3456429b_x2dd8b4_x2d497b_x2dbd68_x2d09794a7a0ee2" style="vector-effect: non-scaling-stroke;" d="M0 0 L50 0 50 50 0 50 z"/>
+	<use xlink:href="#3456429b_x2dd8b4_x2d497b_x2dbd68_x2d09794a7a0ee2"/>
+	<use xlink:href="#3456429b_x2dd8b4_x2d497b_x2dbd68_x2d09794a7a0ee2"/>
+</g>
+<g sketchjs:tool="streamer" transform="matrix(1,0,0,1,339,88)" style="fill: url(#dna_376944282); stroke: url(#dna_3589213988); mix-blend-mode: source-over; fill-opacity: 1; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1;">
+	<g transform="matrix(1,0,0,1,8,8)" sketchjs:uid="1">
+		<g sketchjs:uid="2" style="fill: url(#oxtZlBqDKOaS);">
+			<path sketchjs:uid="3" style="fill: none; stroke: none;"/>
+			<path d=" M 64.14785257816587 173.5369631445415 C 64.14785257816587 173.5369631445415 62.284885699540055 173.15564448839865 61.355901371388306 172.83897534284708 C 60.375940883831625 172.50492961046504 59.42237461604756 172.07647792179517 58.42158171585234 171.5564015197817 C 57.29535501367165 170.97114164133188 56.13905376150155 170.29065927492476 54.95671316146157 169.44900533621325 C 53.57872700315065 168.46808031545942 52.140725515006054 167.18415729055306 50.7111636707775 165.93903937763008 C 49.184677071297656 164.60950206763357 47.54736158142418 163.06006844372735 46.082520263772565 161.6934408572695 C 44.73868522623218 160.43970640028712 43.46918995563295 159.3035472077295 42.24805236619929 158.05487329140743 C 41.046532434836784 156.82625940611277 39.87461713903411 155.50878039482714 38.809095823915094 154.26500223741294 C 37.82458701268958 153.11578960524014 36.91860953348757 152.0447197791363 36.06250454800564 150.8673381310744 C 35.204858406438554 149.68783696622162 34.34489954467917 148.54179508056004 33.668484884857584 147.19386917933912 C 32.93802793287933 145.7382504534557 32.448192889025194 143.91748759586727 31.90250582571906 142.39516868640655 C 31.40994836907809 141.02106697012715 31.027737299647033 139.76832949869384 30.52986980029491 138.46167768750743 C 30.024674704307948 137.13579462015943 29.39291830507165 135.82740252035003 28.889731075405017 134.49796541482215 C 28.39196376115421 133.18284790295206 27.951061251682784 131.857157576434 27.524208382824657 130.528540902368 C 27.0994557598208 129.20646142616386 26.695589659346705 127.98674301541342 26.334080558492822 126.54603820336096 C 25.91551858212379 124.87796331375873 25.511570121980387 122.84872119422303 25.219956776161293 121.08654905503 C 24.949512787039794 119.45229990397169 24.76385456639775 118.00219877555229 24.614428458344122 116.33257233962341 C 24.44924430619042 114.48687194077921 24.388128145733848 112.39861957075834 24.311041060958562 110.48397115136243 C 24.236732445798967 108.63833289720394 24.194658068921836 106.79454527444594 24.15513573655761 105.04430399800404 C 24.118276581238366 103.41200116577198 24.09642288928448 101.89929738003842 24.07703411734873 100.31173319069725 C 24.05739902442751 98.70400009241646 24.04829453394477 97.03954867279054 24.0385738881172 95.4576419210783 C 24.029278002930806 93.94485935494623 23.948217728227004 92.47808195496862 24.01918966824118 91.01840123894488 C 24.088614633651673 89.59053716759381 24.333288382789238 88.19212627302637 24.449748089287958 86.79241186622025 C 24.56438580535649 85.4145957307636 24.486916461718906 84.20112471815084 24.71500213660464 82.68497617691473 C 25.006198328326985 80.749314581707 25.76662652457228 78.16691751952209 26.271546312780163 76.15916546143185 C 26.70673679796883 74.42868348646307 27.00062099470887 72.9347419647493 27.546077001034853 71.34105324309638 C 28.109856486484585 69.69382780779056 28.995290104246898 68.04088493082844 29.623971487099126 66.4389537693462 C 30.216015964767735 64.93037641421921 30.523697266706208 63.542306671152 31.229963506362985 61.99863013944042 C 32.062717307562615 60.17849146166613 33.12458450040697 58.083540397068674 34.4411600874138 56.27308303189508 C 35.83954353991762 54.35012954110602 37.55000916176083 52.72895039521418 39.4694719660105 50.83609159769464 C 41.78348229807328 48.554153752950405 45.03596305574003 45.76202012197357 47.47256206582095 43.63916977909318 C 49.46962528877564 41.89925839849126 51.2629857503376 40.38561058984858 52.998023722883815 38.97590374287942 C 54.49920088219743 37.75620725583795 55.779624771394204 36.65088358847726 57.26174503390428 35.641812684691345 C 58.73198463281579 34.640830484810365 60.10200832932236 33.88505832414613 61.852186969828054 32.94084428218036 C 64.08374147543572 31.7369299783251 67.20625274074501 30.305709021714875 69.61998957718265 29.115034551577132 C 71.72844675020626 28.07495176815192 73.64309173899075 27.044299972735693 75.54354801687488 26.188436396963276 C 77.2526642491831 25.418742115112924 78.75532414370404 24.814220526825505 80.49119543342574 24.169709592357503 C 82.37201866339709 23.471379511840816 84.70553190576497 23.11988939315447 86.4388606949761 22.17473545532897 C 88.03523594787404 21.30425989067258 89.15636383554653 19.872507901710858 90.59379089851579 18.850391019663725 C 92.01975275328877 17.836426748038022 93.47650922734182 16.978977841087254 95.02652733244328 16.0623927868123 C 96.67907978889751 15.085175244639014 98.37395228880852 14.106114316002843 100.23120487879143 13.17421016776066 C 102.276542114044 12.147931747492784 104.68294413553566 11.144024926019807 106.81241016336864 10.207522402777048 C 108.80496228107408 9.331232261711573 110.67020823650462 8.507931121287259 112.62125533959657 7.71627014734716 C 114.57065437120353 6.925277898357297 116.4979161972953 6.180017957243455 118.51367376418638 5.459366388915699 C 120.60352974465826 4.712223967305444 122.96534036523666 3.977985610408413 124.94968998933342 3.3199970548575752 C 126.65623690435852 2.754124828531423 128.06274604602 2.1474474711464193 129.7121254687046 1.7447138226733143 C 131.4242480292029 1.326660004407348 133.2386993160354 1.1017135984102928 135.0485931007459 0.8860938023862683 C 136.9043079102652 0.6650151666743331 138.89747413825148 0.5580307058525031 140.71373077445023 0.4454765299285435 C 142.39319812088013 0.34139924294103924 143.90540791335738 0.2765559110989486 145.5671287535825 0.22127555364909623 C 147.32004731379158 0.16296132767133809 149.23207010318907 0.058799343524074336 150.97250871710466 0.11127431567628454 C 152.60311743368945 0.1604378692252573 154.12444913167653 0.24477249569643134 155.7027683947983 0.4935043698084103 C 157.32251568057563 0.748765005215168 159.04175814089032 1.1720722433968676 160.56695823449598 1.6426094788589731 C 161.9754535598832 2.0771422980920584 163.09972996360003 2.555525739871448 164.5463293782644 3.170078708099659 C 166.33922334032627 3.931746585837041 168.64484099346276 5.031931391067624 170.47865460067342 5.940773641114313 C 172.09842450608306 6.743535339250885 173.51344237029681 7.367042719485095 175.0017957976156 8.314599487034739 C 176.6136598636048 9.340789017064314 178.19779491674672 10.826428222456007 179.769267447638 11.943055097691392 C 181.2368957158083 12.985894304155048 182.67716217982314 13.924049668167346 184.12587824058255 14.828598235583884 C 185.52021417056477 15.699192965721453 186.76852581117237 16.42637580617 188.29919414329765 17.281147736416315 C 190.12083013236278 18.298404889974442 192.27348830379347 19.33549011136714 194.3570993196047 20.491215887859045 C 196.6270738962382 21.750312768365344 199.18480993258183 23.31805984961035 201.39600627509338 24.573665595149425 C 203.34717539531007 25.681617481086313 204.92610531130626 26.57188310931083 206.93391797207832 27.651758033062194 C 209.28889191850996 28.91834896583448 212.3099405251039 30.50006353604481 214.66678155096562 31.67375193658411 C 216.61996942144012 32.64642422228136 218.29601915095924 33.360142487506984 220.07145266830105 34.24773320152763 C 221.8289448800891 35.12635453649162 223.4865885323797 35.94691748559186 225.26713465303433 36.97060263199669 C 227.23982893384766 38.10475906312795 229.56031924329258 39.509995836634154 231.36437548954166 40.80046199955311 C 232.9193198433728 41.91273501100326 234.18852206598322 43.10829856772913 235.520269429823 44.16814039003375 C 236.73633297813004 45.135917794420656 237.95465061956978 45.9589401024717 239.03450641686382 46.91458818171498 C 240.05499468072833 47.8176973298959 240.87642613334538 48.52156948764738 241.85067259803876 49.73152713949781 C 243.24329149234958 51.46107910437275 244.9516921226345 54.251572629355096 246.24628769663926 56.5812310082932 C 247.50106045352337 58.839227192920774 248.61122107443043 61.148778426158295 249.52978180216738 63.486054416659 C 250.4261022139952 65.7667399664563 251.1507621830096 68.1853877046934 251.7161806040258 70.42999674044536 C 252.23341122719842 72.48330891986484 252.50633056480177 74.3395383179654 252.8577138615314 76.41410607962644 C 253.2356360579624 78.64535956386665 253.62814282054612 81.0152201264683 253.89039902717917 83.38501878548463 C 254.16102380342178 85.83043748527433 254.30170289891626 88.39301361357236 254.44041206236085 90.86873714046595 C 254.57677667315596 93.30261437537631 254.65135703018254 95.56187888612172 254.72010814025873 98.11571652986254 C 254.7971503663155 100.97753704218994 254.82409375892686 104.19017203353008 254.85901014363702 107.2217226038963 C 254.8938365684513 110.24546257256416 254.9950239927761 113.35248224742014 254.92951232751275 116.28164657921555 C 254.86774468603505 119.04340773348139 254.79358886320585 121.78902244309991 254.50682264376567 124.32474838197616 C 254.2462005718169 126.62929509383903 253.76611318034097 128.86787900094137 253.3635027697461 130.878326616123 C 253.01713486279112 132.60792553902286 252.63573513147955 134.07424170231616 252.27665255655006 135.68060372625604 C 251.91547676706645 137.29632978120839 251.54801282788046 138.87718293722105 251.2028399551579 140.54478739430672 C 250.83945983473063 142.30035498471804 250.5887367741701 143.97823042311904 250.15514000259742 145.96513052283942 C 249.61933652874404 148.42037937482817 248.78917177213833 151.68006467182633 248.16126065754122 154.1560023512818 C 247.63804977654235 156.21909297740848 247.3890783214695 158.0924045992258 246.6681041490931 159.81547027828896 C 245.99376243468132 161.42708843131348 244.91991739145814 162.82814765157022 244.0591516970737 164.22142404768468 C 243.26509629673666 165.50671998096175 242.47464809934812 166.69540091885082 241.69966932713 167.88487887753627 C 240.9589432437566 169.0217840176272 240.40113120949275 170.16126345508044 239.50905086672756 171.20878723781095 C 238.53339089672502 172.35445425168982 237.16541810563498 173.42711372656035 236.00118898828816 174.4288803194542 C 234.90883939511042 175.3687978270153 233.87515523900436 176.2367012057508 232.73749882686093 177.0595434675773 C 231.58565740014402 177.89264544345366 230.40327905195983 178.65838908783735 229.12894965328138 179.39264458978408 C 227.78084174310808 180.1694105117578 226.4018067345478 180.79060561126852 224.84463781138126 181.57707917245114 C 222.98594340473468 182.5158430967741 220.788535600981 183.40853334877355 218.7168911711692 184.64268575827302 C 216.38705746246637 186.0306507217343 213.9209440527911 187.9312717829759 211.61711699097378 189.61206481384488 C 209.37058054348816 191.25106058184673 207.12568057525047 193.02614233534243 205.05655229909132 194.59846662868054 C 203.1990930358843 196.009944281892 201.1681870595236 197.1124016422632 199.768790763568 198.6157755047524 C 198.52364177432972 199.9534412187005 197.62040127085578 201.47406533028408 196.89595956477817 203.01893296944536 C 196.1954499960236 204.51276546778567 195.8146512596582 206.1685103704301 195.44848356730643 207.7168367682041 C 195.1014820383294 209.18411976068288 195.1076497571185 210.61091856622116 194.72087570886347 212.07115656148306 C 194.3093455985562 213.62485931371322 193.70676478939956 215.35448510297698 192.99640525866482 216.76214594431647 C 192.35015738924338 218.04276199889753 191.668114403559 219.19745488108038 190.72113621403804 220.21665259638584 C 189.72936031809496 221.28406443165915 188.4242329232919 222.2034365356349 187.1253584316262 222.98353361795137 C 185.80423942872395 223.776990634907 184.01134364864723 223.8865181304881 182.85076293193745 224.92257823140486 C 181.5890051420488 226.04895995074827 180.49305402215998 227.97760116972066 180.00260729048514 229.6835902652401 C 179.5189444453885 231.36598202433052 179.30847293225972 233.31398209928892 179.89060924562855 235.07791423999777 C 180.59544994044893 237.21365311613522 183.10944351436999 239.4384754206642 184.72954711586888 241.334825964734 C 186.18687825988593 243.0406494104012 187.69069609603054 244.59320848142673 189.118834532492 245.99281032000948 C 190.3803027969318 247.2290723357551 191.61877697108704 248.24224882638867 192.82141695909436 249.34334000732616 C 193.97603288180738 250.40046219064538 195.09246183876917 251.42979467555054 196.1980114792235 252.47114914303506 C 197.28158471970542 253.49180329869904 198.10663067115757 254.494238973898 199.39114514273996 255.52951331396082 C 201.03757317448412 256.8564774951623 203.54693181543607 258.3327715257942 205.41540735161485 259.58837534946457 C 207.03848988207534 260.67907661470383 208.52103362763606 261.67175131289935 209.96860918642773 262.6401030798793 C 211.28676455393668 263.52187955885415 212.32020838719444 264.3503760586517 213.74855273233945 265.1638141388112 C 215.4515438139146 266.13366276154267 217.75689344532384 267.1238542047396 219.57553059758712 267.95480814198305 C 221.15168938519972 268.67497123150184 222.55253706957248 269.3124117285029 224.0252925277979 269.8913651367159 C 225.4371574696619 270.44638193564424 226.8334829937146 270.91503086435034 228.23194230367383 271.3728901807835 C 229.60288645464 271.82174096060896 231.13563656165618 271.8695586443633 232.33394210177934 272.61570142818744 C 233.5890319699109 273.3972018191987 235.16823419278447 274.8145349324008 235.54293135998319 276.052414395345 C 235.86189723710424 277.1061755209495 235.504367671459 278.43031405334875 234.98901015003736 279.41437147108564 C 234.44169982908983 280.45944165779144 233.3633103091489 281.35816352855574 232.22808464594695 282.08740760841835 C 230.91045541527697 282.93382374140987 229.12006672232602 283.4975905323026 227.40660781939334 283.97286970057155 C 225.5658567671056 284.4834571606058 223.44686596896446 284.71952667920766 221.51631291095782 284.9741802128277 C 219.6673107367191 285.2180766110065 217.8159358186055 285.35776743842274 216.05978494038519 285.4881483505717 C 214.425317136789 285.6094952153279 213.07104822097344 285.7399044157565 211.31929647826615 285.7457949094363 C 209.14159447312872 285.7531177164215 206.22531750989234 285.5810098777427 203.99064997722508 285.3968965562325 C 202.0970667686946 285.24088502924604 200.52204513795678 285.0900930867711 198.758413784424 284.78278467423087 C 196.9190042102717 284.4622720936898 194.91555132786692 283.9199590470514 193.1763781780798 283.4864135713134 C 191.63887760031903 283.1031415437327 190.26647827545875 282.7836521163646 188.8487562832303 282.33326401521725 C 187.43799392315853 281.8850868803446 186.1811946220598 281.3110752229437 184.690195903587 280.79265720992845 C 182.9813916683828 280.19850854616976 180.92336040256467 279.6231720760781 179.1507718007921 278.9909720768469 C 177.4827087329863 278.39605147929257 175.9508776110947 277.75463323046233 174.34287026843845 277.1221592112667 C 172.71890217046771 276.48340738301187 171.02800334290407 275.9110841712922 169.4545238731452 275.1767237777815 C 167.90671017702334 274.4543418866854 166.4967951572859 273.70187848596663 164.97355779072402 272.76026897229474 C 163.26581489392856 271.7046049019222 161.3017654039564 270.3197524495444 159.73878189928325 269.0799810822663 C 158.361458476189 267.98747681825563 157.28355126102917 267.0005480653829 156.03066613263164 265.7721629283388 C 154.61644098627673 264.38559275455253 153.08041417502204 261.87026943962695 151.72359652182766 261.1316747350156 C 150.87023525377927 260.6671406008842 150.02650450425065 260.81668616709857 149.25711106654578 260.6972115020381 C 148.5845228230881 260.5927691567142 147.61294832385624 260.1393604091283 147.36032160895058 260.4419929229887 C 147.0115147917275 260.8598437587062 148.17675321324538 262.72351060233746 148.48510462344498 263.91289647302784 C 148.80100072167917 265.13138402786905 149.03631562951472 266.40364218227387 149.22317070427601 267.67043061364757 C 149.41164198521656 268.94817615332175 149.51140983287888 270.2487546052901 149.60799981755898 271.54724252814395 C 149.70516433948347 272.85345412623747 149.75571118690678 274.0377199198881 149.80329999763057 275.4847517266001 C 149.86168698604294 277.26012345885806 149.8751959321664 279.39751669185625 149.89938202410815 281.4183844027851 C 149.92464025929425 283.52883498924257 150.1579039008879 285.72067367159747 149.94950118885615 287.8903942936594 C 149.73441815468 290.12966503134754 149.2165504984 292.5966831230501 148.58493581706628 294.6477784598248 C 148.02641222327853 296.4615189768718 147.31655903818634 298.14052976111714 146.49471398016792 299.61662585923546 C 145.7571856265963 300.9412827569521 145.02243226190902 302.06899472169806 143.97987527655104 303.155264411128 C 142.82340352299272 304.3602251281107 141.17664062117348 305.420134435497 139.7563893128917 306.42582523340855 C 138.39660267714504 307.3887005349268 137.05396331054388 308.1926380273594 135.64286713134436 309.0820869046073 C 134.1682597712421 310.01156845246925 132.55323804186852 311.61967123832943 131.08825509350956 311.8837288393897 C 129.89722179115026 312.09840805934647 128.61477268373756 311.80093324745116 127.62068799101057 311.1995648673776 C 126.52302965147932 310.5355399383675 125.75595408889305 309.1882633758399 124.91942382725588 307.8420180802055 C 123.87269876635263 306.1575019859452 122.92468262442655 303.62259107384915 122.07934707961518 301.7219482802002 C 121.35189364517366 300.0863502784683 120.70730991962891 298.63974558911264 120.12216473182878 297.12480729836955 C 119.56481846237108 295.6818402836725 119.12469163598672 294.60698976980365 118.63315898448808 292.84337867393253 C 117.87385253014322 290.1189995630713 117.0916488558547 285.4055202748442 116.38962128561302 282.2614746062479 C 115.82274715891948 279.72271655995564 115.4435230706359 277.5793398789397 114.77862313584426 275.39487852087154 C 114.14830405990824 273.32402907031934 113.3767634403826 271.33219180408327 112.54283832919255 269.4638096420829 C 111.75733981264656 267.7039256945928 111.09444475041612 265.03968214498883 109.95034777771147 264.4733262018774 C 109.1149428705839 264.05978037023544 107.90490467783383 264.52075545903466 106.99637394606887 264.9875835414563 C 105.9499574209533 265.52526113755135 105.12755221056129 266.75097603310127 104.16008843257906 267.7762577165583 C 103.06040764235898 268.9416580111446 102.0646107130451 270.23173404433254 100.77563707919501 271.64348451233406 C 99.14767722317278 273.42651019127084 96.95641933621484 275.7583141447008 95.12215013338222 277.57961301127614 C 93.47468820460892 279.2154255403025 91.87107168210966 280.61925864301253 90.30131528861503 282.10610764357597 C 88.7904204601364 283.53720387926563 87.32680079482145 284.9339378512435 85.87198652012005 286.3383017057471 C 84.44537012313425 287.7154455357252 83.1756037859039 289.1768487434493 81.65453235160057 290.45136402738547 C 80.09194785800655 291.7606633637702 78.25808984999641 292.9646092067801 76.60188823510006 294.0737269611518 C 75.06588850410158 295.10234845085324 73.57934904018127 296.0869913552357 72.06617237221222 296.9058495670895 C 70.64928213369828 297.67260220851114 69.28615916801975 298.37385096782714 67.8121574747835 298.8768326392023 C 66.33196361711157 299.3819272967642 64.71981985752396 299.65960564779056 63.20217132792494 299.9261884293587 C 61.747077416022634 300.1817831701121 60.31560619895384 300.3287001555638 58.88932484936473 300.46351783853885 C 57.49316055745051 300.5954887396115 55.92679517069247 301.090320677716 54.73341358795827 300.7321065137212 C 53.63699594502594 300.4029977566945 52.633022192916265 299.52555633451493 51.93016457771853 298.610960203093 C 51.19749429610586 297.65757022668606 50.84671507821029 296.3273132291478 50.48701100089402 295.0742075348574 C 50.10514696475317 293.743902908613 49.79998346776364 292.3164737942501 49.7516962086257 290.8324618976069 C 49.69888009638733 289.2092647997494 49.98337353018344 287.31241210007465 50.299651782101215 285.71128459846005 C 50.58832727634637 284.2498933391005 50.96559532364654 282.9346113613075 51.49963844018355 281.5918559354225 C 52.049905684042265 280.2083078575646 52.73785434099017 278.93136488543615 53.57738804942188 277.53799721550246 C 54.550822176406754 275.92239604579515 55.934025738754855 274.1457566920482 57.09038261092932 272.5214676178299 C 58.19414628788503 270.97105413896435 59.244637593258894 269.36345392036026 60.3616543163937 268.0011186878144 C 61.37009554161763 266.7712042356667 62.478728745488375 265.76884713432463 63.45200106689819 264.66456976550234 C 64.37094005613126 263.6219391401202 65.24130482071018 262.6499444181396 66.05679658865617 261.5578206158948 C 66.889055030265 260.4432425300981 67.59567928140372 259.27218760385045 68.38867457953548 258.0374174633641 C 69.25237548961128 256.69255186758426 70.17836392510037 255.14647435164167 71.03566025754424 253.7846560043018 C 71.83297305885938 252.5181217146885 73.29459317307068 251.30669908672567 73.362643108605 250.12976633346426 C 73.42237002299751 249.09678134607455 72.64021048110625 247.81425472922368 71.90651208852212 247.12640444901962 C 71.21812756383004 246.48103641634634 70.3043830737071 246.28175871780476 69.18557206281558 246.01760907893345 C 67.54863201751154 245.63112993490319 65.03566387244172 245.65961351772464 62.914363719585324 245.53536868915765 C 60.734149320948006 245.40767324547744 58.5788342411931 245.33397696065245 56.27580829099315 245.26795527722567 C 53.778843172954154 245.1963738690628 50.94368122094223 245.16892373522666 48.46691042186786 245.13473092548284 C 46.21938173939345 245.1037028946847 44.06887173900897 245.0841673551145 42.03607174004222 245.0668823117802 C 40.20317084744245 245.05129702480065 38.64933080563566 245.10654663352543 36.807640540747 245.03312909668887 C 34.738567245108776 244.95064711380832 32.30426177764315 244.67933820522873 30.22601044120772 244.55028881976912 C 28.358327573378407 244.43431472072677 26.619007689684697 244.34896305412136 24.90310788465577 244.27964993896063 C 23.29787596317918 244.21480721055255 21.764355526741422 244.25211453812938 20.240744407508767 244.13999441802062 C 18.766568768634947 244.03151217632168 17.280124234062715 243.92575304213622 15.903904349709002 243.6304004427781 C 14.604347383481702 243.3515005864739 13.438468805479598 242.84224855559475 12.190866302056234 242.4580110051224 C 10.928657892494467 242.06927511677267 9.587863824264058 241.83113228071156 8.373770497739256 241.3119435425009 C 7.1590256250120605 240.792476180363 5.8720579862757285 240.2241015512118 4.904539385340502 239.34160092191013 C 3.9181060099613214 238.44184760068734 2.985751562467498 237.1175682943494 2.5342879022968994 235.93844625731265 C 2.1332059851998153 234.89091005710682 1.8758939538963564 233.72050972628594 2.132821087472517 232.68990981465535 C 2.4128581018306696 231.56661030855147 3.5297443080724964 230.41962778041585 4.365545353138625 229.50621214425627 C 5.142083520188462 228.65756268629588 5.9352836016652155 228.0514287894876 6.932267219301117 227.3430578376835 C 8.142932053162667 226.48286336155772 9.712692710187696 225.5454382179089 11.189826301232376 224.81857002081412 C 12.669445566615874 224.09047867258653 14.332663240336455 223.54257347938324 15.803111351607575 222.97933752742847 C 17.136868962594704 222.46845908707894 18.317747226531075 222.06387244357904 19.63824261589675 221.5697197842902 C 21.05512394001971 221.03949780862072 22.62815192794907 220.41958952076197 24.03436055291003 219.89519199349806 C 25.324931653013774 219.41391753561211 26.4605532395441 218.95247941736994 27.756573130619557 218.5367227860419 C 29.136364868243803 218.09409256970085 30.565426157226035 217.88009172727624 32.08392833082959 217.33487139910667 C 33.86893292146722 216.69396300555323 35.99605407175477 215.65371428383162 37.75420352162101 214.8127044580654 C 39.32115896323845 214.06315218135856 40.74973652785634 213.31916364653614 42.14065216838009 212.56336248833549 C 43.43398994557324 211.86058356956573 44.51781220878223 211.171238588525 45.835895961918304 210.43940949912695 C 47.326078909438614 209.61202715189322 49.01853761839804 208.68167000834586 50.63750384169533 207.86582853118946 C 52.25210497572354 207.05218674222047 53.893693773198784 206.29699197353872 55.53630028355783 205.55028086479768 C 57.17600611364782 204.80488837385465 59.00245281097139 204.21352633699797 60.48433844975108 203.38925161881144 C 61.81574872086355 202.64867636975532 62.925778051451736 201.7914967875658 64.07303472317938 200.91583732866707 C 65.2079083398805 200.04962940710192 66.32703583870318 199.12268498227488 67.333883930825 198.16694661230656 C 68.29776457625151 197.25199457126666 69.25255037353689 196.3997766155739 70.00529342242011 195.31364964148054 C 70.79701246763827 194.17128451145285 71.44309563906641 192.87417484075854 71.92337464989124 191.43843488350788 C 72.4652904706009 189.81843863190625 72.7603649290889 187.73032402907404 72.94152304330387 186.02844278122402 C 73.10078915060637 184.53222494626368 73.46211595262838 182.98606996644818 73.05243916745172 181.77502436989053 C 72.67398188642024 180.65626675349128 71.60154857943753 179.81297099224807 70.77356125976414 178.94809788406025 C 69.95738163708143 178.09555849083907 69.08502329391162 177.34800708870523 68.12574592609867 176.61620837385706 C 67.11031013311921 175.8415683862512 65.98818193420122 175.0094415328339 64.82170198043887 174.44523087466868 C 63.67433882171728 173.8902667530403 62.41043305280933 173.68487795137267 61.19056858023968 173.24313382841618 C 59.92607455632364 172.7852282035381 58.5455859028521 172.15982143236738 57.36650593968259 171.7371068382027 C 56.37270238450699 171.3808161033689 54.58885960877692 170.83723138643893 54.58885960877692 170.83723138643893" sketchjs:uid="4" style="stroke: none;"/>
+			<g transform="matrix(1,0,0,1,-8,-8)" sketchjs:uid="5">
+			</g>
+		</g>
+		<g sketchjs:uid="6">
+			<path sketchjs:uid="7" style="fill: none; stroke: none;"/>
+			<path sketchjs:uid="8" style="fill: none; stroke: none;"/>
+			<path d=" M 66.24253562503634 174.06063390625908 Q 66.79005508002743 174.06063390625908 64.25782343812656 173.0970797046987 L 64.03788171820517 173.97684658438428 Q 66.79005508002743 174.06063390625908 66.24253562503634 174.06063390625908 L 66.24253562503634 174.06063390625908" sketchjs:uid="9" style="fill: rgb(27,27,27); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 64.74289468819924 173.21834751721687 Q 63.82155078996264 172.98801154265774 61.59172814915016 171.8956682317997 L 61.120074593626455 173.78228245389445 Q 63.60160907004125 173.86777842234332 64.52295296827785 174.09811439690245 L 64.74289468819924 173.21834751721687" sketchjs:uid="10" style="fill: rgb(27,27,27); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 62.064527596440335 172.05366009695814 Q 61.04033013439567 171.79761073144698 58.943723107518124 170.32147143331395 L 57.89944032418656 172.79133160624946 Q 60.568676578871965 173.68422495354173 61.592874040916634 173.9402743190529 L 62.064527596440335 172.05366009695814" sketchjs:uid="11" style="fill: rgb(27,27,27); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 59.388675442505615 170.5469263964726 Q 58.15680375070881 170.02607812614806 55.84507089135358 167.9601321115134 L 54.068355431569564 170.9378785609131 Q 57.11252096737726 172.49593829908358 58.34439265917406 173.0167865694081 L 59.388675442505615 170.5469263964726" sketchjs:uid="12" style="fill: rgb(28,28,28); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 56.25348740773864 168.2462463952115 Q 54.693205358581615 167.31528155805432 52.14393700594153 164.18246997653617 L 49.27839033561347 167.695608778724 Q 52.9164898987976 170.29302800745404 54.476771947954624 171.22399284461122 L 56.25348740773864 168.2462463952115" sketchjs:uid="13" style="fill: rgb(28,28,28); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 52.522275306958925 164.50906672716422 Q 50.91622628989967 163.19906769998326 47.92923608151863 159.67111421298978 L 44.2358044460265 163.71576750154924 Q 48.05067961957161 166.71220650217109 49.656728636630866 168.02220552935205 L 52.522275306958925 164.50906672716422" sketchjs:uid="14" style="fill: rgb(28,28,28); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 48.2953435845899 160.01162030899664 Q 47.00722017577085 158.83535242912487 44.17601965644736 156.0195825024303 L 40.32008507595122 160.09016408038457 Q 43.313788540278715 162.88000571768433 44.60191194909777 164.0562735975561 L 48.2953435845899 160.01162030899664" sketchjs:uid="15" style="fill: rgb(28,28,28); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 44.526164469144206 156.37605718238808 Q 43.300278436528274 155.2148136955823 40.88013999245011 152.37239685215445 L 36.738051655380076 156.15760762267143 Q 39.444343856032134 159.28539527353658 40.670229888648066 160.44663876034235 L 44.526164469144206 156.37605718238808" sketchjs:uid="16" style="fill: rgb(28,28,28); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 41.206588674065785 152.75084906106002 Q 40.23408804098988 151.68665903987747 38.11759254192648 149.19488765701092 L 34.007416554084806 152.5397886051379 Q 36.091999703919846 155.47186981039445 37.06450033699575 156.536059831577 L 41.206588674065785 152.75084906106002" sketchjs:uid="17" style="fill: rgb(29,29,29); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 38.41307990655639 149.5974601733626 Q 37.500029715848044 148.47551455292648 35.80716191184915 145.78269931287042 L 31.52980785786602 148.6050390458078 Q 33.38985372800637 151.82041550105345 34.30290391871472 152.94236112148957 L 38.41307990655639 149.5974601733626" sketchjs:uid="18" style="fill: rgb(29,29,29); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 36.03368792251444 146.2250501609646 Q 35.10550760002191 144.8183605909925 34.3922561675594 141.4486333720452 L 29.41275548387872 143.3417040007679 Q 30.82815354603878 147.6407003239299 31.75633386853131 149.047389893902 L 36.03368792251444 146.2250501609646" sketchjs:uid="19" style="fill: rgb(29,29,29); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 34.56383301564243 141.91822806102232 Q 34.0752902054882 140.63317338833338 32.912351671404316 137.62611384953925 L 28.147387929185502 139.2972415254756 Q 29.095789521807518 142.52624401705606 29.584332331961747 143.811298689745 L 34.56383301564243 141.91822806102232" sketchjs:uid="20" style="fill: rgb(29,29,29); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 33.08997567182814 138.0933191167441 Q 32.621529489221814 136.75761681976115 31.175006951142635 133.5604419184861 L 26.6044551996674 135.4354889111582 Q 27.856565747003003 138.42874449569752 28.32501192960933 139.76444679268047 L 33.08997567182814 138.0933191167441" sketchjs:uid="21" style="fill: rgb(29,29,29); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 31.35198839591253 134.02787155559818 Q 30.826268863006938 132.7463952292464 29.809164229316824 129.73415962949667 L 25.23925253633249 131.32292217523934 Q 26.255717111531702 134.62144222191847 26.781436644437296 135.90291854827026 L 31.35198839591253 134.02787155559818" sketchjs:uid="22" style="fill: rgb(30,30,30); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 29.963440836321293 130.20964898390844 Q 29.513044228084258 128.914129567254 28.61358367238572 125.85860447740528 L 24.054577444599925 127.23347192931665 Q 24.943132535099924 130.50289211299668 25.39352914333696 131.7984115296511 L 29.963440836321293 130.20964898390844" sketchjs:uid="23" style="fill: rgb(30,30,30); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 28.736715047087053 126.34271053177508 Q 28.205907917607327 124.58257503239518 27.820054248139243 120.54529685055097 L 22.619859304183343 121.62780125950904 Q 23.646901689821533 125.95744248430655 24.17770881930126 127.71757798368645 L 28.736715047087053 126.34271053177508" sketchjs:uid="24" style="fill: rgb(30,30,30); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 27.90355628730975 121.03792170705296 Q 27.581302638029136 119.48986168642601 27.24348490595327 115.98730127647731 L 21.985372010734974 116.67784340276951 Q 22.381107694073236 120.57236609538408 22.70336134335385 122.12042611601103 L 27.90355628730975 121.03792170705296" sketchjs:uid="25" style="fill: rgb(30,30,30); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 27.28979274060478 116.48479416535126 Q 27.038174939732784 114.56885775386044 27.179337474008662 110.3259165168863 L 21.442744647908462 110.64202578583856 Q 21.780062044514487 115.25939988015264 22.031679845386485 117.17533629164346 L 27.28979274060478 116.48479416535126" sketchjs:uid="26" style="fill: rgb(31,31,31); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 27.200544554477602 110.82542673492766 Q 27.10173867928766 109.03234715624315 27.06775837999711 104.95744658179987 L 21.242513093118113 105.13116141420821 Q 21.36514585318746 109.34845642519541 21.463951728377403 111.14153600387992 L 27.200544554477602 110.82542673492766" sketchjs:uid="27" style="fill: rgb(31,31,31); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 27.079502430219904 105.45729864709388 Q 27.0329440433588 103.89603862187164 26.865665941825057 100.26384973418602 L 21.288402292872405 100.35961664720848 Q 21.207698756479804 104.06975345427998 21.254257143340908 105.63101347950222 L 27.079502430219904 105.45729864709388" sketchjs:uid="28" style="fill: rgb(31,31,31); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 26.87205201098691 100.76380411761694 Q 26.844549971636695 99.16214317336112 26.780511611233294 95.43467503486266 L 21.296636165001104 95.48060880729395 Q 21.267286322684043 99.25791008638357 21.294788362034257 100.8595710306394 L 26.87205201098691 100.76380411761694" sketchjs:uid="29" style="fill: rgb(31,31,31); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 26.783750643768997 95.93466364295898 Q 26.771480323919892 94.46975226781386 26.646790803822686 91.00636598400233 L 21.39158853265967 91.03043649388742 Q 21.287604877687702 94.51568604024514 21.299875197536807 95.98059741539026 L 26.783750643768997 95.93466364295898" sketchjs:uid="30" style="fill: rgb(31,31,31); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 26.624061206481294 91.50522075121215 Q 26.617642607486545 90.10387793895241 26.959024537845693 87.03314466401591 L 21.940471640730223 86.55167906842459 Q 21.36244033632353 90.1279484488375 21.36885893531828 91.52929126109724 L 26.624061206481294 91.50522075121215" sketchjs:uid="31" style="fill: rgb(32,32,32); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 26.918593709066876 87.53145323811384 Q 27.04830376513157 86.17942147590865 27.14106143353191 82.84599459069733 L 22.288942839677368 82.52395776313213 Q 22.0297508680161 85.69795588031734 21.900040811951406 87.04998764252252 L 26.918593709066876 87.53145323811384" sketchjs:uid="32" style="fill: rgb(32,32,32); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 27.067963577644864 83.33896792411309 Q 27.214506230044666 81.13101446153007 29.11916060993818 76.82033296814254 L 23.423932015622146 75.49799795472117 Q 22.362387636190125 80.80897763396487 22.215844983790323 83.01693109654789 L 27.067963577644864 83.33896792411309" sketchjs:uid="33" style="fill: rgb(32,32,32); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 28.999037437463155 77.30563475929739 Q 29.370998056814898 75.70361958629636 30.29959220409085 72.06515296483187 L 24.792561797978856 70.6169535213609 Q 23.675769462498863 74.38128457287499 23.30380884314712 75.98329974587602 L 28.999037437463155 77.30563475929739" sketchjs:uid="34" style="fill: rgb(32,32,32); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 30.13992596590052 72.53773061234773 Q 30.586575057893 70.83926971212145 32.277154960004026 67.54351484329868 L 26.970788014194227 65.33439269539372 Q 25.079544651781006 69.39107026865048 24.632895559788526 71.08953116887676 L 30.13992596590052 72.53773061234773" sketchjs:uid="35" style="fill: rgb(32,32,32); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 32.09547958172421 68.009204835998 Q 32.694324349023596 66.57076464749045 33.8263694201879 62.94471601689254 L 28.633557592538068 61.0525442619883 Q 27.387957403213797 64.36164249958549 26.789112635914414 65.80008268809304 L 32.09547958172421 68.009204835998" sketchjs:uid="36" style="fill: rgb(33,33,33); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 33.61977685858552 63.39837392977781 Q 34.36108522577885 61.36395245238282 37.141322816279214 57.766573995150075 L 31.740997358548384 54.77959206864008 Q 29.168273398129017 59.47178069747858 28.42696503093568 61.50620217487357 L 33.61977685858552 63.39837392977781" sketchjs:uid="37" style="fill: rgb(33,33,33); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 36.85201463741194 58.17019935499396 Q 38.03375826960509 56.03366141186001 42.019367191532005 53.15765702028687 L 36.919576740489 48.51452617510241 Q 32.63343281187426 53.04667948535001 31.45168917968111 55.183217428483964 L 36.85201463741194 58.17019935499396" sketchjs:uid="38" style="fill: rgb(33,33,33); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 41.665548452543135 53.510102586919636 Q 44.0564624650095 50.88403822289535 50.39867607294417 46.87828462960245 L 44.546448058697734 40.40005492858391 Q 38.9566720139665 46.24090737771089 36.56575800150013 48.86697174173518 L 41.665548452543135 53.510102586919636" sketchjs:uid="39" style="fill: rgb(33,33,33); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 50.022292107138995 47.20732689887055 Q 51.79278127638057 45.60792292689863 55.68147607982106 42.148248193155986 L 50.31457136594657 35.80355929260285 Q 45.94055326213414 39.1296932258801 44.17006409289256 40.72909719785201 L 50.022292107138995 47.20732689887055" sketchjs:uid="40" style="fill: rgb(33,33,33); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 55.293928764080626 42.464037117983786 Q 56.65757302492791 41.31054497261616 59.51595464586864 38.51449192210809 L 55.00753542193993 32.7691334472746 Q 51.29066831105342 34.96585607206302 49.927024050206136 36.11934821743065 L 55.293928764080626 42.464037117983786" sketchjs:uid="41" style="fill: rgb(34,34,34); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 59.10457051269051 38.7968885761227 Q 60.48674000291653 37.71229141342898 63.563596103339556 35.81014477230074 L 60.14077783631655 30.071543792059973 Q 55.978320778987815 31.96693293859548 54.596151288761796 33.0515301012892 L 59.10457051269051 38.7968885761227" sketchjs:uid="42" style="fill: rgb(34,34,34); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 63.124862958548945 36.04917196873823 Q 65.5786874526358 34.58557564424233 71.33367713988771 32.574813751522576 L 67.90630201447759 25.65525535163169 Q 62.155869185612794 28.846974664001564 59.70204469152594 30.310570988497464 L 63.124862958548945 36.04917196873823" sketchjs:uid="43" style="fill: rgb(34,34,34); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 70.88551961449316 32.796522509423816 Q 72.83931817407 31.82877280689058 77.19667942278748 29.53413427971033 L 73.89041661096228 22.842738514216222 Q 69.41194304865988 24.9092144069997 67.45814448908304 25.876964109532935 L 70.88551961449316 32.796522509423816" sketchjs:uid="44" style="fill: rgb(34,34,34); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 76.7413759098564 29.740063937990094 Q 78.32213804073577 28.95899893588405 81.78246314846844 27.305769571771442 L 79.19992771838305 21.033649612943563 Q 75.01587522891056 22.267603170389943 73.4351130980312 23.048668172495987 L 76.7413759098564 29.740063937990094" sketchjs:uid="45" style="fill: rgb(35,35,35); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 81.31447504003907 27.481063642428953 Q 83.22858855215875 26.692930444291264 87.52494291073896 25.385364907927016 L 85.35277847921324 18.964106002730926 Q 80.64605312207337 20.420810485463385 78.73193960995368 21.208943683601074 L 81.31447504003907 27.481063642428953" sketchjs:uid="46" style="fill: rgb(35,35,35); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 87.0905404073757 25.61864155470408 Q 88.74943197528671 25.057476631629832 92.54528783852291 21.36782290087108 L 88.64229395850867 16.33295913845637 Q 86.57726754376102 18.636217726433742 84.91837597585001 19.19738264950799 L 87.0905404073757 25.61864155470408" sketchjs:uid="47" style="fill: rgb(35,35,35); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 92.13667575450397 21.65503325838729 Q 93.50215070132154 20.5965258960777 96.66287280482332 18.638516810519064 L 93.39018186006324 13.486268763105537 Q 89.5991568213073 15.561662133662992 88.23368187448973 16.620169495972583 L 92.13667575450397 21.65503325838729" sketchjs:uid="48" style="fill: rgb(35,35,35); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 96.2335380918835 18.894386761892175 Q 97.89147531064677 17.841270515761302 101.75403412643064 15.903057239437475 L 98.70837563115222 10.445363096083844 Q 94.61878436588668 12.689022468347774 92.96084714712342 13.742138714478648 L 96.2335380918835 18.894386761892175" sketchjs:uid="49" style="fill: rgb(35,35,35); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 101.30810722929702 16.128274067962977 Q 103.38811686287059 14.96752763469701 108.23229035675394 13.333457251018352 L 105.39252996998334 7.081587554535744 Q 100.34245836759217 9.509833491343377 98.2624487340186 10.670579924609344 L 101.30810722929702 16.128274067962977" sketchjs:uid="50" style="fill: rgb(36,36,36); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 107.77498972195625 13.535571318370724 Q 109.67401974800502 12.67298292432673 113.97322064632814 10.861632020988155 L 111.269290032865 4.570908273706165 Q 106.83425936123443 6.421113227844123 104.93522933518565 7.283701621888117 L 107.77498972195625 13.535571318370724" sketchjs:uid="51" style="fill: rgb(36,36,36); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 113.51021506622024 11.050132751236067 Q 115.42317491432154 10.227888617905347 119.74028814227916 8.647245735308877 L 117.2870593860936 2.271487042522521 Q 112.71924430085839 3.937164870623357 110.8062844527571 4.759409003954077 L 113.51021506622024 11.050132751236067" sketchjs:uid="52" style="fill: rgb(36,36,36); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 119.26985777382063 8.81627277742453 Q 121.35863361914264 8.012565294773507 126.06246751004997 6.649294655875439 L 123.83691246861687 -0.009300546160287748 Q 118.90540486295708 1.6368066019871526 116.81662901763508 2.440514084638174 L 119.26985777382063 8.81627277742453" sketchjs:uid="53" style="fill: rgb(36,36,36); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 125.58802020996285 6.807089482528099 Q 127.15799382579549 6.28234475941217 130.71574069073404 4.7773615713703865 L 128.7085102466752 -1.287933926023758 Q 124.93243878436239 -0.376250442623557 123.36246516852975 0.14849428049237234 L 125.58802020996285 6.807089482528099" sketchjs:uid="54" style="fill: rgb(36,36,36); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 130.2318603560419 4.89735891193833 Q 131.92426715671948 4.3372789528478375 135.5613073657047 3.9354730071052675 L 134.53587883578712 -2.163285402332731 Q 129.91703671266063 -1.7280165445463074 128.22462991198304 -1.167936585455815 L 130.2318603560419 4.89735891193833" sketchjs:uid="55" style="fill: rgb(37,37,37); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 135.06559501325677 3.997244363295319 Q 136.91447208376965 3.686379238111731 140.96499731086598 3.5267872108945166 L 140.46246423803447 -2.6358341510374297 Q 135.88904355385208 -2.4123791713262674 134.0401664833392 -2.1015140461426793 L 135.06559501325677 3.997244363295319" sketchjs:uid="56" style="fill: rgb(37,37,37); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 140.46611095197736 3.559072598564134 Q 142.06408746216715 3.428765055910477 145.70681902396225 3.1362923008005836 L 145.42743848320274 -2.693741193502391 Q 141.56155438933564 -2.7338563060214693 139.96357787914584 -2.6035487633678125 L 140.46611095197736 3.559072598564134" sketchjs:uid="57" style="fill: rgb(37,37,37); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 145.20716370807006 3.153649485471985 Q 146.98923351389072 3.068251069406636 151.03575217558824 3.0435880628477525 L 150.90926525862108 -2.8210394314951834 Q 146.7098529731312 -2.7617824248963387 144.92778316731054 -2.67638400883099 L 145.20716370807006 3.153649485471985" sketchjs:uid="58" style="fill: rgb(37,37,37); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 150.53652293883164 3.0301158010895195 Q 152.1018236044951 2.9963557616808116 155.49131702415963 3.2879853579021896 L 155.914219765437 -2.300976618285369 Q 151.97533668752794 -2.8682717326621243 150.41003602186447 -2.8345116932534165 L 150.53652293883164 3.0301158010895195" sketchjs:uid="59" style="fill: rgb(37,37,37); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 154.99830647832434 3.2134536563258735 Q 156.64201340582957 3.3378288387766086 159.948051344173 4.352243745050073 L 161.18586512481897 -1.0670247873321261 Q 157.06491614710694 -2.25113313741095 155.4212092196017 -2.375508319861685 L 154.99830647832434 3.2134536563258735" sketchjs:uid="60" style="fill: rgb(38,38,38); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 159.47023634780328 4.208819520201743 Q 160.84076735764228 4.521862168050687 163.62957257511928 5.615570194619137 L 165.46308618140952 0.724587221580181 Q 162.07858113828826 -0.8974063643315122 160.70805012844926 -1.2104490121804556 L 159.47023634780328 4.208819520201743" sketchjs:uid="61" style="fill: rgb(38,38,38); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 163.168664934031 5.422673958003991 Q 165.191610022115 6.18102813020742 169.21924234300627 8.65765170341961 L 171.73806685834057 3.2238955788090156 Q 167.02512362840523 1.2900451571684641 165.00217854032124 0.5316909849650351 L 163.168664934031 5.422673958003991" sketchjs:uid="62" style="fill: rgb(38,38,38); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 168.7707942387271 8.436842732826037 Q 170.3000913055814 9.145750319932272 173.6533245987986 10.898410103609649 L 176.35026699643262 5.730788870459829 Q 172.8189158209157 3.711994195321678 171.2896187540614 3.003086608215442 L 168.7707942387271 8.436842732826037" sketchjs:uid="63" style="fill: rgb(38,38,38); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 173.23173649846916 10.632683013399387 Q 174.98348258591662 11.546906034007057 177.93683647489172 14.384798214638346 L 181.60169842038425 9.501311980744438 Q 177.68042498355064 6.379284800857237 175.92867889610318 5.465061780249567 L 173.23173649846916 10.632683013399387" sketchjs:uid="64" style="fill: rgb(39,39,39); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 177.52882364110215 14.096130959758783 Q 178.90795641632735 15.131115186933364 182.47758370941722 17.30275782024473 L 185.77417277174789 12.35443865092304 Q 182.57281836181988 10.247628953039456 181.19368558659468 9.212644725864875 L 177.52882364110215 14.096130959758783" sketchjs:uid="65" style="fill: rgb(39,39,39); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 182.05434164817953 17.036888324846448 Q 183.3836417652264 17.922473121716436 186.8505796602298 19.730601057657612 L 189.7478086263655 14.831694415175019 Q 186.68023082755707 12.974153952394747 185.3509307105102 12.088569155524759 L 182.05434164817953 17.036888324846448" sketchjs:uid="66" style="fill: rgb(39,39,39); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 186.41468496034648 19.485920808105725 Q 188.36197637225112 20.637555141194035 192.8563840529581 23.312070978186625 L 195.85781458625132 17.670360797531465 Q 191.2592053383868 15.738648498711443 189.31191392648216 14.587014165623131 L 186.41468496034648 19.485920808105725" sketchjs:uid="67" style="fill: rgb(39,39,39); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 192.4192782014114 23.069461264625566 Q 194.78987067421357 24.330633569126537 199.55971996378807 27.747749149821075 L 203.2322925863987 21.399582040477775 Q 197.7913012075068 18.68892338847137 195.42070873470462 17.4277510839704 L 192.4192782014114 23.069461264625566" sketchjs:uid="68" style="fill: rgb(39,39,39); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 199.12488838911145 27.50096091214577 Q 200.93467217131877 28.547965859699346 205.20121351854309 30.76435059694425 L 208.66662242561355 24.539165469180137 Q 204.6072447939294 22.199798750356045 202.79746101172208 21.15279380280247 L 199.12488838911145 27.50096091214577" sketchjs:uid="69" style="fill: rgb(40,40,40); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 204.76107579138156 30.527219118621495 Q 207.2742548174269 31.92624465813156 212.81751232814753 35.222386554798156 L 216.51605077378372 28.12511731837007 Q 210.73966372449738 25.701059530367445 208.22648469845203 24.30203399085738 L 204.76107579138156 30.527219118621495" sketchjs:uid="70" style="fill: rgb(40,40,40); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 212.37025521311836 34.99903319887025 Q 214.12208477950463 35.91194896768821 218.48305315239983 37.570610594179676 L 221.65985218420226 30.924855808875584 Q 217.82062322514082 28.814679731260128 216.06879365875454 27.901763962442164 L 212.37025521311836 34.99903319887025" sketchjs:uid="71" style="fill: rgb(40,40,40); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 218.03588936946915 37.34707831590199 Q 219.78231761044023 38.18190471625276 223.6596743611086 40.04915450700193 L 226.87459494496005 33.89205075699145 Q 222.95911664224266 31.536149930948667 221.21268840127158 30.701323530597897 L 218.03588936946915 37.34707831590199" sketchjs:uid="72" style="fill: rgb(40,40,40); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 223.22600983773862 39.80103154142639 Q 225.3320426593783 40.900692769084706 229.44113652842626 43.88053704976228 L 233.28761445065706 37.72038694934393 Q 228.54696324322973 34.74358901907423 226.44093042159005 33.64392779141591 L 223.22600983773862 39.80103154142639" sketchjs:uid="73" style="fill: rgb(40,40,40); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 229.03398871072488 43.591797095248104 Q 230.53076476557055 44.52640355055131 233.43543497685215 46.76991780437405 L 237.60510388279386 41.566362975693444 Q 234.37724268780136 38.36625345013296 232.8804666329557 37.431646994829755 L 229.03398871072488 43.591797095248104" sketchjs:uid="74" style="fill: rgb(41,41,41); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 233.04346187908055 46.45951678734106 Q 234.19204057283318 47.37988623150848 237.20083329542308 49.257756878446834 L 240.86817953830456 44.57141948498313 Q 238.36170947877488 42.17633140282787 237.21313078502226 41.25596195866045 L 233.04346187908055 46.45951678734106" sketchjs:uid="75" style="fill: rgb(41,41,41); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 236.82593839388053 48.92815505532474 Q 237.86065376087913 49.73788324922445 239.97823858345998 51.630454161241445 L 243.72310661261753 47.83260011775417 Q 241.5280000037606 45.05154585576075 240.493284636762 44.241817661861035 L 236.82593839388053 48.92815505532474" sketchjs:uid="76" style="fill: rgb(41,41,41); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 239.6638258982271 51.24541124866352 Q 241.5748695344887 53.1297928320036 243.43073279586358 58.41423805198194 L 249.06184259741494 54.74822396460446 Q 245.31973756364624 49.331938788516325 243.40869392738463 47.447557205176246 L 239.6638258982271 51.24541124866352" sketchjs:uid="77" style="fill: rgb(41,41,41); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 243.1860224847355 57.979406876922724 Q 244.56222879712743 60.093301878403956 246.23223087215396 65.07120173158795 L 252.8273327321808 61.90090710173005 Q 250.1933385986788 56.42728779102648 248.81713228628686 54.31339278954525 L 243.1860224847355 57.979406876922724" sketchjs:uid="78" style="fill: rgb(42,42,42); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 246.04770871425708 64.6077821603286 Q 247.08819093384056 66.77227695430531 248.13955766507286 71.57478896354124 L 255.29280354297873 69.28520451734948 Q 253.6832927938674 63.60198232444742 252.6428105742839 61.4374875304707 L 246.04770871425708 64.6077821603286" sketchjs:uid="79" style="fill: rgb(42,42,42); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 248.01533088148824 71.09134267293747 Q 248.62799650080453 73.005466357346 249.3619662163309 77.09825600214938 L 256.35346150673195 75.72995615710349 Q 255.7812423787104 70.71588191115424 255.1685767593941 68.80175822674572 L 248.01533088148824 71.09134267293747" sketchjs:uid="80" style="fill: rgb(42,42,42); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 249.27692294082635 76.60566766171922 Q 249.723556182675 78.88779479798045 250.27985102164735 83.92573180594243 L 257.500947032711 82.84430576502683 Q 256.7150514730761 77.51949495293455 256.26841823122743 75.23736781667333 L 249.27692294082635 76.60566766171922" sketchjs:uid="81" style="fill: rgb(42,42,42); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 250.22389520494983 83.42920663069772 Q 250.59061877814727 85.87796043482938 250.65316833067692 91.15631630107463 L 258.2276557940448 90.58115797985728 Q 257.81171478921095 84.79653439391377 257.4449912160135 82.34778058978212 L 250.22389520494983 83.42920663069772" sketchjs:uid="82" style="fill: rgb(42,42,42); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 250.62428817879388 90.65723207145206 Q 250.8054930464801 93.04359065822455 250.89225569511453 98.26820485603378 L 258.5479605854029 97.9632282036913 Q 258.37998050984794 92.4684323370072 258.1987756421617 90.08207375023471 L 250.62428817879388 90.65723207145206" sketchjs:uid="83" style="fill: rgb(43,43,43); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 250.87832739856617 97.76843462480038 Q 250.99795350733962 100.77136018945859 250.6201629344546 107.2891637215879 L 259.0978573528194 107.1542814862047 Q 258.65365839762796 100.46638353711612 258.5340322888545 97.4634579724579 L 250.87832739856617 97.76843462480038" sketchjs:uid="84" style="fill: rgb(43,43,43); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 250.61418593655475 106.78920335722611 Q 250.66174938048127 109.77868779117327 250.46317276249113 116.31737734575286 L 259.3958518925344 116.24591581267823 Q 259.13944379884606 109.64380555579007 259.09188035491957 106.65432112184291 L 250.61418593655475 106.78920335722611" sketchjs:uid="85" style="fill: rgb(43,43,43); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 250.473838468035 115.8177063886222 Q 250.49509973662188 118.4753612416999 250.12560724911407 124.10249931176435 L 258.8880380384173 124.54699745218798 Q 259.4277788666651 118.40389970862527 259.40651759807827 115.74624485554757 L 250.473838468035 115.8177063886222" sketchjs:uid="86" style="fill: rgb(43,43,43); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 250.18015176018622 123.6063529930145 Q 250.06895987973328 125.79828827506691 249.37464165656448 130.20055337424586 L 257.3523638829277 131.55609985800012 Q 258.8313906690365 126.24278641549054 258.94258254948943 124.05085113343813 L 250.18015176018622 123.6063529930145" sketchjs:uid="87" style="fill: rgb(43,43,43); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 249.47106558388208 129.71010888963872 Q 249.19890068139938 131.31186583253512 248.8750169508632 134.92011266780708 L 255.67828816223692 136.441094784705 Q 257.1766229077626 132.6674123162894 257.4487878102453 131.06565537339299 L 249.47106558388208 129.71010888963872" sketchjs:uid="88" style="fill: rgb(44,44,44); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 248.98348540064546 134.43202026893155 Q 248.62483440486943 136.0362468850012 248.1047961348775 139.8604507758989 L 254.30088377543834 141.22912401271455 Q 255.42810561624316 137.55722900189912 255.7867566120192 135.95300238582948 L 248.98348540064546 134.43202026893155" sketchjs:uid="89" style="fill: rgb(44,44,44); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 248.2064453242752 139.37093328288188 Q 247.81349622908132 141.14984366602417 247.10773104106534 145.37247071249448 L 253.2025489641295 146.55779033318436 Q 254.00958386964217 142.51851690283982 254.40253296483604 140.73960651969753 L 248.2064453242752 139.37093328288188" sketchjs:uid="90" style="fill: rgb(44,44,44); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 247.21426020982906 144.88408256229343 Q 246.68319940083663 147.61475442529712 244.5885220242561 153.2913882411537 L 251.73399929082635 155.02061646140993 Q 252.7780173239008 148.800074045987 253.30907813289323 146.0694021829833 L 247.21426020982906 144.88408256229343" sketchjs:uid="91" style="fill: rgb(44,44,44); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 244.71089824467893 152.8066203966817 Q 244.256579844386 154.68394449019937 243.31589415439552 158.9340579819671 L 250.02031414379067 160.6968825746108 Q 251.40205711095626 156.4131727104556 251.85637551124918 154.53584861693793 L 244.71089824467893 152.8066203966817" sketchjs:uid="92" style="fill: rgb(44,44,44); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 243.50408749577383 158.47555105254372 Q 243.0751644505389 160.10684224872148 241.29482738456508 162.63189159978197 L 246.82347600958232 165.8109564955874 Q 249.77958443993404 161.8696668413652 250.20850748516898 160.23837564518743 L 243.50408749577383 158.47555105254372" sketchjs:uid="93" style="fill: rgb(45,45,45); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 241.55424162147213 162.20461814121512 Q 240.8374815425972 163.45112135974574 239.28300193869165 166.33772111558307 L 244.11633671556837 169.43203663948947 Q 246.36613016761444 166.63018625555117 247.08289024648937 165.38368303702055 L 241.55424162147213 162.20461814121512" sketchjs:uid="94" style="fill: rgb(45,45,45); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 239.55520441718005 165.9183214349943 Q 238.84690421496362 167.02468953914928 237.33258772351783 169.77683481944018 L 241.6855140099373 172.64073965618172 Q 243.68023899184033 170.11900506305568 244.38853919405676 169.0126369589007 L 239.55520441718005 165.9183214349943" sketchjs:uid="95" style="fill: rgb(45,45,45); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 237.652093780656 169.39669270406569 Q 236.78971329030986 170.70744809550322 234.20981512511312 172.5244917144466 L 237.7925628514632 176.3332689244618 Q 241.14263957672932 173.57135293224476 242.00502006707546 172.26059754080723 L 237.652093780656 169.39669270406569" sketchjs:uid="96" style="fill: rgb(45,45,45); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 234.58587890341465 172.19547634740786 Q 233.57844277323846 173.14312681521176 231.15925893097713 175.11865534427176 L 234.31573872274473 179.00043159088284 Q 237.16119049958854 176.95190402522695 238.16862662976473 176.00425355742306 L 234.58587890341465 172.19547634740786" sketchjs:uid="97" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 231.562352708703 174.82394267117033 Q 230.46250152019456 175.71829047225992 227.7820760911259 177.3364959229464 L 230.47582321543686 181.44879325662177 Q 233.61898131196216 179.600066718871 234.7188325004706 178.7057189177814 L 231.562352708703 174.82394267117033" sketchjs:uid="98" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 228.21331367222328 177.0847600432687 Q 226.88616637609692 177.9541036053701 223.67868357644005 179.32021131168298 L 226.01059204632247 183.8339470332193 Q 229.57991350040788 182.06640093904548 230.90706079653424 181.19705737694406 L 228.21331367222328 177.0847600432687" sketchjs:uid="99" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 224.12432417657342 179.0935074381934 Q 222.11548020239658 180.13132634631077 217.3657040694878 181.94492193457538 L 220.0680782728506 187.34044958197066 Q 224.447388672279 184.64506206784708 226.45623264645585 183.6072431597297 L 224.12432417657342 179.0935074381934" sketchjs:uid="100" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 217.7946332996034 181.69044804928944 Q 215.23837596973513 182.970760989346 209.52248988955174 186.59325353023004 L 213.71174409239583 192.63087609745972 Q 217.94075017309794 188.36628863674127 220.4970075029662 187.08597569668473 L 217.7946332996034 181.69044804928944" sketchjs:uid="101" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 209.9271165977085 186.2997117332196 Q 207.69297047120352 187.84989244524832 202.66036832607674 191.43747074904513 L 207.4527362721059 197.75946250831595 Q 211.88222467404762 193.887515012478 214.1163708005526 192.33733430044927 L 209.9271165977085 186.2997117332196" sketchjs:uid="102" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 203.0586677854451 191.13521675996859 Q 201.3122858519113 192.45905663804476 197.47000185329847 195.5897623718879 L 202.06757967383754 201.6417886376169 Q 206.10465379794047 198.78104839731557 207.85103573147427 197.4572085192394 L 203.0586677854451 191.13521675996859" sketchjs:uid="103" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 197.8088695192622 195.23127159454626 Q 196.4309994137106 196.27800615231587 194.06872652996773 201.11198380672968 L 199.7231925995886 204.92588213216104 Q 201.02857723424967 202.33003241804488 202.40644733980128 201.28329786027527 L 197.8088695192622 195.23127159454626" sketchjs:uid="104" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 194.2854911058816 200.66686616237476 Q 193.38025949394822 202.0089579010806 192.48658699164642 206.75839074383734 L 198.41038014296643 208.67528279257087 Q 199.03472556356908 205.82285622651196 199.93995717550246 204.4807644878061 L 194.2854911058816 200.66686616237476" sketchjs:uid="105" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 192.60669981537055 206.27428497154241 Q 192.15843440426562 207.65956463506416 191.92629414500286 211.581529397113 L 197.5154572727241 212.56078372585313 Q 198.08222755558563 209.5764566837977 198.53049296669056 208.19117702027594 L 192.60669981537055 206.27428497154241" sketchjs:uid="106" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 192.05370494543698 211.09991014766499 Q 191.76928763979114 212.72324197367465 190.3609061600354 215.8185927560176 L 195.63190435729425 217.70569913261534 Q 197.35845076751238 213.70249630241477 197.6428680731582 212.0791644764051 L 192.05370494543698 211.09991014766499" sketchjs:uid="107" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 190.57985569105898 215.3726032142153 Q 190.12049117279278 216.65568379604827 188.53418521546658 218.81818082932082 L 192.9080872126095 221.61512436345086 Q 195.39148937005163 218.542790172646 195.85085388831783 217.25970959081303 L 190.57985569105898 215.3726032142153" sketchjs:uid="108" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 188.86426078790151 218.45160722811607 Q 188.06014884626853 219.70908947061295 185.52811527607014 220.98237414521518 L 188.72260158718228 224.98469309068756 Q 192.43405084341146 222.506033004743 193.23816278504444 221.2485507622461 L 188.86426078790151 218.45160722811607" sketchjs:uid="109" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 185.94987856868286 220.7203241576421 Q 184.7411245756384 221.6851018619904 181.75830264047408 222.59165365748547 L 183.94322322340082 227.25350280532425 Q 187.93561088675054 225.6874208074628 189.144364879795 224.72264310311448 L 185.94987856868286 220.7203241576421" sketchjs:uid="110" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 182.11818911172497 222.27419680115196 Q 180.47268746283856 223.04541232269207 177.67383295343745 228.21251575325599 L 182.33138162753283 231.1546647772242 Q 182.6576080457653 227.70726147053085 184.3031096946517 226.93604594899074 L 182.11818911172497 222.27419680115196" sketchjs:uid="111" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 177.81828753172016 227.75139400928296 Q 176.87345030542932 229.247112048953 177.06488782924427 234.95415531466531 L 182.71633066201284 235.20167316533022 Q 181.5309989795247 232.18926107292123 182.47583620581554 230.6935430332512 L 177.81828753172016 227.75139400928296" sketchjs:uid="112" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 176.92685561993358 234.5036271484663 Q 176.81347501147775 237.0923860008531 182.00355615342485 243.35753144966063 L 187.4555380783129 239.31212047980736 Q 182.46491784424632 237.33990385151802 182.57829845270214 234.7511449991312 L 176.92685561993358 234.5036271484663" sketchjs:uid="113" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 181.68393676353776 242.97406425744833 Q 182.94215965334794 244.6697655110034 186.62134315805804 248.32556191377083 L 191.61632590692597 243.66005872624814 Q 188.394141578236 240.62435454115013 187.13591868842582 238.92865328759507 L 181.68393676353776 242.97406425744833" sketchjs:uid="114" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 186.26599750332764 247.97437818262458 Q 187.3906262565829 249.17842863454885 190.70822028779395 251.65988889819346 L 194.93461363039478 247.02679111645887 Q 192.38560900545082 244.51292544702616 191.26098025219557 243.3088749951019 L 186.26599750332764 247.97437818262458" sketchjs:uid="115" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 190.34005201536857 251.3215860189862 Q 191.46218358273862 252.3452141851242 194.2347651580893 254.5922265185973 L 198.16125780035773 250.35007176747283 Q 195.68857692533945 247.71211640338962 194.5664453579694 246.68848823725162 L 190.34005201536857 251.3215860189862" sketchjs:uid="116" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 193.8705906224881 254.24964719239247 Q 194.94138940586726 255.24076698668424 197.51853827144058 257.4882167686397 L 201.26375201403934 253.57080985928192 Q 198.8678820481357 250.99861223555976 197.79708326475654 250.007492441268 L 193.8705906224881 254.24964719239247" sketchjs:uid="117" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 197.13129280214153 257.174600072203 Q 198.86314038508348 258.83032272695885 203.61165199066446 262.23328046056355 L 207.21916271256524 256.9434702383656 Q 202.60835412768225 254.91291581760112 200.8765065447403 253.25719316284528 L 197.13129280214153 257.174600072203" sketchjs:uid="118" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 203.19748934476655 261.9531633521617 Q 204.69188410395597 262.9723010697882 208.23459105606995 265.22530751956356 L 211.7026273167855 260.054898640195 Q 208.29939482585675 257.68249084759026 206.80500006666733 256.66335312996375 L 203.19748934476655 261.9531633521617" sketchjs:uid="119" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 207.8190683923432 264.9472056310592 Q 209.06467014560636 265.78268927413524 212.1574754328385 267.5463111763408 L 215.3396300318404 262.78131710128156 Q 212.53270640632192 260.6122803947667 211.28710465305878 259.77679675169065 L 207.8190683923432 264.9472056310592" sketchjs:uid="120" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 211.7246760891752 267.29828627938275 Q 213.49708021741444 268.481931811596 218.21163033825667 270.7641726241254 L 220.93943085691757 265.1454436598407 Q 216.6792348164163 263.71693773653675 214.90683068817708 262.5332922043235 L 211.7246760891752 267.29828627938275" sketchjs:uid="121" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 217.75770396754265 270.5547601632662 Q 219.19829735826193 271.25414456556825 222.84846169455844 272.58050480461105 L 225.20212336103734 267.2022254688207 Q 221.92609787692282 265.6354156012835 220.48550448620355 264.9360311989815 L 217.75770396754265 270.5547601632662" sketchjs:uid="122" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 222.383956652737 272.3963060758867 Q 223.73207405367964 272.98627399134926 227.31029766344005 273.95743923492654 L 229.1535869439076 268.78834112664043 Q 226.08573572015854 267.6079946555589 224.7376183192159 267.01802674009633 L 222.383956652737 272.3963060758867" sketchjs:uid="123" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 226.83575588791194 273.800341659223 Q 228.1679238153993 274.2753898802239 231.5744335741162 275.09866481480566 L 233.0934506294425 270.1327380415692 Q 230.01121309586685 269.1062917719378 228.6790451683795 268.6312435509369 L 226.83575588791194 273.800341659223" sketchjs:uid="124" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 231.16016786779716 274.8471980887515 Q 232.63391760468275 275.29800034336324 233.6941065469497 277.86869349223554 L 237.39175617301666 274.2361352984545 Q 234.15293466000904 270.3320735701268 232.67918492312344 269.88127131551505 L 231.16016786779716 274.8471980887515" sketchjs:uid="125" style="fill: rgb(78,78,78); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 233.54549840282058 277.4417723504833 Q 234.31109699396282 278.2210896231153 232.69867478815783 279.16936416444116 L 237.2793455119169 279.6593787777301 Q 238.00874662002977 274.58853142933424 237.24314802888753 273.80921415670224 L 233.54549840282058 277.4417723504833" sketchjs:uid="126" style="fill: rgb(77,77,77); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 232.8978435051196 278.7399033754692 Q 232.76487694944834 279.9828785690342 230.60996161353955 280.54355543033233 L 233.84620767835435 283.63125978650436 Q 237.3455476732074 280.47289318232316 237.47851422887865 279.2299179887582 L 232.8978435051196 278.7399033754692" sketchjs:uid="127" style="fill: rgb(77,77,77); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 231.01354532901823 280.26709488248264 Q 229.83930673287946 281.49782315098145 226.45666882880866 281.67700182574544 L 228.35654680997803 286.26873757539767 Q 233.07555279769426 284.5855275071535 234.24979139383302 283.35479923865466 L 231.01354532901823 280.26709488248264" sketchjs:uid="128" style="fill: rgb(77,77,77); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 226.93375611037587 281.5373245603566 Q 225.11369452990658 282.2903937937871 221.0225221546335 282.21853766431855 L 222.01010366728215 287.7298227613369 Q 227.01357251107595 286.8821295434393 228.83363409154524 286.1290603100088 L 226.93375611037587 281.5373245603566" sketchjs:uid="129" style="fill: rgb(76,76,76); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 221.51741398049128 282.15009290047794 Q 219.73741564599175 282.46905543222 215.7793335518026 282.62233967530796 L 216.34023632896776 288.3539570258354 Q 220.7249971586404 287.98034052923833 222.50499549313994 287.6613779974963 L 221.51741398049128 282.15009290047794" sketchjs:uid="130" style="fill: rgb(76,76,76); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 216.27774662050123 282.583883197861 Q 214.7185979608892 282.73646330914653 211.16287057829422 282.9781776062483 L 211.4757223782381 288.5134122126243 Q 215.27950073805437 288.468080659674 216.8386493976664 288.31550054838846 L 216.27774662050123 282.583883197861" sketchjs:uid="131" style="fill: rgb(76,76,76); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 211.66222861380726 282.9751038115839 Q 209.24532485219135 283.11170736064423 204.1342322148986 282.1468023101095 L 203.84706773955156 288.6469908023555 Q 209.55817665213522 288.6469419670202 211.97508041375113 288.5103384179599 L 211.66222861380726 282.9751038115839" sketchjs:uid="132" style="fill: rgb(75,75,75); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 204.63237876336967 282.1861614838241 Q 202.89579029159594 282.10944270590164 199.1094312500952 281.704661458869 L 198.40739631875277 287.86090788959274 Q 202.60862581624892 288.60963119814767 204.34521428802265 288.6863499760701 L 204.63237876336967 282.1861614838241" sketchjs:uid="133" style="fill: rgb(75,75,75); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 199.60160823219496 281.788376291718 Q 197.72320564515795 281.57417040407796 193.86430889707242 280.4586039799044 L 192.48844745908718 286.5142231627224 Q 197.0211707138155 287.7304168348017 198.89957330085252 287.94462272244175 L 199.60160823219496 281.788376291718" sketchjs:uid="134" style="fill: rgb(75,75,75); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 194.34979216139803 280.5778903979678 Q 192.90862959262307 280.2504523698515 189.57625318209116 279.58144062425714 L 188.12125938436944 285.08508740617737 Q 191.53276815463784 286.30607155266944 192.9739307234128 286.63350958078576 L 194.34979216139803 280.5778903979678" sketchjs:uid="135" style="fill: rgb(75,75,75); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 190.05282227197898 279.73098133401214 Q 188.63830977863205 279.3570280288363 185.61068013713853 278.2682837104575 L 183.7697116700355 283.3170307093994 Q 187.18331598091032 284.8606748107565 188.59782847425726 285.23462811593237 L 190.05282227197898 279.73098133401214" sketchjs:uid="136" style="fill: rgb(74,74,74); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 186.08318175331348 278.4315963881437 Q 184.27727428243773 277.77309266254906 180.0475903445338 276.24714893423317 L 178.25395325705043 281.73479521946064 Q 182.4363058153347 282.8218396614909 184.24221328621044 283.48034338708555 L 186.08318175331348 278.4315963881437" sketchjs:uid="137" style="fill: rgb(74,74,74); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 180.51846430735202 276.41480000461524 Q 178.9005618038131 275.8859886010648 175.37314363746168 274.45155860907226 L 173.3125968994152 279.79275981346115 Q 177.10692471632973 281.3736348862923 178.72482721986864 281.9024462898427 L 180.51846430735202 276.41480000461524" sketchjs:uid="138" style="fill: rgb(74,74,74); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 175.83871400989003 274.6338711630786 Q 174.21886954795914 274.008962065958 170.5145052835783 272.5095600534339 L 168.3945424627121 277.84388750212906 Q 172.15832280991268 279.35016327034685 173.77816727184356 279.9750723674675 L 175.83871400989003 274.6338711630786" sketchjs:uid="139" style="fill: rgb(73,73,73); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 170.96751544224375 272.71935640175235 Q 169.4067538204413 272.0990801546942 166.30722518221717 270.2546886459025 L 163.63989039923086 275.265849298687 Q 167.28679099957512 277.43340760338936 168.84755262137756 278.0536838504475 L 170.96751544224375 272.71935640175235" sketchjs:uid="140" style="fill: rgb(73,73,73); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 166.7330895256884 270.5149877836775 Q 164.86956629231827 269.52307379734197 161.50688006342577 266.54011391613034 L 157.97068373514074 271.6198482484022 Q 162.20223150933197 274.53423445012646 164.0657547427021 275.526148436462 L 166.7330895256884 270.5149877836775" sketchjs:uid="141" style="fill: rgb(73,73,73); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 161.89957270695626 266.8482918259436 Q 160.5542269743199 265.91174547748625 157.9771462543074 263.5647097363232 L 154.08418601095588 267.97961612035436 Q 157.01803064603487 270.9914798097581 158.36337637867123 271.92802615821546 L 161.89957270695626 266.8482918259436" sketchjs:uid="142" style="fill: rgb(73,73,73); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 158.33542438231228 263.9126448801952 Q 156.7686230463824 262.53107644375746 154.0178774714805 258.98598305707685 L 149.42931557217483 263.2773664129544 Q 152.87566280303088 266.9459828277886 154.44246413896076 268.3275512642264 L 158.33542438231228 263.9126448801952" sketchjs:uid="143" style="fill: rgb(72,72,72); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 154.43206814131625 259.22552938153655 Q 153.8779032921407 258.63298858478424 149.81373542734227 258.3182326149996 L 148.70048670574928 263.0761903890766 Q 149.28934139283504 262.9243719406618 149.8435062420106 263.5169127374141 L 154.43206814131625 259.22552938153655" sketchjs:uid="144" style="fill: rgb(72,72,72); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 149.54994150207938 260.19406933173155 C 149.54994150201193 258.84471084426906 148.45607031873618 257.75083966107536 147.10671183127366 257.75083966110907 C 145.7573533438111 257.7508396611428 144.66348216059006 258.8447108443912 144.66348216059006 260.1940693318537 C 144.66348216059006 261.54342781931626 145.7573533438111 262.63729900256465 147.10671183127366 262.63729900259835 C 148.45607031873618 262.63729900263206 149.54994150201193 261.54342781943836 149.54994150207938 260.19406933197587 M 150.05716105731113 258.3751884107913 L 147.6633361921312 257.81509044493737 L 146.55008747053822 262.57304821901437 L 148.94391233571815 263.1331461848683 L 150.05716105731113 258.3751884107913" sketchjs:uid="145" style="fill: rgb(72,72,72); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 146.46320071448446 262.33863258040964 Q 147.65725232782327 262.61801219981436 146.3261871547377 264.71310475503617 L 150.64402209215226 263.1126881910195 Q 148.77050104941625 257.86005442573736 147.57644943607744 257.58067480633264 L 146.46320071448446 262.33863258040964" sketchjs:uid="146" style="fill: rgb(72,72,72); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 146.188705918301 264.23386224177347 Q 146.62754608597146 265.41782862309657 147.02566203685367 268.1245548159869 L 151.42067937169836 267.2163064113082 Q 150.945381023386 263.8174120590799 150.50654085571554 262.6334456777568 L 146.188705918301 264.23386224177347" sketchjs:uid="147" style="fill: rgb(71,71,71); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 146.9488028841005 267.6311114354705 Q 147.20890094659737 268.8897269062433 147.39596257025815 271.7809294805467 L 151.8200370648598 271.3135555757412 Q 151.60391828144205 267.9814785015646 151.34382021894518 266.72286303079176 L 146.9488028841005 267.6311114354705" sketchjs:uid="148" style="fill: rgb(71,71,71); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 147.35648429829521 271.28266241733695 Q 147.49315042983287 272.57631861122127 147.58346917263492 275.6022437762724 L 152.02313082262623 275.3672596769278 Q 151.91722492443452 272.10894470641574 151.78055879289687 270.8152885125314 L 147.35648429829521 271.28266241733695" sketchjs:uid="149" style="fill: rgb(71,71,71); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 147.5658372667899 275.10263226483056 Q 147.6693421517681 277.05819721456936 147.25929808314194 281.465050488796 L 152.53946596507436 281.37171831677415 Q 152.1090038017594 276.82321311522475 152.00549891678122 274.86764816548595 L 147.5658372667899 275.10263226483056" sketchjs:uid="150" style="fill: rgb(70,70,70); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 147.25285151474162 280.9650977625355 Q 147.29059840203624 283.10058756865925 146.95395156343739 287.914698133202 L 152.9450508142749 287.86609045411683 Q 152.57076628396865 283.0072553966374 152.53301939667404 280.87176559051363 L 147.25285151474162 280.9650977625355" sketchjs:uid="151" style="fill: rgb(70,70,70); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 146.99964043896148 287.41930245973384 Q 147.01808336962623 289.69247061275314 145.35631852948768 294.0199955485226 L 151.81355310464488 295.27556137112697 Q 153.0091826204637 289.64386293366795 152.99073968979894 287.37069478064865 L 146.99964043896148 287.41930245973384" sketchjs:uid="152" style="fill: rgb(70,70,70); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 145.49887763103206 293.5432801648271 Q 145.15966128282875 295.28783189811134 143.58608247267566 298.42403342287054 L 149.40334548766018 300.8092182956004 Q 151.61689585798595 296.5433977207157 151.95611220618926 294.79884598743143 L 145.49887763103206 293.5432801648271" sketchjs:uid="153" style="fill: rgb(70,70,70); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 143.82321643589682 297.9871666269411 Q 143.2805017643914 299.3108015461181 141.64585836797454 301.53958283749876 L 146.31389218512754 304.7709459847572 Q 149.09776477937592 301.69598641884795 149.64047945088134 300.3723514996709 L 143.82321643589682 297.9871666269411" sketchjs:uid="154" style="fill: rgb(69,69,69); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 141.98372775315417 301.1783050588191 Q 140.98250034720252 302.6246802189765 137.968158602353 304.17992264447815 L 141.54462002343044 308.67172782233894 Q 145.65053416435552 305.8560433662349 146.65176157030717 304.4096682060775 L 141.98372775315417 301.1783050588191" sketchjs:uid="155" style="fill: rgb(69,69,69); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 138.37310079591 303.8875752281477 Q 137.1092824534294 304.8938516284266 134.11368248123966 306.73875614785226 L 137.17205178144906 311.42541766136236 Q 140.68574387450684 309.3856568062874 141.94956221698746 308.37938040600847 L 138.37310079591 303.8875752281477" sketchjs:uid="156" style="fill: rgb(69,69,69); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 134.53583040419414 306.47089345105553 Q 133.05806402337063 307.43523775434346 129.59170410289482 309.45728680938066 L 132.5848060841243 314.3101708693987 Q 136.11643332358003 312.12189926785356 137.59419970440354 311.15755496456563 L 134.53583040419414 306.47089345105553" sketchjs:uid="157" style="fill: rgb(68,68,68); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 130.05171268991353 309.3631915744248 Q 129.0766164705452 309.96459939500846 127.99026104556084 308.739637653145 L 127.2511149364603 313.6594920816102 Q 132.06971845177466 314.8174834550265 133.044814671143 314.2160756344428 L 130.05171268991353 309.3631915744248" sketchjs:uid="158" style="fill: rgb(68,68,68); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 128.40142307738606 308.96552550621954 Q 127.01566685722345 308.7573331027271 126.761209426231 306.24231770322376 L 123.07763822828076 309.4417184571872 Q 126.2765207481229 313.6771875311923 127.66227696828551 313.88537993468475 L 128.40142307738606 308.96552550621954" sketchjs:uid="159" style="fill: rgb(68,68,68); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 127.0326240039496 306.65678073594125 Q 125.57465284148509 304.97817246067495 124.72908577200027 300.46024539081554 L 119.42960838723008 302.98365116958485 Q 121.89108164353485 308.1775732146384 123.34905280599936 309.8561814899047 L 127.0326240039496 306.65678073594125" sketchjs:uid="160" style="fill: rgb(67,67,67); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 124.93495185381542 300.9157886428724 Q 124.2261336974324 299.4271791527656 122.74804620704825 296.00067039640385 L 117.4962832566093 298.24894420033525 Q 118.9266563126622 301.9505849315349 119.63547446904522 303.43919442164173 L 124.93495185381542 300.9157886428724" sketchjs:uid="161" style="fill: rgb(67,67,67); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 122.92941550695672 296.4663224081372 Q 122.34078412463222 295.0913330808801 121.19282394392945 291.94269869706613 L 116.0734940250467 293.74405865079893 Q 117.08902117419328 297.3396068848115 117.67765255651777 298.7145962120686 L 122.92941550695672 296.4663224081372" sketchjs:uid="162" style="fill: rgb(67,67,67); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 121.328369622167 292.4229366430677 Q 120.14373739056244 289.056300666977 120.25132249567719 281.430956507233 L 112.52792007554885 283.0919927052627 Q 115.02440747167968 290.8576606207098 116.20903970328425 294.2242965968005 L 121.328369622167 292.4229366430677" sketchjs:uid="163" style="fill: rgb(67,67,67); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 120.36083482433082 281.9187954837481 Q 119.87146168105089 279.6433328998277 118.55382368332748 274.5117009490486 L 111.00342258836103 276.2780560926945 Q 112.14805926092255 281.30436909785743 112.63743240420249 283.5798316817778 L 120.36083482433082 281.9187954837481" sketchjs:uid="164" style="fill: rgb(66,66,66); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 118.69779646499904 274.98949282010886 Q 118.22147953687393 272.9534448211523 115.99679342673508 268.1812765720207 L 109.08888323165002 270.74634271214506 Q 110.67107844190748 274.7197999647982 111.1473953700326 276.7558479637548 L 118.69779646499904 274.98949282010886" sketchjs:uid="165" style="fill: rgb(66,66,66); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 116.1979010676269 268.63809349055714 Q 115.5521009606364 266.898906701849 112.99575489446732 262.91151700170076 L 106.90494066095562 266.03513540205404 Q 108.6441907655513 269.4639728419734 109.28999087254181 271.2031596306815 L 116.1979010676269 268.63809349055714" sketchjs:uid="166" style="fill: rgb(66,66,66); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 113.35871450000332 263.1102986932739 Q 112.93226054449289 262.2787464710605 106.7421709093632 262.31487470446194 L 107.25057698277455 267.6602923784506 Q 106.84144631098118 265.4023648714138 107.26790026649161 266.23391709362716 L 113.35871450000332 263.1102986932739" sketchjs:uid="167" style="fill: rgb(65,65,65); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 107.17580453383677 262.1227849319994 Q 105.88649602919602 262.2454118835751 102.48510250742599 265.93878630693786 L 105.83507435773213 269.6137291261787 Q 106.39490210260738 267.5908295575638 107.68421060724812 267.46820260598804 L 107.17580453383677 262.1227849319994" sketchjs:uid="168" style="fill: rgb(65,65,65); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 102.83548227536697 265.5831001268518 Q 101.58254235425994 266.7252440110661 98.80861072359349 269.9038059323207 L 102.74266343479653 273.3831630923474 Q 104.93251420456608 270.40018683030695 106.1854541256731 269.25804294609264 L 102.83548227536697 265.5831001268518" sketchjs:uid="169" style="fill: rgb(65,65,65); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 99.14645039754718 269.53531667405343 Q 97.35432255144187 271.5616465641815 92.69413405356714 275.2722507044047 L 97.5501662131973 279.88697531814756 Q 101.2883752626449 275.04100372420817 103.08050310875022 273.0146738340801 L 99.14645039754718 269.53531667405343" sketchjs:uid="170" style="fill: rgb(64,64,64); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 93.04824839622003 274.9195258131649 Q 91.54506755806798 276.50130914863587 87.94395583285878 279.60586854976845 L 92.65867474437128 284.6063467373835 Q 96.40109971769814 281.1160337623787 97.90428055585019 279.53425042690776 L 93.04824839622003 274.9195258131649" sketchjs:uid="171" style="fill: rgb(64,64,64); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 88.30665181618274 279.2617042389639 Q 86.83572045287121 280.64857718509893 83.53444644124124 283.8906022461717 L 88.20952659899885 288.7860011653225 Q 91.55043936438372 285.649055372714 93.02137072769524 284.26218242657893 L 88.30665181618274 279.2617042389639" sketchjs:uid="172" style="fill: rgb(64,64,64); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 83.89429712365916 283.5434694728708 Q 82.48838441944568 284.8861086929955 79.34790638270026 288.0841738009478 L 83.96115832050087 292.81855425382315 Q 87.16346457720329 289.7815076121463 88.56937728141676 288.4388683920216 L 83.89429712365916 283.5434694728708" sketchjs:uid="173" style="fill: rgb(64,64,64); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 79.72929050446908 287.76286287965263 Q 78.2605566317226 289.194019385135 74.64775347952217 291.3811048444508 L 78.55602299067796 296.7663490778528 Q 82.8738085695232 293.92839983801036 84.34254244226969 292.497243332528 L 79.72929050446908 287.76286287965263" sketchjs:uid="174" style="fill: rgb(63,63,63); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 75.06172905342017 291.10119801660016 Q 73.63373738535601 292.1375440125466 70.38555138651961 294.2328172329323 L 73.74679335790483 299.5788819012467 Q 77.54200689651181 297.52278824594856 78.96999856457596 296.48644225000214 L 75.06172905342017 291.10119801660016" sketchjs:uid="175" style="fill: rgb(63,63,63); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 70.82334983657594 293.9931944385006 Q 69.51408012533979 294.81637421246654 66.56737674272554 296.23489680534374 L 69.05693820684147 301.51876847306085 Q 72.87532209672501 300.16243888078094 74.18459180796117 299.339259106815 L 70.82334983657594 293.9931944385006" sketchjs:uid="176" style="fill: rgb(63,63,63); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 67.03668242652695 296.0702244491038 Q 65.62694338496748 296.7344404280363 62.55345187320587 297.21205413475815 L 63.850890782644 302.6403227239593 Q 68.1165048490834 302.0183120957534 69.52624389064287 301.3540961168209 L 67.03668242652695 296.0702244491038" sketchjs:uid="177" style="fill: rgb(62,62,62); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 63.04449475126907 297.12153909890844 Q 61.65000843674716 297.4548425774318 58.547726331766725 297.8498107397215 L 59.23092336696274 303.0772249373562 Q 62.947447346185285 302.88311116663294 64.3419336607072 302.5498076881096 L 63.04449475126907 297.12153909890844" sketchjs:uid="178" style="fill: rgb(62,62,62); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 59.045036275653985 297.8003655214131 Q 57.682478683963126 297.97844502147416 54.56237782317639 298.22964604068443 L 54.904449352740144 303.23456698675795 Q 58.36567571915914 303.2058592191089 59.72823331085 303.0277797190478 L 59.045036275653985 297.8003655214131" sketchjs:uid="179" style="fill: rgb(62,62,62); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 55.01763658585654 298.3544779814739 Q 53.87929704162716 298.4322801192605 53.22744935666497 296.7288348827702 L 50.63287979877209 300.4930855234158 Q 54.221368571190915 303.437201065334 55.3597081154203 303.35939892754743 L 55.01763658585654 298.3544779814739" sketchjs:uid="180" style="fill: rgb(61,61,61); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 53.535551517678115 297.0988422453231 Q 52.508131368510796 296.3906765845641 52.517261925503554 294.1641212861622 L 48.45676007628449 295.98429378355263 Q 49.913561810617914 300.15492722520975 50.94098195978523 300.86309288596874 L 53.535551517678115 297.0988422453231" sketchjs:uid="181" style="fill: rgb(61,61,61); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 52.6655676956967 294.6379729911472 Q 52.08544572897597 293.34381745258185 52.01033764091022 290.4092319506989 L 47.49305477634118 291.2556918445149 Q 48.024943879756904 295.1639899499723 48.605065846477636 296.45814548853764 L 52.6655676956967 294.6379729911472" sketchjs:uid="182" style="fill: rgb(61,61,61); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 52.03310352046891 290.9038690999501 Q 51.720683125371295 289.2365824303433 52.805994742695546 285.9456772238611 L 47.79330882150688 285.476891973059 Q 47.203400260802255 290.0830423241593 47.51582065589987 291.7503289937661 L 52.03310352046891 290.9038690999501" sketchjs:uid="183" style="fill: rgb(61,61,61); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 52.715302293825445 286.43533025689754 Q 52.84701198023898 285.0269683478151 53.873483439345755 282.25660269965795 L 49.12579344102135 280.927109171187 Q 47.83432605905032 284.55818309701306 47.70261637263678 285.9665450060955 L 52.715302293825445 286.43533025689754" sketchjs:uid="184" style="fill: rgb(60,60,60); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 53.69435492817954 282.7209931162835 Q 54.09929299886776 281.27493836913607 55.80532173675716 278.65085634316523 L 51.3494543620866 276.4251380878397 Q 49.351603000543356 279.9454448406651 48.94666492985514 281.3914995878126 L 53.69435492817954 282.7209931162835" sketchjs:uid="185" style="fill: rgb(60,60,60); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 55.55138727156407 279.0801127143305 Q 56.4541054556201 277.27287925374645 59.42193303624025 274.13423481517793 L 54.75883218561839 270.90870042048186 Q 51.99823808094954 275.0471609984209 51.09551989689351 276.85439445900494 L 55.55138727156407 279.0801127143305" sketchjs:uid="186" style="fill: rgb(60,60,60); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 59.133331833041495 274.5425035725381 Q 60.180830157649126 273.0281528539301 62.72961676072677 269.71146546027865 L 57.99369187206062 266.2907719153502 Q 55.51772930702727 269.80261845923405 54.470230982419636 271.31696917784205 L 59.133331833041495 274.5425035725381" sketchjs:uid="187" style="fill: rgb(59,59,59); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 62.41451840905204 270.09861355620274 Q 63.29292728289117 268.8824629734627 65.48419824110302 266.52308185165384 L 61.41980389269337 262.80605767935083 Q 58.55700239422502 265.46176942853424 57.678593520385895 266.6779200112743 L 62.41451840905204 270.09861355620274" sketchjs:uid="188" style="fill: rgb(59,59,59); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 65.15438094401513 266.8987383527704 Q 66.05723836262953 265.9115054429122 68.00950333079236 263.2033607429412 L 64.10408984651998 259.9122804888484 Q 61.9928440142199 262.1944812706092 61.089986595605495 263.1817141804674 L 65.15438094401513 266.8987383527704" sketchjs:uid="189" style="fill: rgb(59,59,59); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 67.70900919590737 263.60206425439156 Q 68.6066350773464 262.5368820192138 70.4411757408509 259.4160344055366 L 66.33617341822006 256.65880052119155 Q 64.70122159307402 259.24580176512103 63.803595711635 260.3109840002988 L 67.70900919590737 263.60206425439156" sketchjs:uid="190" style="fill: rgb(58,58,58); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 70.16932654302512 259.8355932839832 Q 71.09100133469526 258.46339298498134 73.233088098847 255.15740627761548 L 68.83823241624147 252.41190573098814 Q 66.98599901206443 255.7061591006363 66.06432422039428 257.07835939963815 L 70.16932654302512 259.8355932839832" sketchjs:uid="191" style="fill: rgb(58,58,58); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 72.96646559214447 255.5803818592631 Q 73.72401266766859 254.3677395693906 75.48701550762868 251.4809104480557 L 71.23827070958131 248.7786222188728 Q 69.32915698506305 251.62223902276327 68.57160990953894 252.83488131263576 L 72.96646559214447 255.5803818592631" sketchjs:uid="192" style="fill: rgb(58,58,58); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 75.44793870841063 251.92306802180673 Q 76.01918463103829 251.0249113722091 73.98055192806947 246.2734047940963 L 69.83247224897477 247.97940410394293 Q 71.77043983299092 248.3226231430262 71.19919391036326 249.22077979262383 L 75.44793870841063 251.92306802180673" sketchjs:uid="193" style="fill: rgb(58,58,58); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 74.3013875182456 246.61203472162347 Q 73.94132278751968 245.73654949483446 70.04842199944743 244.20432316929762 L 68.32272212618373 247.83089498856927 Q 69.79324310842497 247.44254880468108 70.1533078391509 248.3180340314701 L 74.3013875182456 246.61203472162347" sketchjs:uid="194" style="fill: rgb(57,57,57); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 70.52314371472102 244.33434070920669 Q 68.65369750445987 243.44476696052828 63.14821336616123 242.9587857107731 L 62.68051407300942 248.1119516675422 Q 66.92799763119618 247.07133877979993 68.79744384145732 247.96091252847833 L 70.52314371472102 244.33434070920669" sketchjs:uid="195" style="fill: rgb(57,57,57); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 63.6469686945961 242.99190005914733 Q 61.46354345407236 242.79373325252598 56.40204665740204 242.269887978545 L 56.149569924584256 248.26602257590633 Q 60.99584416092055 247.94689920929508 63.17926940144429 248.14506601591643 L 63.6469686945961 242.99190005914733" sketchjs:uid="196" style="fill: rgb(57,57,57); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 56.90178557131444 242.28486381652567 Q 54.32678098635771 242.17643917494294 48.529071191107654 241.64977416037195 L 48.40474965262806 248.61968769059374 Q 54.07430425353993 248.17257377230428 56.64930883849666 248.280998413887 L 56.90178557131444 242.28486381652567" sketchjs:uid="197" style="fill: rgb(56,56,56); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 49.02901679007175 241.65693829508047 Q 46.907061550271834 241.61908922581256 42.073703127852546 241.58993957038658 L 41.99844035223189 248.54382505317383 Q 46.78274001179224 248.58900275603435 48.90469525159216 248.62685182530225 L 49.02901679007175 241.65693829508047" sketchjs:uid="198" style="fill: rgb(56,56,56); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 42.57368295069611 241.59430890536456 Q 40.84836650132791 241.5756355888245 36.82906740747205 241.81346253990213 L 36.78621367402195 248.2527956534756 Q 40.77310372570725 248.52952107161175 42.49842017507545 248.5481943881518 L 42.57368295069611 241.59430890536456" sketchjs:uid="199" style="fill: rgb(56,56,56); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 37.32843551413446 241.8328120195896 Q 35.15088511034226 241.81832043126323 30.463579292503535 241.20051000062296 L 29.988441589911904 247.9000676389153 Q 35.10803137689216 248.2576535448367 37.28558178068436 248.27214513316306 L 37.32843551413446 241.8328120195896" sketchjs:uid="200" style="fill: rgb(55,55,55); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 30.962618942153373 241.2311141630259 Q 29.208214434111266 241.10669046636224 25.067016223671 241.11189254716126 L 24.739199545640542 247.44740733076 Q 28.733076731519635 247.80624810465457 30.487481239561742 247.93067180131823 L 30.962618942153373 241.2311141630259" sketchjs:uid="201" style="fill: rgb(55,55,55); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 25.56656171754053 241.1325725182582 Q 24.029366614620557 241.05303388417144 20.33153252303275 241.21712324314103 L 20.149956291984786 247.0628655929002 Q 23.701549936590098 247.38854866777018 25.23874503951007 247.46808730185694 L 25.56656171754053 241.1325725182582" sketchjs:uid="202" style="fill: rgb(55,55,55); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 20.82983670778783 241.25290569481731 Q 19.38981566053117 241.20817680005146 16.208536307529624 240.9296246405011 L 15.599272391888379 246.3311762450551 Q 19.208239429483207 247.05391914981064 20.648260476739868 247.0986480445765 L 20.82983670778783 241.25290569481731" sketchjs:uid="203" style="fill: rgb(55,55,55); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 16.6962176587803 241.03014554236603 Q 15.420821506844 240.88628820091856 12.91532873473958 240.06721936782938 L 11.466403869372888 244.8488026424154 Q 14.811557591202757 246.28783980547257 16.086953743139055 246.43169714692004 L 16.6962176587803 241.03014554236603" sketchjs:uid="204" style="fill: rgb(54,54,54); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 13.394014946227886 240.21164634807363 Q 12.135340002622463 239.83024016554472 9.061641185274325 239.0221680653195 L 7.685899810204187 243.6017190196823 Q 10.686415137255771 244.61182344013073 11.945090080861194 244.99322962265964 L 13.394014946227886 240.21164634807363" sketchjs:uid="205" style="fill: rgb(54,54,54); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 9.520062200980568 239.21468830877805 Q 8.260995344230146 238.83645245419913 6.027648404990187 237.30209041736416 L 3.7814303656908175 241.3811114264561 Q 6.885253969160009 243.41600340856192 8.14432082591043 243.79423926314084 L 9.520062200980568 239.21468830877805" sketchjs:uid="206" style="fill: rgb(54,54,54); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 6.394672593478039 237.62414415126545 Q 5.202913318996083 236.96787119388748 4.404801289366647 234.56399676617457 L 0.6637745152271517 237.31289574845073 Q 2.9566952796967128 241.04689220297942 4.148454554178669 241.7031651603574 L 6.394672593478039 237.62414415126545" sketchjs:uid="207" style="fill: rgb(53,53,53); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 4.5921571999217345 235.0123452164264 Q 3.9583700926064322 234.14981277967323 4.238699603046656 232.35449522567617 L 0.026942571898378453 233.02532440363453 Q 0.2173433184669371 236.8987117619494 0.8511304257822392 237.76124419870257 L 4.5921571999217345 235.0123452164264" sketchjs:uid="208" style="fill: rgb(53,53,53); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 4.143354052935784 232.81201165632922 Q 3.94497505446779 231.56650211517803 6.172225688737765 230.6613427790769 L 2.5588650175394854 228.35108150943563 Q -0.266781976680487 232.23733129313638 -0.06840297821249308 233.48284083428757 L 4.143354052935784 232.81201165632922" sketchjs:uid="209" style="fill: rgb(53,53,53); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 5.849759992310492 231.03699332123432 Q 6.444582230915388 230.10666249174213 8.2863998484698 228.88407551466167 L 5.578134590132434 225.8020401607053 Q 2.831221559717109 227.79640122210085 2.236399321112213 228.72673205159305 L 5.849759992310492 231.03699332123432" sketchjs:uid="210" style="fill: rgb(53,53,53); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 7.884704412489275 229.1785095515061 Q 9.110688484782706 228.1012052090997 12.39771565333461 226.81502973590182 L 9.981936949130143 222.82211030572643 Q 6.40242322644534 225.01916985514333 5.176439154151908 226.09647419754972 L 7.884704412489275 229.1785095515061" sketchjs:uid="211" style="fill: rgb(52,52,52); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 11.952327857373476 227.03884870799826 Q 13.353662204589792 226.19101951117253 16.747427949217812 225.29483416461937 L 14.858794753997337 220.66384089023757 Q 10.937883500385325 222.19810008099714 9.536549153169009 223.04592927782286 L 11.952327857373476 227.03884870799826" sketchjs:uid="212" style="fill: rgb(52,52,52); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 16.281461439252666 225.47596174862775 Q 17.52995433743514 224.96679557372778 20.475409315434113 223.8332724514659 L 18.801075916359387 219.30616711711454 Q 15.641321142214663 220.33580229934597 14.392828244032188 220.84496847424595 L 16.281461439252666 225.47596174862775" sketchjs:uid="213" style="fill: rgb(52,52,52); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 20.007263429097083 224.00886894792654 Q 21.463269473444917 223.4703704219903 24.92051182415366 222.22502118412328 L 23.1482092816664 217.56536280287284 Q 19.78893607437019 218.94326508763896 18.332930030022357 219.4817636135752 L 20.007263429097083 224.00886894792654" sketchjs:uid="214" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 24.45206377794984 222.399796276516 Q 25.6742184496889 221.93494935967948 28.5753071816694 220.7744852545081 L 26.937839079569713 216.2989603175757 Q 23.90191590720164 217.27529097842904 22.67976123546258 217.74013789526558 L 24.45206377794984 222.399796276516" sketchjs:uid="215" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 28.09992912901078 220.92829801040213 Q 29.491542676372223 220.41914593855242 32.74405649655042 219.67351811292028 L 31.423800165108766 214.99622468529307 Q 27.854074574272534 215.94362100162002 26.46246102691109 216.45277307346973 L 28.09992912901078 220.92829801040213" sketchjs:uid="216" style="fill: rgb(51,51,51); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 32.274476435322256 219.84176887627018 Q 34.244630255896325 219.28565494077 38.88485846226567 217.39299437520668 L 36.62354858097635 212.23241454092414 Q 32.92437392445468 214.6083615131428 30.954220103880605 215.16447544864297 L 32.274476435322256 219.84176887627018" sketchjs:uid="217" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 38.4330864419378 217.60675248654886 Q 39.92293664158136 216.9539163545092 43.39919596034561 215.03549613467567 L 40.88210837641458 210.0912288419953 Q 37.66162676029204 211.79333652022666 36.17177656064848 212.4461726522663 L 38.4330864419378 217.60675248654886" sketchjs:uid="218" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 42.95930864366238 215.2728890655495 Q 44.21265068177138 214.63482249353925 47.1296380472178 212.70497893561938 L 44.542153876618805 208.17384006263453 Q 41.69556309784035 209.69055520085888 40.44222105973135 210.32862177286913 L 42.95930864366238 215.2728890655495" sketchjs:uid="219" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 46.6923352859673 212.94731164213064 Q 48.25347956632519 212.05582801589912 51.945252959706885 210.29885083308451 L 49.32975472368377 205.4328062292944 Q 45.66599539572619 207.52468914291427 44.104851115368305 208.4161727691458 L 46.6923352859673 212.94731164213064" sketchjs:uid="220" style="fill: rgb(50,50,50); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 51.49926820715866 210.52456150869912 Q 53.07417751403584 209.67804799527485 56.75789802189344 208.11954842452008 L 54.31470254522222 202.9810133050753 Q 50.458679278012724 204.81200339148475 48.88376997113554 205.65851690490902 L 51.49926820715866 210.52456150869912" sketchjs:uid="221" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 56.30315867951051 208.32728259184734 Q 57.912282631370175 207.56219988457732 61.64433085721658 206.03501221016023 L 59.324346042285576 200.74349102746265 Q 55.469087154698954 202.42366476513254 53.85996320283929 203.18874747240255 L 56.30315867951051 208.32728259184734" sketchjs:uid="222" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 61.20807946200433 206.2751482662049 Q 62.524050565139454 205.69818129002715 65.57952532863746 203.15038066735366 L 62.5665441177213 198.68129398998047 Q 60.20406575020845 200.40666010732957 58.88809464707332 200.98362708350732 L 61.20807946200433 206.2751482662049" sketchjs:uid="223" style="fill: rgb(49,49,49); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 65.18013916889365 203.45013038970234 Q 66.34675108217832 202.66362074491207 68.97444682979643 200.13662669297383 L 65.69332103185356 196.1972665316393 Q 63.33376987126215 198.19453406753888 62.16715795797749 198.98104371232915 L 65.18013916889365 203.45013038970234" sketchjs:uid="224" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 68.61013634411974 200.4778481877862 Q 69.60078698374397 199.65272704188962 71.75390037290873 196.97533390128143 L 68.25668647193149 193.65196538167964 Q 66.3196611858011 195.71336688055507 65.32901054617686 196.53848802645166 L 68.61013634411974 200.4778481877862" sketchjs:uid="225" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 71.46716954343933 197.37878738677537 Q 72.44769345153382 196.34697228068552 74.06557303541115 192.54231687668764 L 69.78117626437134 190.33455289032813 Q 68.95047955055658 193.02360376108373 67.96995564246208 194.0554188671736 L 71.46716954343933 197.37878738677537" sketchjs:uid="226" style="fill: rgb(48,48,48); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 73.90176796566725 193.0096397581354 Q 74.73239468753735 191.39772178723493 75.54606046254133 186.55222652109666 L 70.33698562406641 185.50465904135137 Q 70.44799791649754 189.18995780087542 69.61737119462744 190.80187577177588 L 73.90176796566725 193.0096397581354" sketchjs:uid="227" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 75.48787360046438 187.04716111655236 Q 75.76447503122513 185.67174847620169 75.58949323427883 181.86537641791662 L 70.51538510062461 181.68467232186444 Q 70.55540019275021 184.6241809964564 70.27879876198946 185.99959363680708 L 75.48787360046438 187.04716111655236" sketchjs:uid="228" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 75.72901774780523 182.316391776665 Q 75.77098816849538 181.1378769690355 72.64678139928789 177.5660721082267 L 68.90034112024038 180.3301236598938 Q 70.69688003484116 180.9571728729833 70.65490961415101 182.13568768061282 L 75.72901774780523 182.316391776665" sketchjs:uid="229" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 72.98048410914325 177.9350883434559 Q 72.29027239311273 176.99956419505583 69.59939360235049 174.98945514710425 L 66.65209824984686 178.24296160060987 Q 68.54383211406522 179.7636157467229 69.23404383009574 180.69913989512298 L 72.98048410914325 177.9350883434559" sketchjs:uid="230" style="fill: rgb(47,47,47); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 69.99233992036405 175.29649155563112 Q 69.02612781553266 174.42121668318268 66.05091148214402 172.61135272504657 L 63.59249247873374 176.2791090242908 Q 66.07883246302903 177.6747231366883 67.04504456786042 178.54999800913674 L 69.99233992036405 175.29649155563112" sketchjs:uid="231" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 66.49458563743761 172.83300888183342 Q 65.4484445003633 172.1318027378585 61.911922580285385 171.17860556375885 L 60.46921458019397 175.3076620930735 Q 62.990025496953 175.7995590371027 64.03616663402732 176.50076518107764 L 66.49458563743761 172.83300888183342" sketchjs:uid="232" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 62.38074626274927 171.35215599268292 Q 61.100429243988735 170.9048083740429 58.18136764608901 169.65437541140017 L 56.55164423327617 173.81983826500522 Q 59.65772124389732 175.03386490335754 60.938038262657855 175.48121252199758 L 62.38074626274927 171.35215599268292" sketchjs:uid="233" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+			<path d=" M 55.23646368107296 169.99999999977635 C 55.23646368101119 168.76483521519114 54.23516478452927 167.76353631878433 52.999999999944066 167.7635363188152 C 51.764835215358865 167.7635363188461 50.763536318927024 168.76483521530298 50.76353631892703 169.9999999998882 C 50.76353631892704 171.23516478447337 51.76483521535889 172.23646368093029 52.999999999944094 172.23646368096115 C 54.2351647845293 172.236463680992 55.23646368101121 171.23516478458518 55.236463681072955 169.99999999999997 M 58.41418289862681 169.74546360045758 L 53.81486170640642 167.91726857319748 L 52.18513829359358 172.08273142680252 L 56.784459485813976 173.91092645406263 L 58.41418289862681 169.74546360045758" sketchjs:uid="234" style="fill: rgb(46,46,46); stroke: none; paint-order: stroke fill markers;"/>
+		</g>
+	</g>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,0.85,434,167)">
+	<path id="2301c955_x2d2b6f_x2d48cb_x2da6a8_x2da1033eab438a" style="vector-effect: non-scaling-stroke;" d="M20 0 C31.05 0 40 8.95 40 20 40 31.05 31.05 40 20 40 8.95 40 0 31.05 0 20 0 8.95 8.95 0 20 0 z"/>
+	<use xlink:href="#2301c955_x2d2b6f_x2d48cb_x2da6a8_x2da1033eab438a" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.09;"/>
+	<use xlink:href="#2301c955_x2d2b6f_x2d48cb_x2da6a8_x2da1033eab438a" style="fill: #e4f9c1; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,0.8461538461538461,454,186)">
+	<path id="733ec230_x2de549_x2d41b3_x2d8a69_x2daea508057e54" style="vector-effect: non-scaling-stroke;" d="M6.5 0 C10.09 0 13 2.91 13 6.5 13 10.09 10.09 13 6.5 13 2.91 13 0 10.09 0 6.5 0 2.91 2.91 0 6.5 0 z"/>
+	<use xlink:href="#733ec230_x2de549_x2d41b3_x2d8a69_x2daea508057e54" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1;"/>
+	<use xlink:href="#733ec230_x2de549_x2d41b3_x2d8a69_x2daea508057e54" style="fill: #000000; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,0.6689285233544217,500,180)">
+	<path id="56d0e6cb_x2ddedd_x2d40fc_x2dba8b_x2d0f39a9af8034" style="vector-effect: non-scaling-stroke;" d="M23 0 C35.7 0 46 10.3 46 23 46 35.7 35.7 46 23 46 10.3 46 0 35.7 0 23 0 10.3 10.3 0 23 0 z"/>
+	<use xlink:href="#56d0e6cb_x2ddedd_x2d40fc_x2dba8b_x2d0f39a9af8034" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 5.09;"/>
+	<use xlink:href="#56d0e6cb_x2ddedd_x2d40fc_x2dba8b_x2d0f39a9af8034" style="fill: #e4f9c1; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(-0.9166666666666666,0,0,1,528,195)">
+	<path id="fb95e0f6_x2d1ccf_x2d4c12_x2dbfd8_x2d88aab1f47013" style="vector-effect: non-scaling-stroke;" d="M6 0 C9.31 0 12 2.69 12 6 12 9.31 9.31 12 6 12 2.69 12 0 9.31 0 6 0 2.69 2.69 0 6 0 z"/>
+	<use xlink:href="#fb95e0f6_x2d1ccf_x2d4c12_x2dbfd8_x2d88aab1f47013" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1;"/>
+	<use xlink:href="#fb95e0f6_x2d1ccf_x2d4c12_x2dbfd8_x2d88aab1f47013" style="fill: #000000; fill-opacity: 1;"/>
+</g>
+<g sketchjs:tool="ellipse" style="fill: none; mix-blend-mode: source-over;" transform="matrix(1,0,0,0.26453488372093026,434,241)">
+	<path id="92c9f3ec_x2d69e6_x2d45b2_x2d955e_x2dde642433c7bf" style="vector-effect: non-scaling-stroke;" d="M48 0 C74.51 0 96 21.49 96 48 96 74.51 74.51 96 48 96 21.49 96 0 74.51 0 48 0 21.49 21.49 0 48 0 z"/>
+	<use xlink:href="#92c9f3ec_x2d69e6_x2d45b2_x2d955e_x2dde642433c7bf" style="stroke: black; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 6.1;"/>
+	<use xlink:href="#92c9f3ec_x2d69e6_x2d45b2_x2d955e_x2dde642433c7bf" style="fill: #e4f9c1; fill-opacity: 1;"/>
+</g>
+</svg>

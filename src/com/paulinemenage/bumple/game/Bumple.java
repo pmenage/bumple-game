@@ -11,19 +11,22 @@ import processing.event.KeyEvent;
 public class Bumple extends Screen {
 
     private static final int PIXELS_PER_METER = 200;
-    private BumpCube bumpCube = new BumpCube();
     private Obstacle[] obstacles = new Obstacle[2];
     private float cameraHeight = 0f;
     private static final float CAMERA_SPEED = 1.8f;
     private int score = 0;
     private Water water;
     private Main main;
+    private BumpCube bumpCube;
+
+    public static final boolean DEBUG = false;
 
     public Bumple(Main main) {
         this.main = main;
         setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
         cycleObstacles();
-        water = new Water(-.5f);
+        water = new Water(- .5f);
+        bumpCube = new BumpCube(main);
     }
 
     private Obstacle getGroundObstacle() {
@@ -71,7 +74,7 @@ public class Bumple extends Screen {
                 Obstacle.ObstacleType.Sliding
         };
         return new Obstacle(
-                obstacleTypes[(int) Math.random() * obstacleTypes.length],
+                obstacleTypes[(int) (Math.random() * obstacleTypes.length)],
                 y,
                 (float) Math.random() + 1
         );

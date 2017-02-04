@@ -4,18 +4,26 @@ import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
 import processing.core.PApplet;
 import processing.core.PConstants;
+import processing.core.PImage;
+
+import static com.paulinemenage.bumple.game.Bumple.DEBUG;
 
 public class BumpCube {
 
     private static final float MAX_JUMP_TIME = .4f;
-    private float size = 0.3f;
+    private float size = 0.4f;
     private Point position = new Point(0, size/2);
     private float vy = 0f;
     private float ay = 0f;
-    private float radius = 0.1f;
+    private float radius = 0.15f;
     private boolean isOnGround = true;
     private boolean isColliding = false;
     private float jumpTimeLeft = 0;
+    private PImage sprite;
+
+    public BumpCube(PApplet pApplet) {
+        sprite = pApplet.loadImage("octopus.png");
+    }
 
     /**
      * Get the cube's shape.
@@ -70,10 +78,14 @@ public class BumpCube {
     public void draw(Bumple bumple, PApplet pApplet) {
         int sizePixels = bumple.metersToPixels(size);
         Point positionPixels = bumple.metersToPixels(position);
-        pApplet.rectMode(PConstants.CENTER);
-        pApplet.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
-        int diameter = bumple.metersToPixels(radius*2);
-        pApplet.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
+        pApplet.imageMode(PConstants.CENTER);
+        pApplet.image(sprite, positionPixels.x, positionPixels.y, sizePixels, sizePixels);
+        if (DEBUG) {
+            pApplet.rectMode(PConstants.CENTER);
+            pApplet.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
+            int diameter = bumple.metersToPixels(radius * 2);
+            pApplet.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
+        }
     }
 
 }

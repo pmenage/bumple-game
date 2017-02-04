@@ -30,6 +30,7 @@ public class Main extends PApplet {
     @Override
     public void settings() {
         size(Bumple.metersToPixels(2), Bumple.metersToPixels(3));
+        smooth(4);
     }
 
     @Override
