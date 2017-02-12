@@ -1,40 +1,40 @@
 package com.paulinemenage.bumple;
 
 import com.paulinemenage.bumple.game.Bumple;
-import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.event.KeyEvent;
 
 public class GameOverScreen extends Screen {
 
-    private Main main;
+    private Applet applet;
 
-    public GameOverScreen(Main main) {
-        this.main = main;
+    public GameOverScreen(Applet applet) {
+        this.applet = applet;
     }
 
     /**
-     * Binds the spacebar to the beginning of a game and the m key to the main menu.
+     * Binds the spacebar to the beginning of a game and the m key to the applet menu.
      * @param event An event.
      */
+    @Override
     public void keyPressed(KeyEvent event) {
         if (event.getKey() == ' ')
-            main.setScreen(new Bumple(main));
+            applet.setScreen(new Bumple(applet));
         if (event.getKey() == 'm')
-            main.setScreen(new TitleScreen(main));
+            applet.setScreen(new TitleScreen(applet));
     }
 
     /**
      * Draws the game over screen.
-     * @param pApplet An instance of pApplet to be able to use the Processing library.
      */
-    public void draw(PApplet pApplet) {
-        pApplet.clear();
-        pApplet.textAlign(PConstants.CENTER);
-        pApplet.textSize(30);
-        pApplet.text("Game over", 200, 170);
-        pApplet.textSize(20);
-        pApplet.text("Press m to return to menu", 70, 250, 100, 200);
-        pApplet.text("Press spacebar to play again", 200, 250, 150, 200);
+    @Override
+    public void draw() {
+        applet.clear();
+        applet.textAlign(PConstants.CENTER);
+        applet.textSize(30);
+        applet.text("Game over", 200, 170);
+        applet.textSize(20);
+        applet.text("Press m to return to menu", 70, 250, 100, 200);
+        applet.text("Press spacebar to play again", 200, 250, 150, 200);
     }
 }

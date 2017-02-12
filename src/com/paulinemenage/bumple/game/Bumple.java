@@ -1,11 +1,10 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.Applet;
 import com.paulinemenage.bumple.GameOverScreen;
-import com.paulinemenage.bumple.Main;
 import com.paulinemenage.bumple.Screen;
 import com.paulinemenage.bumple.physics.Point;
 import com.paulinemenage.bumple.physics.Utils;
-import processing.core.PApplet;
 import processing.event.KeyEvent;
 
 public class Bumple extends Screen {
@@ -16,17 +15,17 @@ public class Bumple extends Screen {
     private static final float CAMERA_SPEED = 1.8f;
     private int score = 0;
     private Water water;
-    private Main main;
+    private Applet applet;
     private BumpCube bumpCube;
 
     public static final boolean DEBUG = false;
 
-    public Bumple(Main main) {
-        this.main = main;
+    public Bumple(Applet applet) {
+        this.applet = applet;
         setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
         cycleObstacles();
         water = new Water(- .5f);
-        bumpCube = new BumpCube(main);
+        bumpCube = new BumpCube(applet);
     }
 
     private Obstacle getGroundObstacle() {
@@ -93,6 +92,7 @@ public class Bumple extends Screen {
      * Binds the jump method to the space bar.
      * @param event An event.
      */
+    @Override
     public void keyPressed(KeyEvent event) {
         if (event.getKey() == ' ')
             bumpCube.jump();
@@ -103,18 +103,19 @@ public class Bumple extends Screen {
      * Calls the Processing update function.
      * Draws the bumpCube and the obstacles.
      */
-    public void draw(PApplet pApplet) {
-        pApplet.clear();
+    @Override
+    public void draw() {
+        applet.clear();
         update();
-        pApplet.textSize(20);
-        pApplet.text(score, 20, 30);
-        pApplet.pushMatrix();
-        pApplet.translate(0, metersToPixels(cameraHeight));
-        bumpCube.draw(this, pApplet);
+        applet.textSize(20);
+        applet.text(score, 20, 30);
+        applet.pushMatrix();
+        applet.translate(0, metersToPixels(cameraHeight));
+        bumpCube.draw(this, applet);
         for (Obstacle obstacle : obstacles)
-            obstacle.draw(this, pApplet);
-        water.draw(this, pApplet);
-        pApplet.popMatrix();
+            obstacle.draw(this, applet);
+        water.draw(this, applet);
+        applet.popMatrix();
     }
 
     /**
@@ -143,7 +144,7 @@ public class Bumple extends Screen {
             if (cameraHeight < getGroundObstacle().getPosition().y)
                 cameraHeight += CAMERA_SPEED * delta;
             if (Utils.detectSegmentCircleIntersection(water.getCollisionShape(), bumpCube.getCollisionShape()))
-                main.setScreen(new GameOverScreen(main));
+                applet.setScreen(new GameOverScreen(applet));
         }
     }
 

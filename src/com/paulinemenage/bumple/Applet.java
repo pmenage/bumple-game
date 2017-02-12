@@ -5,7 +5,7 @@ import processing.core.PApplet;
 
 import processing.event.KeyEvent;
 
-public class Main extends PApplet {
+public class Applet extends PApplet {
 
     /**
      * Defines the screen on which the game is.
@@ -13,7 +13,7 @@ public class Main extends PApplet {
     private Screen screen = new TitleScreen(this);
 
     public static void main(String[] args) {
-        Main.main(Main.class.getName());
+        Applet.main(Applet.class.getName());
     }
 
     /**
@@ -40,7 +40,7 @@ public class Main extends PApplet {
 
     @Override
     public void draw() {
-        screen.draw(this);
+        screen.draw();
     }
 
 }

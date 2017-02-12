@@ -15,6 +15,6 @@ public abstract class Screen {
      * Draws the screen.
      * @param pApplet An instance of pApplet, to be able to use the Processing library.
      */
-    public void draw(PApplet pApplet) { }
+    public void draw() { }
 
 }
