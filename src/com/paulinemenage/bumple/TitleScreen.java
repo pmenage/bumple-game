@@ -2,14 +2,19 @@ package com.paulinemenage.bumple;
 
 import com.paulinemenage.bumple.game.Bumple;
 import processing.core.PConstants;
+import processing.core.PImage;
 import processing.event.KeyEvent;
 
 public class TitleScreen extends Screen {
 
     private Applet applet;
+    private PImage title;
+    private PImage playButton;
 
     public TitleScreen(Applet applet) {
         this.applet = applet;
+        title = applet.loadImage("bumple-title.png");
+        playButton = applet.loadImage("play-button.png");
     }
 
     /**
@@ -28,11 +33,10 @@ public class TitleScreen extends Screen {
     @Override
     public void draw() {
         applet.clear();
-        applet.textSize(30);
-        applet.text("Main Menu", 200, 170);
-        applet.textSize(20);
-        applet.textAlign(PConstants.CENTER);
-        applet.text("Press the spacebar to play",130, 250, 130, 200);
+        applet.background(255, 255, 255);
+        applet.imageMode(PConstants.CENTER);
+        applet.image(title, 200, 170, 315, 129);
+        applet.image(playButton, 200, 400, 191, 121);
     }
 
 }

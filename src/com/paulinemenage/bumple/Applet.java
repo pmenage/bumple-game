@@ -10,7 +10,7 @@ public class Applet extends PApplet {
     /**
      * Defines the screen on which the game is.
      */
-    private Screen screen = new TitleScreen(this);
+    private Screen screen;
 
     public static void main(String[] args) {
         Applet.main(Applet.class.getName());
@@ -31,6 +31,8 @@ public class Applet extends PApplet {
     public void settings() {
         size(Bumple.metersToPixels(2), Bumple.metersToPixels(3));
         smooth(4);
+        screen = new TitleScreen(this);
+
     }
 
     @Override
