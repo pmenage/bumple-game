@@ -12,8 +12,12 @@ public abstract class Screen {
     public void keyPressed(KeyEvent event) { }
 
     /**
+     * Binds the mouse click to different actions.
+     */
+    public void mouseClicked() { }
+
+    /**
      * Draws the screen.
-     * @param pApplet An instance of pApplet, to be able to use the Processing library.
      */
     public void draw() { }
 

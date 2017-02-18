@@ -10,11 +10,13 @@ public class TitleScreen extends Screen {
     private Applet applet;
     private PImage title;
     private PImage playButton;
+    private PImage playButtonHightlighted;
 
     public TitleScreen(Applet applet) {
         this.applet = applet;
         title = applet.loadImage("bumple-title.png");
         playButton = applet.loadImage("play-button.png");
+        playButtonHightlighted = applet.loadImage("play-button-highlighted.png");
     }
 
     /**
@@ -28,6 +30,15 @@ public class TitleScreen extends Screen {
     }
 
     /**
+     * Binds the mouse click to the beginning of a game, if its position is on the play button.
+     */
+    @Override
+    public void mouseClicked() {
+        if (applet.mouseX > 100 && applet.mouseX < 300 && applet.mouseY > 340 && applet.mouseY < 460)
+            applet.setScreen(new Bumple(applet));
+    }
+
+    /**
      * Draws the main menu screen.
      */
     @Override
@@ -36,7 +47,10 @@ public class TitleScreen extends Screen {
         applet.background(255, 255, 255);
         applet.imageMode(PConstants.CENTER);
         applet.image(title, 200, 170, 315, 129);
-        applet.image(playButton, 200, 400, 191, 121);
+        if (applet.mouseX > 100 && applet.mouseX < 300 && applet.mouseY > 340 && applet.mouseY < 460)
+            applet.image(playButtonHightlighted, 200, 400, 191, 121);
+        else
+            applet.image(playButton, 200, 400, 191, 121);
     }
 
 }

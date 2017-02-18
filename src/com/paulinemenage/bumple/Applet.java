@@ -41,6 +41,11 @@ public class Applet extends PApplet {
     }
 
     @Override
+    public void mouseClicked() {
+        screen.mouseClicked();
+    }
+
+    @Override
     public void draw() {
         screen.draw();
     }
