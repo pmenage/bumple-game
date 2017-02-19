@@ -24,6 +24,10 @@ public class BubbleGenerator {
         }
     }
 
+    /**
+     * Updates a bubble's attributes with random values, except for the vertical position.
+     * @param bubble A bubble.
+     */
     public void resetBubble(Bubble bubble) {
         bubble.circle.center.x = (float) Math.random() * 2;
         bubble.circle.center.y = 3.1f;
@@ -31,12 +35,29 @@ public class BubbleGenerator {
         bubble.vy = (float) Math.random();
     }
 
+    /**
+     * Resets the bubbles which are outside the frame.
+     */
     public void regenerateBubble() {
         for (Bubble bubble : bubbles)
             if (bubble.circle.center.y < -0.1)
                 resetBubble(bubble);
     }
 
+    /**
+     * Updates the position of the bubbles and regenerates the ones which are outside the frame.
+     * @param delta Small time interval to calculate the approximation.
+     */
+    public void update(float delta) {
+        for (Bubble bubble : bubbles)
+            bubble.circle.center.y -= bubble.vy * delta;
+        regenerateBubble();
+    }
+
+    /**
+     * Draws the bubbles with the Processing library.
+     * @param bumple Instance of Bumple, to call methods in the Bumple class.
+     */
     public void draw(Bumple bumple) {
         applet.fill(176,224,230);
         applet.stroke(255, 255, 255);
@@ -47,12 +68,6 @@ public class BubbleGenerator {
                     bumple.metersToPixels(bubble.circle.radius),
                     bumple.metersToPixels(bubble.circle.radius)
             );
-    }
-
-    public void update(float delta) {
-        for (Bubble bubble : bubbles)
-            bubble.circle.center.y -= bubble.vy * delta;
-        regenerateBubble();
     }
 
 }

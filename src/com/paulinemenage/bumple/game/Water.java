@@ -18,11 +18,19 @@ public class Water {
         return segment;
     }
 
+    /**
+     * Updates the position of the water.
+     * @param delta Small time interval to calculate the approximation.
+     */
     public void update(float delta) {
         segment.a.y += 0.5 * delta;
         segment.b.y += 0.5 * delta;
     }
 
+    /**
+     * Draws the water with the Processing library.
+     * @param bumple Instance of Bumple, to call methods in the Bumple class.
+     */
     public void draw(Bumple bumple) {
         Point pointPixels = bumple.metersToPixels(segment.a);
         applet.rect(pointPixels.x, pointPixels.y, bumple.metersToPixels(2f), bumple.metersToPixels(.05f));
