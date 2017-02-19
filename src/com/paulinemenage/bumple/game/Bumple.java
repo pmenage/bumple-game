@@ -22,7 +22,7 @@ public class Bumple extends Screen {
 
     public Bumple(Applet applet) {
         this.applet = applet;
-        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0));
+        setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0, applet));
         cycleObstacles();
         water = new Water(- .5f);
         bumpCube = new BumpCube(applet);
@@ -75,7 +75,8 @@ public class Bumple extends Screen {
         return new Obstacle(
                 obstacleTypes[(int) (Math.random() * obstacleTypes.length)],
                 y,
-                (float) Math.random() + 1
+                (float) Math.random() + 1,
+                applet
         );
     }
 
@@ -106,6 +107,8 @@ public class Bumple extends Screen {
     @Override
     public void draw() {
         applet.clear();
+        applet.background(135, 206, 235);
+        applet.fill(50);
         update();
         applet.textSize(20);
         applet.text(score, 20, 30);
