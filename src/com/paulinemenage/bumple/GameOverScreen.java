@@ -9,10 +9,18 @@ public class GameOverScreen extends Screen {
 
     private Applet applet;
     private PImage gameOver;
+    private PImage playAgainButton;
+    private PImage playAgainButtonHighlighted;
+    private PImage mainMenuButton;
+    private PImage mainMenuButtonHighlighted;
 
     public GameOverScreen(Applet applet) {
         this.applet = applet;
         gameOver = applet.loadImage("game-over.png");
+        playAgainButton = applet.loadImage("play-again-button.png");
+        playAgainButtonHighlighted = applet.loadImage("play-again-button-highlighted.png");
+        mainMenuButton = applet.loadImage("main-menu-button.png");
+        mainMenuButtonHighlighted = applet.loadImage("main-menu-button-highlighted.png");
     }
 
     /**
@@ -28,6 +36,17 @@ public class GameOverScreen extends Screen {
     }
 
     /**
+     * Binds the mouse click to the beginning of a game, if its position is on the play button, and to the title screen if it's on the main menu button.
+     */
+    @Override
+    public void mouseClicked() {
+        if (applet.mouseX > 28 && applet.mouseX < 192 && applet.mouseY > 341 && applet.mouseY < 459)
+            applet.setScreen(new Bumple(applet));
+        if (applet.mouseX > 213 && applet.mouseX < 367 && applet.mouseY > 341 && applet.mouseY < 459)
+            applet.setScreen(new TitleScreen(applet));
+    }
+
+    /**
      * Draws the game over screen.
      */
     @Override
@@ -35,11 +54,14 @@ public class GameOverScreen extends Screen {
         applet.clear();
         applet.background(255, 255, 255);
         applet.imageMode(PConstants.CENTER);
-        applet.image(gameOver, 200, 170, 380, 214);
-        applet.textAlign(PConstants.CENTER);
-        applet.textSize(20);
-        applet.fill(50);
-        applet.text("Press m to return to menu", 70, 250, 100, 200);
-        applet.text("Press spacebar to play again", 200, 250, 150, 200);
+        applet.image(gameOver, 200, 170, 276, 188);
+        if (applet.mouseX > 28 && applet.mouseX < 192 && applet.mouseY > 341 && applet.mouseY < 459)
+            applet.image(playAgainButtonHighlighted, 110, 400, 164, 118);
+        else
+            applet.image(playAgainButton, 110, 400, 164, 118);
+        if (applet.mouseX > 213 && applet.mouseX < 367 && applet.mouseY > 341 && applet.mouseY < 459)
+            applet.image(mainMenuButtonHighlighted, 290, 400, 155, 119);
+        else
+            applet.image(mainMenuButton, 290, 400, 155, 119);
     }
 }

@@ -1,6 +1,5 @@
 package com.paulinemenage.bumple;
 
-import processing.core.PApplet;
 import processing.event.KeyEvent;
 
 public abstract class Screen {

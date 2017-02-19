@@ -10,13 +10,13 @@ public class TitleScreen extends Screen {
     private Applet applet;
     private PImage title;
     private PImage playButton;
-    private PImage playButtonHightlighted;
+    private PImage playButtonHighlighted;
 
     public TitleScreen(Applet applet) {
         this.applet = applet;
         title = applet.loadImage("bumple-title.png");
         playButton = applet.loadImage("play-button.png");
-        playButtonHightlighted = applet.loadImage("play-button-highlighted.png");
+        playButtonHighlighted = applet.loadImage("play-button-highlighted.png");
     }
 
     /**
@@ -48,7 +48,7 @@ public class TitleScreen extends Screen {
         applet.imageMode(PConstants.CENTER);
         applet.image(title, 200, 170, 315, 129);
         if (applet.mouseX > 100 && applet.mouseX < 300 && applet.mouseY > 340 && applet.mouseY < 460)
-            applet.image(playButtonHightlighted, 200, 400, 191, 121);
+            applet.image(playButtonHighlighted, 200, 400, 191, 121);
         else
             applet.image(playButton, 200, 400, 191, 121);
     }
