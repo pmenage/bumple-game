@@ -1,8 +1,8 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.Applet;
 import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
-import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
 
@@ -11,6 +11,7 @@ import static com.paulinemenage.bumple.game.Bumple.DEBUG;
 public class BumpCube {
 
     private static final float MAX_JUMP_TIME = .4f;
+    private Applet applet;
     private float size = 0.4f;
     private Point position = new Point(0, size/2);
     private float vy = 0f;
@@ -21,8 +22,9 @@ public class BumpCube {
     private float jumpTimeLeft = 0;
     private PImage sprite;
 
-    public BumpCube(PApplet pApplet) {
-        sprite = pApplet.loadImage("octopus.png");
+    public BumpCube(Applet applet) {
+        this.applet = applet;
+        sprite = applet.loadImage("octopus.png");
     }
 
     /**
@@ -73,18 +75,17 @@ public class BumpCube {
     /**
      * Draws the cube with the Processing library.
      * @param bumple Instance of Bumple, to call methods in the Bumple class.
-     * @param pApplet Instance of PApplet, to call methods from the Processing library.
      */
-    public void draw(Bumple bumple, PApplet pApplet) {
+    public void draw(Bumple bumple) {
         int sizePixels = bumple.metersToPixels(size);
         Point positionPixels = bumple.metersToPixels(position);
-        pApplet.imageMode(PConstants.CENTER);
-        pApplet.image(sprite, positionPixels.x, positionPixels.y, sizePixels, sizePixels);
+        applet.imageMode(PConstants.CENTER);
+        applet.image(sprite, positionPixels.x, positionPixels.y, sizePixels, sizePixels);
         if (DEBUG) {
-            pApplet.rectMode(PConstants.CENTER);
-            pApplet.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
+            applet.rectMode(PConstants.CENTER);
+            applet.rect(positionPixels.x, positionPixels.y, sizePixels, sizePixels);
             int diameter = bumple.metersToPixels(radius * 2);
-            pApplet.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
+            applet.ellipse(positionPixels.x, positionPixels.y, diameter, diameter);
         }
     }
 

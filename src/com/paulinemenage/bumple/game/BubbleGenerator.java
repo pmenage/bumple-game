@@ -1,8 +1,8 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.Applet;
 import com.paulinemenage.bumple.physics.Circle;
 import com.paulinemenage.bumple.physics.Point;
-import processing.core.PApplet;
 
 public class BubbleGenerator {
 
@@ -11,16 +11,13 @@ public class BubbleGenerator {
         public Circle circle = new Circle(new Point(0, 0), 0);
         public float vy;
 
-        /*public Bubble(Point center, float radius, float vy) {
-            circle = new Circle(center, radius);
-            this.vy = vy;
-        }*/
-
     }
 
+    private Applet applet;
     private Bubble[] bubbles = new Bubble[15];
 
-    public BubbleGenerator() {
+    public BubbleGenerator(Applet applet) {
+        this.applet = applet;
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i] = new Bubble();
             resetBubble(bubbles[i]);
@@ -40,11 +37,11 @@ public class BubbleGenerator {
                 resetBubble(bubble);
     }
 
-    public void draw(Bumple bumple, PApplet pApplet) {
-        pApplet.fill(176,224,230);
-        pApplet.stroke(255, 255, 255);
+    public void draw(Bumple bumple) {
+        applet.fill(176,224,230);
+        applet.stroke(255, 255, 255);
         for (Bubble bubble : bubbles)
-            pApplet.ellipse(
+            applet.ellipse(
                     bumple.metersToPixels(bubble.circle.center.x),
                     bumple.metersToPixels(bubble.circle.center.y),
                     bumple.metersToPixels(bubble.circle.radius),

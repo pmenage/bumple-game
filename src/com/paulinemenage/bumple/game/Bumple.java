@@ -25,9 +25,9 @@ public class Bumple extends Screen {
         this.applet = applet;
         setNextObstacle(new Obstacle(Obstacle.ObstacleType.Ground, 0f, 0, applet));
         cycleObstacles();
-        water = new Water(- .5f);
+        water = new Water(applet, - .5f);
         bumpCube = new BumpCube(applet);
-        bubbleGenerator = new BubbleGenerator();
+        bubbleGenerator = new BubbleGenerator(applet);
     }
 
     private Obstacle getGroundObstacle() {
@@ -111,16 +111,16 @@ public class Bumple extends Screen {
         applet.clear();
         applet.background(135, 206, 235);
         update();
-        bubbleGenerator.draw(this, applet);
+        bubbleGenerator.draw(this);
         applet.textSize(20);
         applet.fill(50);
         applet.text(score, 20, 30);
         applet.pushMatrix();
         applet.translate(0, metersToPixels(cameraHeight));
-        bumpCube.draw(this, applet);
+        bumpCube.draw(this);
         for (Obstacle obstacle : obstacles)
-            obstacle.draw(this, applet);
-        water.draw(this, applet);
+            obstacle.draw(this);
+        water.draw(this);
         applet.popMatrix();
     }
 

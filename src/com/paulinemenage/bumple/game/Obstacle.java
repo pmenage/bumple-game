@@ -1,8 +1,8 @@
 package com.paulinemenage.bumple.game;
 
+import com.paulinemenage.bumple.Applet;
 import com.paulinemenage.bumple.physics.Point;
 import com.paulinemenage.bumple.physics.Polygon;
-import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PImage;
 
@@ -12,6 +12,7 @@ import static com.paulinemenage.bumple.game.Bumple.DEBUG;
 
 public class Obstacle {
 
+    private Applet applet;
     private float height = 0.15f;
     private float width = 1f;
     private float duration;
@@ -36,9 +37,10 @@ public class Obstacle {
      * @param type The type of obstacle wanted, chosen from the enum ObstacleType.
      * @param y The height of the obstacle at the beginning.
      * @param duration The time needed for the obstacle to close itself, in seconds.
-     * @param pApplet Instance of PApplet, to call methods from the Processing library.
+     * @param applet Instance of Applet, to call methods from the Processing library.
      */
-    public Obstacle(ObstacleType type, float y, float duration, PApplet pApplet) {
+    public Obstacle(ObstacleType type, float y, float duration, Applet applet) {
+        this.applet = applet;
         this.type = type;
         position.y = y;
         this.duration = duration;
@@ -57,8 +59,8 @@ public class Obstacle {
                 angle = 0;
                 break;
         }
-        obstacleLeft = pApplet.loadImage("obstacle-left.png");
-        obstacleRight = pApplet.loadImage("obstacle-right.png");
+        obstacleLeft = applet.loadImage("obstacle-left.png");
+        obstacleRight = applet.loadImage("obstacle-right.png");
     }
 
     /**
@@ -111,32 +113,31 @@ public class Obstacle {
     /**
      * Draws the obstacle with the Processing library.
      * @param bumple Instance of Bumple, to call methods in the Bumple class.
-     * @param pApplet Instance of PApplet, to call methods from the Processing library.
      */
-    public void draw(Bumple bumple, PApplet pApplet) {
-        pApplet.rectMode(PConstants.CORNER);
-        pApplet.imageMode(PConstants.CORNER);
+    public void draw(Bumple bumple) {
+        applet.rectMode(PConstants.CORNER);
+        applet.imageMode(PConstants.CORNER);
         Point positionPixelsLeft = bumple.metersToPixels(position);
         Point positionPixelsRight = bumple.metersToPixels(new Point(-position.x, position.y));
 
         // Left part of obstacle
-        pApplet.pushMatrix();
-        pApplet.translate(positionPixelsLeft.x, positionPixelsLeft.y);
-        pApplet.rotate(-angle);
-        pApplet.image(obstacleLeft, 0, 0, 202, 40);
+        applet.pushMatrix();
+        applet.translate(positionPixelsLeft.x, positionPixelsLeft.y);
+        applet.rotate(-angle);
+        applet.image(obstacleLeft, 0, 0, 202, 40);
         if (DEBUG)
-            pApplet.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
-        pApplet.popMatrix();
+            applet.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
+        applet.popMatrix();
 
         // Right part of obstacle
-        pApplet.pushMatrix();
-        pApplet.translate(positionPixelsRight.x, positionPixelsRight.y);
-        pApplet.rotate(angle);
-        pApplet.translate(-bumple.metersToPixels(width), 0);
-        pApplet.image(obstacleRight, 0, 0, 202, 40);
+        applet.pushMatrix();
+        applet.translate(positionPixelsRight.x, positionPixelsRight.y);
+        applet.rotate(angle);
+        applet.translate(-bumple.metersToPixels(width), 0);
+        applet.image(obstacleRight, 0, 0, 202, 40);
         if (DEBUG)
-            pApplet.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
-        pApplet.popMatrix();
+            applet.rect(0, 0, bumple.metersToPixels(width), bumple.metersToPixels(height));
+        applet.popMatrix();
     }
 
 }
