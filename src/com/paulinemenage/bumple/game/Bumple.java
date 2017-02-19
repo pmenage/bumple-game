@@ -17,6 +17,7 @@ public class Bumple extends Screen {
     private Water water;
     private Applet applet;
     private BumpCube bumpCube;
+    private BubbleGenerator bubbleGenerator;
 
     public static final boolean DEBUG = false;
 
@@ -26,6 +27,7 @@ public class Bumple extends Screen {
         cycleObstacles();
         water = new Water(- .5f);
         bumpCube = new BumpCube(applet);
+        bubbleGenerator = new BubbleGenerator();
     }
 
     private Obstacle getGroundObstacle() {
@@ -108,9 +110,10 @@ public class Bumple extends Screen {
     public void draw() {
         applet.clear();
         applet.background(135, 206, 235);
-        applet.fill(50);
         update();
+        bubbleGenerator.draw(this, applet);
         applet.textSize(20);
+        applet.fill(50);
         applet.text(score, 20, 30);
         applet.pushMatrix();
         applet.translate(0, metersToPixels(cameraHeight));
@@ -138,6 +141,7 @@ public class Bumple extends Screen {
                     bumpCube.setColliding(true);
                 }
             }
+            bubbleGenerator.update(delta);
             bumpCube.update(delta);
             water.update(delta);
             if (bumpCube.isOnGround() && ground == getNextObstacle()) {
