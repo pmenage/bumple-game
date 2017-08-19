@@ -1,6 +1,6 @@
 # Bumple
 
-<img width="400" alt="bumple" src="data/play.png">
+![bumple](data/play.png)
 
 ## Description
 
