@@ -1,6 +1,6 @@
 # Bumple
 
-![bumple](data/play.png)
+![bumple](data/play.png | width=700)
 
 ## Description
 
